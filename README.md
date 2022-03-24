@@ -3,4 +3,5 @@
 # Obligatorio 1
 
 Integrantes:
+-Franco Barbieri
 -Nicolás Visconti
