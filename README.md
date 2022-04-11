@@ -21,8 +21,8 @@ https://github.com/ORTFIS2022/obligatorio-Barbieri-Franco--Heredia-Felipe--Visco
 -NFT: Token no fungible (en inglés: Non Fungible Token). Es un contrato inteligente con tecnología blockchain.
 -Blockchain: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
 
--Ethereum:
--Wallet:
+-Ethereum: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
+-Wallet: las Ethereum wallets son aplicaciones que permiten interactuar con las cuentas de ethereum, se usan para ver el balance de la cuenta y hacer transacciones.
 -Contratos inteligentes:
 -OpenSea
 ...
@@ -44,6 +44,9 @@ Nosotros utilizamos principalmente la rama main (princpal) y luego cada uno una 
 ### Creación del repositorio
 
 {cómo fue creado, cómo se agregaron los integrantes, cómo se configuraron permisos, cómo funcionan las ramas, etc.}
+El repositorio fue creado utilizando el comando git init y dandole la ruta del del espacio de trabajo colaborativo classroom, 
+y luego desde la pagina de github le dimos los permisos de administrador a todos los participantes.
+
 
 ### Comandos utilizados
 
