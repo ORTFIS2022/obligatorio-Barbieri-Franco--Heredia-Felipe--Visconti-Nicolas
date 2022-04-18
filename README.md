@@ -18,8 +18,11 @@
 [Link al repositorio](https://github.com/ORTFIS2022/obligatorio-Barbieri-Franco--Heredia-Felipe--Visconti-Nicolas.git)
 
 
-# Obligatorio 1 
+# Obligatorio 1:(Título)
 
+## Índice
+
+## Introducción
 
 ## Glosario
 
@@ -82,7 +85,7 @@ Pudimos identificar las siguientes funcionalidades:
 
 -Explorar y crear NFTs
 
--Coleciones de NFTs
+-Colecciones de NFTs
 
 -Compra, venta y subasta de NFTs
 
@@ -132,3 +135,23 @@ OpenSea cuenta con más funcionalidades pero creemos que estas son las suficient
 ### Detalles del trabajo individual
 
 ### Técnicas aplicadas y aprendidas
+
+### Cronograma para siguiente reunión (19/4/2022)
+
+-5 ideas c/u en lluvia de ideas 
+
+-Requerimientos funcionales:
+
+Felipe: Requerimientos de wallet
+
+Franco: Requerimientos de compra y venta de NFTs
+
+Nicolás: Requrerimientos de subasta y colecciones de NFTs
+
+-Requirimientos no funcionales:
+
+Felipe: navegador/sistema operativo en el que va a funcionar la aplicación 
+
+Franco: cómo se muestra la info de la NFT
+
+Nicolás: paleta de colores primaria y secundaria, fuente y tamaño
