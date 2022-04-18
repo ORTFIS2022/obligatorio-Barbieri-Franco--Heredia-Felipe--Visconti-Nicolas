@@ -110,9 +110,9 @@ OpenSea cuenta con más funcionalidades pero creemos que estas son las suficient
 
 ## Especificación
 
-### Requisitos funcionales
+### Requerimientos funcionales
 
-### Requisitos no funcionales
+### Requerimientos no funcionales
 
 ### User Stories
 
