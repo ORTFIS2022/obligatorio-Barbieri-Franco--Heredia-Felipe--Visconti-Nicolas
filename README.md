@@ -3,15 +3,20 @@
 ## Profesores
 
 -Alejandro Adorjan
+
 -Johny Kidd
+
 
 ## Integrantes (grupo M4B):
 
 -Franco Barbieri
+
 -Nicolás Visconti
+
 -Felipe Heredia
 
-https://github.com/ORTFIS2022/obligatorio-Barbieri-Franco--Heredia-Felipe--Visconti-Nicolas.git
+[Link al repositorio](https://github.com/ORTFIS2022/obligatorio-Barbieri-Franco--Heredia-Felipe--Visconti-Nicolas.git)
+
 
 # Obligatorio 1 
 
@@ -22,10 +27,18 @@ https://github.com/ORTFIS2022/obligatorio-Barbieri-Franco--Heredia-Felipe--Visco
 -Blockchain: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
 
 -Ethereum: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
+
 -Wallet: las Ethereum wallets son aplicaciones que permiten interactuar con las cuentas de ethereum, se usan para ver el balance de la cuenta y hacer transacciones.
+
 -Contratos inteligentes:
+
 -OpenSea
-...
+
+-Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás, difunde información digital
+
+-Git: herramienta para el versionado de software 
+
+-Marketplace:
 
 -Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás, difunde información digital
 -Git: herramienta para el versionado de software 
@@ -63,12 +76,20 @@ y luego desde la pagina de github le dimos los permisos de administrador a todos
 La técnica de ingeniería reversa consiste en identificar las funcionalidades de una implementación ya existente de otro sistema similar.
 Para identificar algunas de las principales funcionalidades que deben estar presente en nuestro sistema, realizamos esta técnica sobre OpenSea (opeansea.io), el autodenominado marketplace de NFTs más grande.
 
+
 Pudimos identificar las siguientes funcionalidades:
+
+
 -Explorar y crear NFTs
+
 -Coleciones de NFTs
+
 -Compra, venta y subasta de NFTs
+
 -Wallet necesaria para poder crear, comprar, vender o subastar los NFTs (no necesaria para explorar)
+
 -Uso de diferentes wallet (MetaMask, Coinbase Wallet, Phantom, etc.)
+
 
 OpenSea cuenta con más funcionalidades pero creemos que estas son las suficientes y necesarias en términos de nuestro proyecto.
 
