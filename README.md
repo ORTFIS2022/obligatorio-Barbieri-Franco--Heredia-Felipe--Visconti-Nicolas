@@ -161,6 +161,21 @@ La fuente de texto de la aplicación será Roboto, tamaño 14 por defecto. Para 
 
 Se utilizará un 100% de opacidad para todos los textos.
 
+#### rnf2 funcionales
+-el usuario debe poder comprar ntfs
+-el sistema debe solo aceptar ethereum como medio de pago
+-el usuario debe poder filtrar el contenido por distintas categorías
+-la compra no se debe efectuar si el usuario no cuenta con los fondos necesarios
+-el precio definido por el usuario para su nft no puede exceder las 10.000 monedas
+
+#### rnfs
+-Al seleccionar un nft se debe visualizar el token precio y una descripción
+-la página debe ser adaptativa a cualquier tamaño de pantalla
+-los nfts solo pueden ser subidos en formato jpg , png y gif
+-la descripción no debe puede exceder los 10.000 caracteres
+-el precio no puede exceder las 10.000 monedas
+
+
 ### User Stories
 
 ### Use cases
