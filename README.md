@@ -129,6 +129,46 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ## Especificación
 
 ### Requerimientos funcionales
+Se asignan prioridades con un número entero del 1 al 10, siendo 1 el más prioritario.
+
+#### RFi: Subasta de NFTs.
+
+El sistema deberá permitir subastar NFTs, esto es: el propietario debe poder indicar un precio inicial, un precio máximo o la ausencia de precio máximo sobre una de sus NFsT, además de la duración de la subasta. 
+Una vez realizado, el propietario puede iniciar la subasta. El sistema debe guardar la oferta actual. Los potenciales compradores podrán realizar ofertas únicamente más altas que la oferta actual, y esta deberá actualizarse inmediatamente en el sistema si el comprador posee un saldo mayor o igual al precio ofertado por el mismo, en caso contrario, no se realizará la oferta. El saldo indicado para la oferta quedará bloqueado y no se podrá utilizar en otras transacciones.
+El sistema deberá permitir retirar una oferta, si el potencial comprador lo indica.
+Al finalizar la duración de la subasta, la NFT la adquiere el mejor postor y se resta el saldo de su cuenta.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 3
+
+#### RFj: Colecciones de NFTs.
+
+El sistema deberá permitir crear colecciones de NFTs y añadir NFTs a dicha colección.
+El usuario debe indicar el nombre de la colección a ser creada, si ya existiese una colección con ese nombre, no se permitirá crearla.
+El usuario puede agregar NFTs que le pertenezcan a una colección.
+El usuario puede retirar una NFT que le pertenezca de una colección.
+El usuario puede eliminar una colección, el sistema quitará las NFTs de dicha colección y luego eliminará la colección del sistema.
+
+-Actor: Usuario propietario
+
+-Prioridad: 2
+
+#### RFh: Filtrado de NFTs.
+El sistema devera permitir ordenar NFTs por nombre, precio y popularidad.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 4
+
+#### RFk: Wallet.
+El sistema debera permitir al usuario acceder a una wallet.
+El sistema debera poder permitir al usuario almacenar las claves para acceder a sus fondos en la blockchain.
+
+-Actor : Usuario
+
+-Prioridad: 1
+
 
 ### Requerimientos no funcionales
 
