@@ -103,6 +103,21 @@ OpenSea cuenta con más funcionalidades pero creemos que estas son las suficient
 
 #### Lluvia de ideas
 
+Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de proyecto.
+
+##### Ideas de Nicolás:
+
+-Basar la aplicación en NFTs de pinturas. Museo virtual para recorrer colecciones de NFT.
+
+-Los NFTs en la aplicación son exclusivamente contenido multimedia creado por YouTubers/Influencers.
+
+-Sistema de puntos, recompensados mediante algún tipo de juego/minijuego, que se pueden intercambiar por algunos NFTs. Esto no reemplaza la compra/venta de NFTs, es un añadido.
+
+-Red social donde el contenido que se comparte son las NFTs que se pueden comprar en el marketplace de la aplicación.
+
+-Sobres de figuritas, pero de NFTs. Existe la posibilidad de comprar "sobres" de NFTs, los cuales contienen NFTs al azar de determinada colección. Existe un álbum global dentro de la aplicación donde se pueden revisar las "figuritas" NFTs y sus propietarios.
+
+
 ### Referencias bibliográficas
 
 ### User Personas
@@ -115,7 +130,61 @@ OpenSea cuenta con más funcionalidades pero creemos que estas son las suficient
 
 ### Requerimientos funcionales
 
+Se asignan prioridades con un número entero del 1 al 10, siendo 1 el más prioritario.
+
+#### RFi: Subasta de NFTs.
+
+El sistema deberá permitir subastar NFTs, esto es: el propietario debe poder indicar un precio inicial, un precio máximo o la ausencia de precio máximo sobre una de sus NFsT, además de la duración de la subasta. 
+Una vez realizado, el propietario puede iniciar la subasta. El sistema debe guardar la oferta actual. Los potenciales compradores podrán realizar ofertas únicamente más altas que la oferta actual, y esta deberá actualizarse inmediatamente en el sistema si el comprador posee un saldo mayor o igual al precio ofertado por el mismo, en caso contrario, no se realizará la oferta. El saldo indicado para la oferta quedará bloqueado y no se podrá utilizar en otras transacciones.
+El sistema deberá permitir retirar una oferta, si el potencial comprador lo indica.
+Al finalizar la duración de la subasta, la NFT la adquiere el mejor postor y se resta el saldo de su cuenta.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 3
+
+#### RFj: Colecciones de NFTs.
+
+El sistema deberá permitir crear colecciones de NFTs y añadir NFTs a dicha colección.
+El usuario debe indicar el nombre de la colección a ser creada, si ya existiese una colección con ese nombre, no se permitirá crearla.
+El usuario puede agregar NFTs que le pertenezcan a una colección.
+El usuario puede retirar una NFT que le pertenezca de una colección.
+El usuario puede eliminar una colección, el sistema quitará las NFTs de dicha colección y luego eliminará la colección del sistema.
+
+-Actor: Usuario propietario
+
+-Prioridad: 2
+
 ### Requerimientos no funcionales
+
+#### RNFk: Paleta de colores.
+
+Se indica el nombre del color y el código en hexadecimal.
+
+La paleta de colores primaria de la aplicación será:
+
+-Índigo #3949ab
+
+-Índigo claro #6f74dd
+
+-Índigo oscuro #00227b
+
+
+La paleta de colores secundaria de la aplicación será:
+
+-Verde #aed581
+
+-Verde claro #e1ffb1
+
+-Verde oscuro #7da453
+
+Para la paleta principal el texto irá en color blanco #ffffff y para la secundaria en negro #000000
+
+#### RNFl: Fuente de texto.
+
+La fuente de texto de la aplicación será Roboto, tamaño 14 por defecto. Para títulos se utilizará tamaño 20 y para subtítulos tamaño 17.
+
+Se utilizará un 100% de opacidad para todos los textos.
 
 ### User Stories
 
