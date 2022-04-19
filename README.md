@@ -222,7 +222,7 @@ Se utilizará un 100% de opacidad para todos los textos.
 
 ### Técnicas aplicadas y aprendidas
 
-### Cronograma para siguiente reunión (19/4/2022)
+### Cronograma para reunión (19/4/2022)
 
 -5 ideas c/u en lluvia de ideas 
 
@@ -241,3 +241,11 @@ Felipe: navegador/sistema operativo en el que va a funcionar la aplicación
 Franco: cómo se muestra la info de la NFT
 
 Nicolás: paleta de colores primaria y secundaria, fuente y tamaño
+
+### Cronograma para siguiente reunión (20/4/2022)
+
+Franco: Comandos utilizados
+
+Felipe: User Stories (2)
+
+Nicolás: Requerimientos Funcionales (2) y Requerimientos no funcionales (2)
