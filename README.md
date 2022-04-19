@@ -155,6 +155,23 @@ El usuario puede eliminar una colección, el sistema quitará las NFTs de dicha 
 
 -Prioridad: 2
 
+#### RFh: Filtrado de NFTs.
+El sistema devera permitir ordenar NFTs por nombre, precio y popularidad.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 4
+
+#### RFk: Wallet.
+El sistema debera permitir al usuario acceder a una wallet.
+El sistema debera poder permitir al usuario almacenar las claves para acceder a sus fondos en la blockchain.
+
+-Actor : Usuario
+
+-Prioridad: 1
+
+
+
 ### Requerimientos no funcionales
 
 #### RNFk: Paleta de colores.
