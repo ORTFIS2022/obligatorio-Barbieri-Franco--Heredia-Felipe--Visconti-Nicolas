@@ -27,6 +27,7 @@
 ## Glosario
 
 -NFT: Token no fungible (en inglés: Non Fungible Token). Es un contrato inteligente con tecnología blockchain.
+
 -Blockchain: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
 
 -Ethereum: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
@@ -35,16 +36,11 @@
 
 -Contratos inteligentes:
 
--OpenSea
+-OpenSea:
 
--Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás, difunde información digital
+-Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
 
--Git: herramienta para el versionado de software 
-
--Marketplace:
-
--Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás, difunde información digital
--Git: herramienta para el versionado de software 
+-Git: herramienta para el versionado de software.
 
 -Marketplace:
 
