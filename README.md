@@ -297,7 +297,7 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 
 ### Técnicas aplicadas y aprendidas
 
-### Cronograma para reunión (19/4/2022)
+### Cronograma para reunión 3 (19/4/2022)
 
 -5 ideas c/u en lluvia de ideas 
 
@@ -317,10 +317,16 @@ Franco: cómo se muestra la info de la NFT
 
 Nicolás: paleta de colores primaria y secundaria, fuente y tamaño
 
-### Cronograma para siguiente reunión (20/4/2022)
+### Cronograma para reunión 4 (20/4/2022)
 
 Franco: Comandos utilizados
 
 Felipe: User Stories (2)
 
 Nicolás: Requerimientos Funcionales (2) y Requerimientos no funcionales (2)
+
+### Cronograma para siguiente reunión (21/4/2022)
+
+Felipe: User Stories: Publicar NFT y subastar NFT
+
+Nicolás: armar Índice, User Story: Comprar y vender NFT
