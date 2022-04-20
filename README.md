@@ -131,37 +131,68 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ### Requerimientos funcionales
 Se asignan prioridades con un número entero del 1 al 10, siendo 1 el más prioritario.
 
-#### RFi: Subasta de NFTs.
+#### RF1: Subasta de NFTs.
 
-El sistema deberá permitir subastar NFTs, esto es: el propietario debe poder indicar un precio inicial, un precio máximo o la ausencia de precio máximo sobre una de sus NFsT, además de la duración de la subasta. 
-Una vez realizado, el propietario puede iniciar la subasta. El sistema debe guardar la oferta actual. Los potenciales compradores podrán realizar ofertas únicamente más altas que la oferta actual, y esta deberá actualizarse inmediatamente en el sistema si el comprador posee un saldo mayor o igual al precio ofertado por el mismo, en caso contrario, no se realizará la oferta. El saldo indicado para la oferta quedará bloqueado y no se podrá utilizar en otras transacciones.
-El sistema deberá permitir retirar una oferta, si el potencial comprador lo indica.
-Al finalizar la duración de la subasta, la NFT la adquiere el mejor postor y se resta el saldo de su cuenta.
+El sistema deberá permitir subastar una NFT, esto es: el propietario debe poder indicar un precio inicial, un precio máximo o la ausencia de precio máximo sobre una de sus NFTs, además de la duración de la subasta. 
+Una vez realizado, el propietario puede iniciar la subasta. 
 
 -Actor: Propietario/Comprador
 
 -Prioridad: 3
 
-#### RFj: Colecciones de NFTs.
 
-El sistema deberá permitir crear colecciones de NFTs y añadir NFTs a dicha colección.
+#### Rf2: Ofertas en subastas.
+
+El sistema debe guardar todas las ofertas de las subastas. Los potenciales compradores podrán realizar ofertas únicamente más altas que la oferta actual, y esta deberá actualizarse inmediatamente en el sistema si el comprador posee un saldo mayor o igual al precio ofertado por el mismo, en caso contrario, no se realizará la oferta. El saldo indicado para la oferta quedará bloqueado y no se podrá utilizar en otras transacciones.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 3
+
+#### Rf3: Retiro de ofertas en subastas.
+
+El sistema deberá permitir retirar una oferta, si el potencial comprador lo indica. Luego se actualiza la lista de ofertas refrescando la oferta más alta.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 3
+
+#### Rf4: Finalización de la subasta.
+
+Al cumplirse la duración indicada por el usuario de la subasta, la NFT la adquiere el mejor postor y se resta el saldo de su cuenta.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 3
+
+#### RF5: Colecciones de NFTs.
+
+El sistema deberá permitir crear colecciones de NFTs.
 El usuario debe indicar el nombre de la colección a ser creada, si ya existiese una colección con ese nombre, no se permitirá crearla.
-El usuario puede agregar NFTs que le pertenezcan a una colección.
-El usuario puede retirar una NFT que le pertenezca de una colección.
 El usuario puede eliminar una colección, el sistema quitará las NFTs de dicha colección y luego eliminará la colección del sistema.
 
 -Actor: Usuario propietario
 
 -Prioridad: 2
 
-#### RFh: Filtrado de NFTs.
-El sistema devera permitir ordenar NFTs por nombre, precio y popularidad.
+#### RF6: Agregado y borrado de NFTs a colecciones. 
+
+El sistema debe permitir que el usuario puede agregar NFTs que le pertenezcan a una colección.
+El usuario puede retirar una NFT que le pertenezca de una colección.
+
+
+-Actor: Usuario propietario
+
+-Prioridad: 2
+
+#### RF7: Filtrado de NFTs.
+El sistema debera permitir ordenar NFTs por nombre, precio y popularidad.
 
 -Actor: Propietario/Comprador
 
 -Prioridad: 4
 
-#### RFk: Wallet.
+#### RF8: Wallet.
 El sistema debera permitir al usuario acceder a una wallet.
 El sistema debera poder permitir al usuario almacenar las claves para acceder a sus fondos en la blockchain.
 
@@ -169,10 +200,36 @@ El sistema debera poder permitir al usuario almacenar las claves para acceder a 
 
 -Prioridad: 1
 
+#### RF9: Información de NFTs
+
+El sistema deberá almacenar la información de cada NFT. Esto es: 
+
+-Una identificación única (ver RNF#X)
+-Descripción (ver RNF#X)
+-Precio si está a la venta o en subasta 
+-Propietario actual
+-Colecciones a las que pertenece
+-Contenido multimedia (ver RNF#X)
+-Número de vistas
+-Fecha de subida
+
+-Actor: Sistema
+
+-Prioridad: 1
+
+#### RF10: Explorar NFTs.
+
+El sistema debe permitir explorar NFTs, dicho de otra forma, determinar las NFTs que pueden interesar al usuario (mediante el algoritmo #X), ordenar por precio decreciente y creciente, por popularidad (número de vistas) decreciente y por fecha de subida más antigua y más nueva.
+
+-Actor: Usuario
+
+-Prioridad: 2
+
+
 
 ### Requerimientos no funcionales
 
-#### RNFk: Paleta de colores.
+#### RNF1: Paleta de colores.
 
 Se indica el nombre del color y el código en hexadecimal.
 
@@ -195,7 +252,7 @@ La paleta de colores secundaria de la aplicación será:
 
 Para la paleta principal el texto irá en color blanco #ffffff y para la secundaria en negro #000000
 
-#### RNFl: Fuente de texto.
+#### RNF2: Fuente de texto.
 
 La fuente de texto de la aplicación será Roboto, tamaño 14 por defecto. Para títulos se utilizará tamaño 20 y para subtítulos tamaño 17.
 
@@ -215,6 +272,15 @@ Se utilizará un 100% de opacidad para todos los textos.
 -la descripción no debe puede exceder los 10.000 caracteres
 -el precio no puede exceder las 10.000 monedas
 
+#### RNFx: Identificaciones únicas de NFTs
+
+Las identificaciones de cada NFT serán un número entero.
+A la primera NFT se le asigna el número 1.
+A cada NFT se le asigna su identificación como el número siguiente a la NFT registrada antes de ella.
+
+#### RNFy: Descripción de una NFT
+
+Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \, ^
 
 ### User Stories
 
