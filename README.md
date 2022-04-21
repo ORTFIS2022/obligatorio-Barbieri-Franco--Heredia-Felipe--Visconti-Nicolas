@@ -303,7 +303,9 @@ A cada NFT se le asigna su identificación como el número siguiente a la NFT re
 
 Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \, ^
 
+-La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
 ### User Stories
+
 
 #### US1: Comprar una NFT
 
@@ -329,6 +331,30 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 **Criterios de aceptación**
 
 -La NFT no puede estar en proceso de subasta/venta
+
+#### US3: Publicacion NFT
+
+    **Como** usuario vendedor 
+
+    **Quiero** publicar una imagen
+
+    **Para**  venderla como NFT
+
+    **Criterios de aceptación**
+
+    -El vendedor debe subir una imagen en formato png de tamaño 700*700
+
+#### US4: Creacion Subasta NFT
+
+    **Como** usuario vendedor 
+
+    **Quiero** comenzar una subasta
+
+    **Para** vender un NFT obteniendo el mayor beneficio posible
+
+    **Criterios de aceptación**
+
+    -El vendedor debe tener un NFT en propiedad o publicado por su cuenta
 
 
 
