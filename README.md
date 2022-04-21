@@ -225,14 +225,14 @@ El sistema debera poder permitir al usuario almacenar las claves para acceder a 
 
 El sistema deberá almacenar la información de cada NFT. Esto es: 
 
--Una identificación única [(ver RNF#X)](#rnfx-identificaciones-únicas-de-nfts)
--Descripción [(ver RNF#X)](#rnfy-descripción-de-una-nft)
--Precio si está a la venta o en subasta 
--Propietario actual
--Colecciones a las que pertenece
--Contenido multimedia (ver RNF#X)
--Número de vistas
--Fecha de subida
+1. Una identificación única [(ver RNFx)](#rnfx-identificaciones-únicas-de-nfts)
+2. Descripción [(ver RNFy)](#rnfy-descripción-de-una-nft)
+3. Precio si está a la venta o en subasta 
+4. Propietario actual
+5. Colecciones a las que pertenece
+6. Contenido multimedia (ver RNF#X)
+7. Número de vistas
+8. Fecha de subida
 
 -Actor: Sistema
 
