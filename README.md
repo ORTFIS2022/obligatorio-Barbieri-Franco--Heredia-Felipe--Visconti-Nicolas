@@ -334,27 +334,27 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 
 #### US3: Publicacion NFT
 
-    Como usuario vendedor 
+**Como** usuario vendedor 
 
-    Quiero publicar una imagen
+**Quiero** publicar una imagen
 
-    Para  venderla como NFT
+**Para**  venderla como NFT
 
-    Criterios de aceptación
+**Criterios de aceptación**
 
-    -El vendedor debe subir una imagen en formato png de tamaño 700*700
+-El vendedor debe subir una imagen en formato png de tamaño 700*700
 
 #### US4: Creacion Subasta NFT
 
-    **Como** usuario vendedor 
+**Como** usuario vendedor 
 
-    **Quiero** comenzar una subasta
+**Quiero** comenzar una subasta
 
-    **Para** vender un NFT obteniendo el mayor beneficio posible
+**Para** vender un NFT obteniendo el mayor beneficio posible
 
-    **Criterios de aceptación**
+**Criterios de aceptación**
 
-    -El vendedor debe tener un NFT en propiedad o publicado por su cuenta
+-El vendedor debe tener un NFT en propiedad o publicado por su cuenta
 
 
 
