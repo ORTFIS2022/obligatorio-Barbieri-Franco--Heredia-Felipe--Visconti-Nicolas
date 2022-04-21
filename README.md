@@ -225,14 +225,14 @@ El sistema debera poder permitir al usuario almacenar las claves para acceder a 
 
 El sistema deberá almacenar la información de cada NFT. Esto es: 
 
--Una identificación única (ver RNF#X)
--Descripción (ver RNF#X)
--Precio si está a la venta o en subasta 
--Propietario actual
--Colecciones a las que pertenece
--Contenido multimedia (ver RNF#X)
--Número de vistas
--Fecha de subida
+1. Una identificación única [(ver RNFx)](#rnfx-identificaciones-únicas-de-nfts)
+2. Descripción [(ver RNFy)](#rnfy-descripción-de-una-nft)
+3. Precio si está a la venta o en subasta 
+4. Propietario actual
+5. Colecciones a las que pertenece
+6. Contenido multimedia (ver RNF#X)
+7. Número de vistas
+8. Fecha de subida
 
 -Actor: Sistema
 
@@ -384,3 +384,22 @@ Nicolás: Requerimientos Funcionales (2) y Requerimientos no funcionales (2)
 Felipe: User Stories: Publicar NFT y subastar NFT
 
 Nicolás: armar Índice, User Story: Comprar y vender NFT
+
+### Cronograma para siguiente reunión (21/4/2022)
+
+Franco: formalizar requerimientos (R3)
+
+-Comandos utilizados (R4)
+
+
+
+Felipe: Use cases RF 7, 8, 9, 10
+
+-Ideas de lluvia de Ideas  (R3)
+
+
+
+Nicolás: Use cases RF 1, 2, 3, 4, 5, 6
+
+-Avanzar introducción
+
