@@ -375,3 +375,22 @@ Nicolás: Requerimientos Funcionales (2) y Requerimientos no funcionales (2)
 Felipe: User Stories: Publicar NFT y subastar NFT
 
 Nicolás: armar Índice, User Story: Comprar y vender NFT
+
+### Cronograma para siguiente reunión (21/4/2022)
+
+Franco: formalizar requerimientos (R3)
+
+-Comandos utilizados (R4)
+
+
+
+Felipe: Use cases RF 7, 8, 9, 10
+
+-Ideas de lluvia de Ideas  (R3)
+
+
+
+Nicolás: Use cases RF 1, 2, 3, 4, 5, 6
+
+-Avanzar introducción
+
