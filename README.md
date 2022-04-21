@@ -308,20 +308,29 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 #### US1: Comprar una NFT
 
 **Como** comprador de NFTs
+
 **Quiero** comprar una NFT
+
 **Para** incrementar el valor de mi colección o revenderla
 
 **Criterios de aceptación**
+
 -El comprador debe tener saldo suficiente para realizar la compra
+
 
 #### US2: Vender una NFT
 
 **Como** propietario de NFTs
+
 **Quiero** vender una/s de mis NFT
+
 **Para** obtener ganancias
 
 **Criterios de aceptación**
+
 -La NFT no puede estar en proceso de subasta/venta
+
+
 
 ### Use cases
 
