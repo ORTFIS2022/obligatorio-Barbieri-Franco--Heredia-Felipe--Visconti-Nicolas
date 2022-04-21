@@ -23,7 +23,29 @@
 ## Índice
 1. [Introducción](#introducción)
 2. [Glosasrio](#glosario)
-
+3. [Repositorio Git](#repositorio-git)
+    1. [Creación del repositorio](#creación-del-repositorio)
+    2. [Comandos utilizados](#comandos-utilizados)
+4. [Elicitación](#elicitación)
+    1. [Investigación: técnicas utilizadas](#investigación-técnicas-utilizadas)
+        1. [Ingeniería Reversa](#ingeniería-reversa)
+        2. [Focus Group](#focus-group)
+        3. [Análisis de documentación](#análisis-de-documentación)
+        4. [Lluvia de ideas](#lluvia-de-ideas)
+        5. [Referencias bibliográficas](#referencias-bibliográficas)
+        6. [User Personas](#user-personas)
+5. [Especificación](#especificación)
+    1. [Requerimientos funcionales](#requerimientos-funcionales)
+    2. [Requerimientos no funcionales](#requerimientos-no-funcionales)
+    3. [User Stories](#user-stories)
+    4. [Use Cases](#use-cases)
+    5. [Boceto de UI](#boceto-de-ui)
+6. [Validación](#validación)
+7. [Verificación](#verificación)
+8. [Reflexión](#reflexión)
+    1. [Detalles del trabajo individual](#detalles-del-trabajo-individual)
+    2. [Técnicas aplicadas y aprendidas](#técnicas-aplicadas-y-aprendidas)
+9. [Anexo](#anexo)
 
 ## Introducción
 
@@ -299,6 +321,8 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 ### Detalles del trabajo individual
 
 ### Técnicas aplicadas y aprendidas
+
+## Anexo
 
 ### Cronograma para reunión 3 (19/4/2022)
 
