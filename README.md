@@ -21,6 +21,9 @@
 # Obligatorio 1:(Título)
 
 ## Índice
+1. [Introducción] (#introduccion)
+2. [Glosasrio] (#glosario)
+
 
 ## Introducción
 
