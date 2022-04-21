@@ -385,7 +385,7 @@ Felipe: User Stories: Publicar NFT y subastar NFT
 
 Nicolás: armar Índice, User Story: Comprar y vender NFT
 
-### Cronograma para siguiente reunión (21/4/2022)
+### Cronograma para siguiente reunión (22/4/2022)
 
 Franco: formalizar requerimientos (R3)
 
