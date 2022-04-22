@@ -268,6 +268,10 @@ A cada NFT se le asigna su identificación como el número siguiente a la NFT re
 
 Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \ , ^
 
+#### RNF5: Navegadores compatibles
+
+La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
+
 #### rnf2 funcionales
 -el usuario debe poder comprar ntfs
 -el sistema debe solo aceptar ethereum como medio de pago
@@ -281,10 +285,6 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 -los nfts solo pueden ser subidos en formato jpg , png y gif
 -la descripción no debe puede exceder los 10.000 caracteres
 -el precio no puede exceder las 10.000 monedas
-
-
-#### RNFj: Navegadores compatibles
--La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
 
 ### User Stories
 
