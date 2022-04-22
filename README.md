@@ -425,15 +425,8 @@ Este caso de uso trata sobre la creación de colecciones de NFT y su creación.
     * Agregar/Eliminar NFT
     ![Bosquejo agregar o quitar una NFT a la colección](/Placeholders/Placeholder-Colecciones-Agregar-Eliminar.png "Bosquejo inicial para agregar o quitar NFTs")
     * Eliminar colección
-    ![Bosquejo ekiminar colección](/Placeholders/Placeholder-Colecciones-Eliminar-Coleccion.png "Bosquejo inicial para eliminar colección")
+    ![Bosquejo eliminar colección](/Placeholders/Placeholder-Colecciones-Eliminar-Coleccion.png "Bosquejo inicial para eliminar colección")
 
-
-
-| 1. El usuario selecciona la opcion de explorar el mercado de NFTs | 2. El sistema despliega en forma de galeria las miniaturas de los NFTs a la venta ordenados por popularidad. |
-| 3. El usuario indica si desea filtrarlos por fecha de publicacion o precio o mantener el filtro en popularidad | 4. El sistema cambia el orden en el que se muestran las imagenes dependiendo del criterio elegido por el usuario|
-
-
-* **Postcondición**: La pagina debe quedar en forma de galeria para que el usuario pueda hacer click en alguna de las miniaturas y acceder a la pagina de dicho NFT para ver su informacion.
 
 ### UC4: Explorar NFTs - Comprador
 
@@ -441,7 +434,15 @@ Este caso de uso trata sobre el proceso busqueda de NFTs desde el punto de vista
 
 * **Prioridad**: 6
 * **Requerimientos asociados**: [RF7](#rf7-Filtrado-de-NFTs), [RF10](#rf10-Explorar-NFTs))
+* **Precondición**: -
 
+| **Acción del usuario comprador** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario selecciona la opcion de explorar el mercado de NFTs | 2. El sistema despliega en forma de galeria las miniaturas de los NFTs a la venta ordenados por popularidad. |
+| 3. El usuario indica si desea filtrarlos por fecha de publicacion o precio o mantener el filtro en popularidad | 4. El sistema cambia el orden en el que se muestran las imagenes dependiendo del criterio elegido por el usuario|
+
+
+* **Postcondición**: La pagina debe quedar en forma de galeria para que el usuario pueda hacer click en alguna de las miniaturas y acceder a la pagina de dicho NFT para ver su informacion.
 
 ### Boceto de UI
 
