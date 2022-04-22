@@ -395,7 +395,7 @@ Este caso de uso trata sobre el proceso de subasta de una NFT desde el punto de 
 
  ### UC3: Crear y agregar NFTs a colecciones de NFT
 
-Este caso de uso trata sobre la creación de colecciones de NFT y su creación.
+Este caso de uso trata sobre la creación de colecciones de NFT y agregar/quitar NFTs de la misma. También trata sobre la eliminación de colecciones.
 
 * **Prioridad**: 7
 * **Requerimientos asociados**: [RF5](#rf5-colecciones-de-nfts), [RF6](#rf6-agregado-y-borrado-de-nfts-a-colecciones)
@@ -403,17 +403,16 @@ Este caso de uso trata sobre la creación de colecciones de NFT y su creación.
 
 | **Acción del usuario creador de colecciones** | **Respuesta del sistema** |
 | ---------------- | ------- |
-| 1. El usuario indica el nombre de la colección a crear | 2. El sistema almacena el nombre y crea una colección vacía |
+| 1. El usuario indica el nombre de la colección a crear | 2. El sistema almacena el nombre y crea una colección vacía, se muestra menú con opciones pasos 3, 5, 7 y 9. |
 | 3. El usuario indica NFTs a agregar a la colección | 4. El sistema agrega las NFTs seleccionadas a la colección | 
 | 5. El usuario indica NFTs que quiera remover de la colección | 6. El sistema elimina las NFTs seleccionadas de la colección |
-| *Repetir 3,4 o 5,6 tantas veces como se desee* |
-|  7. El usuario desea eliminar la colección | 8. El sistema desasocia las NFTs de la colección y elimina la colección del sistema |
+| 7. El usuario desea eliminar la colección | 8. El sistema desasocia las NFTs de la colección y elimina la colección del sistema |
+| 9. El usuario indica finalizar | 10. El sistema sale del menú |
 
 
 * **Cursos alternativos** 
 
     - 2.1 El nombre ingresado no es válido (ver RNF{x}). No se crea la colección y se vuelve al paso 1.
-    - 8.1 El usuario no desea eliminar la colección. El sistema no elimina la colección. Fin de caso de uso 
     
 
 * **Postcondición**: El sistema ahora contendrá la colección creada por el usuario con las NFTs seleccionadas o no, si se decidió eliminar.
@@ -433,7 +432,7 @@ Este caso de uso trata sobre la creación de colecciones de NFT y su creación.
 Este caso de uso trata sobre el proceso busqueda de NFTs desde el punto de vista de un comprador.
 
 * **Prioridad**: 6
-* **Requerimientos asociados**: [RF7](#rf7-Filtrado-de-NFTs), [RF10](#rf10-Explorar-NFTs))
+* **Requerimientos asociados**: [RF7](#rf7-Filtrado-de-NFTs), [RF10](#rf10-Explorar-NFTs)
 * **Precondición**: -
 
 | **Acción del usuario comprador** | **Respuesta del sistema** |
