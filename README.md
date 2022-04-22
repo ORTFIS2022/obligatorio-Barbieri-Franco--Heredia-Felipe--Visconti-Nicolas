@@ -180,7 +180,8 @@ El sistema deberá permitir retirar una oferta, si el potencial comprador lo ind
 
 #### Rf4: Finalización de la subasta.
 
-Al cumplirse la duración indicada por el usuario de la subasta, la NFT la adquiere el mejor postor y se resta el saldo de su cuenta.
+Al cumplirse la duración indicada por el usuario de la subasta, la NFT la adquiere el mejor postor y se resta al saldo de su cuenta lo que ofertó por la NFT.
+El saldo de la cuenta del propietario que subastó la NFT se le suma el precio al que fue vendida.
 
 -Actor: Propietario/Comprador
 
@@ -225,8 +226,8 @@ El sistema debera poder permitir al usuario almacenar las claves para acceder a 
 
 El sistema deberá almacenar la información de cada NFT. Esto es: 
 
-1. Una identificación única [(ver RNFx)](#rnfx-identificaciones-únicas-de-nfts)
-2. Descripción [(ver RNFy)](#rnfy-descripción-de-una-nft)
+1. Una identificación única [(ver RNF3)](#rnf3-identificaciones-únicas-de-nfts)
+2. Descripción [(ver RNF4)](#rnf4-descripción-de-una-nft)
 3. Precio si está a la venta o en subasta 
 4. Propietario actual
 5. Colecciones a las que pertenece
@@ -279,6 +280,16 @@ La fuente de texto de la aplicación será Roboto, tamaño 14 por defecto. Para 
 
 Se utilizará un 100% de opacidad para todos los textos.
 
+#### RNF3: Identificaciones únicas de NFTs
+
+Las identificaciones de cada NFT serán un número entero.
+A la primera NFT se le asigna el número 1.
+A cada NFT se le asigna su identificación como el número siguiente a la NFT registrada antes de ella.
+
+#### RNF4: Descripción de una NFT
+
+Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \, ^
+
 #### rnf2 funcionales
 -el usuario debe poder comprar ntfs
 -el sistema debe solo aceptar ethereum como medio de pago
@@ -293,15 +304,6 @@ Se utilizará un 100% de opacidad para todos los textos.
 -la descripción no debe puede exceder los 10.000 caracteres
 -el precio no puede exceder las 10.000 monedas
 
-#### RNFx: Identificaciones únicas de NFTs
-
-Las identificaciones de cada NFT serán un número entero.
-A la primera NFT se le asigna el número 1.
-A cada NFT se le asigna su identificación como el número siguiente a la NFT registrada antes de ella.
-
-#### RNFy: Descripción de una NFT
-
-Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \, ^
 
 ### User Stories
 
@@ -333,6 +335,39 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 
 
 ### Use cases
+
+### UC1: Subasta de NFT - Vendedor
+
+Este caso de uso trata sobre el proceso de subasta de uan NFT desde el punto de vista de un vendedor, la parte de poner una oferta y vender la NFT.
+
+* **Prioridad**: 3
+* **Requerimientos asociados**: [RF1](#rf1-subasta-de-nfts), [RF3](#rf3-retiro-de-ofertas-en-subastas), [RF4](#rf4-finalización-de-la-subasta)
+* **Precondición**: El usuario posee al menos una NFT.
+
+| **Acción del usuario vendedor** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario determina una NFT de su colección que desea vender | 2. El sistema bloquea dicha NFT para que no se pueda utilizar en otra transacción |
+| 3. El usuario indica el precio inicial para la oferta | 4. El sistema guarda el precio |
+| 5. El usuario indica un precio máximo | 6. El sistema guarda el precio |
+| 7. El usuario indica el período de tiempo por el que la NFT estará en subasta | 8. El sistema guarda la información |
+| 9. El usuario da comienzo a la subasta | 10. El sistema da de alta la subasta | 
+| - | 11. Pasa el tiempo límite y el sistema da de baja la subasta, finalizando la transacción otorgando la NFT al mayor postor |
+
+* **Cursos alternativos** 
+
+- 2.1. El usuario no seleccionó una NFT, vuelvo a paso 1.
+- 4.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 3.
+- 6.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 5.
+- 8.1. El usuario no indicó un período de tiempo válido, vuelvo a paso 7.
+- 11.1. No hubo ningún postor, la transacción no surte efecto. Fin de caso de uso.
+
+* **Postcondición**: El mayor postor (o el propietario original si no hubo postores) se vuelve propietario de la NFT y se deduce el saldo de su cuenta y se suma a la del propietario original.
+
+* **Bosquejo GUI** {Placeholder}
+
+ ![Bosquejo de la interfaz gráfica para venta de NFT](/Placeholders/Placeholder-Subasta-Vendedor.png "Bosquejo inicial para venta de NFTs")
+
+### UC2: Subasta de NFT - Comprador
 
 ### Boceto de UI
 
