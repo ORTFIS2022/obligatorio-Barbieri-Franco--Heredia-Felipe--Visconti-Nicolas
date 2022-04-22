@@ -18,7 +18,7 @@
 [Link al repositorio](https://github.com/ORTFIS2022/obligatorio-Barbieri-Franco--Heredia-Felipe--Visconti-Nicolas.git)
 
 
-# Obligatorio 1:(Título)
+# Obligatorio 1: NFTs
 
 ## Índice
 1. [Introducción](#introducción)
@@ -48,6 +48,9 @@
 9. [Anexo](#anexo)
 
 ## Introducción
+
+Este documento explica y establece cómo debería ser nuestro software, un marketplace de NFTs, a la hora de implementarlo, se establecen distintos aspectos del mismo como requerimientos funcionales y no funcionales, use cases, user personas, user stories.
+Se recomienda el uso del [Índice](#índice) para navegar cómodamente por el documento luego de una lectura inicial.
 
 ## Glosario
 
@@ -369,7 +372,7 @@ Este caso de uso trata sobre el proceso de subasta de uan NFT desde el punto de 
 
 ### UC2: Subasta de NFT - Comprador
 
-Este caso de uso trata sobre el proceso de subasta de uan NFT desde el punto de vista de un vendedor, la parte de poner una oferta y vender la NFT.
+Este caso de uso trata sobre el proceso de subasta de uan NFT desde el punto de vista de un comprador, la parte de poner una oferta y recibir la NFT en caso de ser el mejor postor.
 
 * **Prioridad**: 5
 * **Requerimientos asociados**: [RF2](#rf2-ofertas-en-subastas), [RF3](#rf3-retiro-de-ofertas-en-subastas), [RF4](#rf4-finalización-de-la-subasta)
@@ -394,6 +397,42 @@ Este caso de uso trata sobre el proceso de subasta de uan NFT desde el punto de 
 * **Bosquejo GUI** {Placeholder}
 
  ![Bosquejo de la interfaz gráfica para compra en subasta de NFT](/Placeholders/Placeholder-Subasta-Comprador.png "Bosquejo inicial para compra de NFTs en subasta")
+
+ ### UC3: Crear y agregar NFTs a colecciones de NFT
+
+Este caso de uso trata sobre la creación de colecciones de NFT y su creación.
+
+* **Prioridad**: 7
+* **Requerimientos asociados**: [RF5](#rf5-colecciones-de-nfts), [RF6](#rf6-agregado-y-borrado-de-nfts-a-colecciones)
+* **Precondición**: -
+
+| **Acción del usuario creador de colecciones** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario indica el nombre de la colección a crear | 2. El sistema almacena el nombre y crea una colección vacía |
+| 3. El usuario indica NFTs a agregar a la colección | 4. El sistema agrega las NFTs seleccionadas a la colección | 
+| 5. El usuario indica NFTs que quiera remover de la colección | 6. El sistema elimina las NFTs seleccionadas de la colección |
+| *Repetir 3,4 o 5,6 tantas veces como se desee* |
+|  7. El usuario desea eliminar la colección | 8. El sistema desasocia las NFTs de la colección y elimina la colección del sistema |
+
+
+
+* **Cursos alternativos** 
+
+    - 2.1 El nombre ingresado no es válido (ver RNF{x}). No se crea la colección y se vuelve al paso 1.
+    - 8.1 El usuario no desea eliminar la colección. El sistema no elimina la colección. Fin de caso de uso 
+    
+
+* **Postcondición**: El sistema ahora contendrá la colección creada por el usuario con las NFTs seleccionadas o no, si se decidió eliminar.
+
+* **Bosquejo GUI** {Placeholder}
+
+    * Creación
+    ![Bosquejo crear colección](/Placeholders/Placeholder-Colecciones-Crear.png "Bosquejo inicial para crear colección")
+    * Agregar/Eliminar NFT
+    ![Bosquejo agregar o quitar una NFT a la colección](/Placeholders/Placeholder-Colecciones-Agregar-Eliminar.png "Bosquejo inicial para agregar o quitar NFTs")
+    * Eliminar colección
+    ![Bosquejo ekiminar colección](/Placeholders/Placeholder-Colecciones-Eliminar-Coleccion.png "Bosquejo inicial para eliminar colección")
+
 
 
 ### Boceto de UI
