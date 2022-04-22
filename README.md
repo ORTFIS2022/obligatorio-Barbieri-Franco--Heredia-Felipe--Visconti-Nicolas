@@ -340,34 +340,61 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 
 Este caso de uso trata sobre el proceso de subasta de uan NFT desde el punto de vista de un vendedor, la parte de poner una oferta y vender la NFT.
 
-* **Prioridad**: 3
+* **Prioridad**: 5
 * **Requerimientos asociados**: [RF1](#rf1-subasta-de-nfts), [RF3](#rf3-retiro-de-ofertas-en-subastas), [RF4](#rf4-finalización-de-la-subasta)
 * **Precondición**: El usuario posee al menos una NFT.
 
 | **Acción del usuario vendedor** | **Respuesta del sistema** |
 | ---------------- | ------- |
-| 1. El usuario determina una NFT de su colección que desea vender | 2. El sistema bloquea dicha NFT para que no se pueda utilizar en otra transacción |
+| 1. El usuario determina una NFT de su propiedad que desea vender | 2. El sistema bloquea dicha NFT para que no se pueda utilizar en otra transacción |
 | 3. El usuario indica el precio inicial para la oferta | 4. El sistema guarda el precio |
 | 5. El usuario indica un precio máximo | 6. El sistema guarda el precio |
 | 7. El usuario indica el período de tiempo por el que la NFT estará en subasta | 8. El sistema guarda la información |
 | 9. El usuario da comienzo a la subasta | 10. El sistema da de alta la subasta | 
-| - | 11. Pasa el tiempo límite y el sistema da de baja la subasta, finalizando la transacción otorgando la NFT al mayor postor |
+| - | 11. Pasa el tiempo límite y el sistema da de baja la subasta, finalizando la transacción sumando al saldo del propietario la mayor oferta. Se desbloquea la NFT |
 
 * **Cursos alternativos** 
 
-- 2.1. El usuario no seleccionó una NFT, vuelvo a paso 1.
-- 4.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 3.
-- 6.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 5.
-- 8.1. El usuario no indicó un período de tiempo válido, vuelvo a paso 7.
-- 11.1. No hubo ningún postor, la transacción no surte efecto. Fin de caso de uso.
+    - 2.1. El usuario no seleccionó una NFT, vuelvo a paso 1.
+    - 4.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 3.
+    - 6.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 5.
+    - 8.1. El usuario no indicó un período de tiempo válido, vuelvo a paso 7.
+    - 11.1. No hubo ningún postor, la transacción no surte efecto y se desbloquea la NFT. Fin de caso de uso.
 
-* **Postcondición**: El mayor postor (o el propietario original si no hubo postores) se vuelve propietario de la NFT y se deduce el saldo de su cuenta y se suma a la del propietario original.
+* **Postcondición**: El mayor postor (o el propietario original si no hubo postores o se retiraron todos los postores) se vuelve propietario de la NFT y se deduce el saldo de su cuenta y se suma a la del propietario original.
 
 * **Bosquejo GUI** {Placeholder}
 
  ![Bosquejo de la interfaz gráfica para venta de NFT](/Placeholders/Placeholder-Subasta-Vendedor.png "Bosquejo inicial para venta de NFTs")
 
 ### UC2: Subasta de NFT - Comprador
+
+Este caso de uso trata sobre el proceso de subasta de uan NFT desde el punto de vista de un vendedor, la parte de poner una oferta y vender la NFT.
+
+* **Prioridad**: 5
+* **Requerimientos asociados**: [RF2](#rf2-ofertas-en-subastas), [RF3](#rf3-retiro-de-ofertas-en-subastas), [RF4](#rf4-finalización-de-la-subasta)
+* **Precondición**: -
+
+| **Acción del usuario comprador** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario determina una NFT en subasta por la cual desea ofertar | 2. El sistema indica la mayor oferta actual. |
+| 3. El usuario indica una oferta mayor a la actual | 4. El sistema guarda el precio, bloqueando esa cantidad de saldo del usuario para no poder usarse en otra transacción y actualiza la oferta mayor |
+|  -  | 5. Finaliza la duración de la subasta y el sistema otorga la NFT al usuario, deduciendo su saldo |
+
+
+* **Cursos alternativos** 
+
+    - 4.1. El usuario indico una oferta menor o igual a la actual. La oferta no se registra y se vuelve al paso 3.
+    - 5.1. No hubo postor o todos se retiraron, no se deduce del saldo de nadie y la transacción no tiene efecto
+    - 5.2. El usuario retira la oferta, el sistema actualiza la oferta mayor y desbloquea su saldo.
+
+
+* **Postcondición**: El mayor postor (o el propietario original si no hubo postores o se retiraron todos los postores) se vuelve propietario de la NFT y se deduce el saldo de su cuenta.
+
+* **Bosquejo GUI** {Placeholder}
+
+ ![Bosquejo de la interfaz gráfica para compra en subasta de NFT](/Placeholders/Placeholder-Subasta-Comprador.png "Bosquejo inicial para compra de NFTs en subasta")
+
 
 ### Boceto de UI
 
