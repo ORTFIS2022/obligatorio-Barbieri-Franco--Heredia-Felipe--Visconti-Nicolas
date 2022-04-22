@@ -138,6 +138,19 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 
 -Sobres de figuritas, pero de NFTs. Existe la posibilidad de comprar "sobres" de NFTs, los cuales contienen NFTs al azar de determinada colección. Existe un álbum global dentro de la aplicación donde se pueden revisar las "figuritas" NFTs y sus propietarios.
 
+##### Ideas de Felipe:
+
+-Crear un logo para la pagina.
+
+-Crear un nombre para la pagina.
+
+-Mostrar la cantidad de NFTs a la venta.
+
+-Crear una funcion de intercambio de NFTs en similar valor.
+
+-Mostrar la cantidad total de valor de una coleccion de un usuario dada por la suma de valores de todos sus NFTs.
+
+-Avisarle al usuario cuando uno de sus NFTs cambie de precio o de propietario.
 
 ### Referencias bibliográficas
 
@@ -303,7 +316,9 @@ A cada NFT se le asigna su identificación como el número siguiente a la NFT re
 
 Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \, ^
 
+#### RNFj: Navegadores compatibles
 -La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
+
 ### User Stories
 
 
@@ -360,6 +375,61 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 
 ### Use cases
 
+### UC4: Explorar NFTs - Comprador
+
+Este caso de uso trata sobre el proceso busqueda de NFTs desde el punto de vista de un comprador.
+
+* **Prioridad**: 6
+* **Requerimientos asociados**: [RF7](#rf7-Filtrado-de-NFTs), [RF10](#rf10-Explorar-NFTs))
+* **Precondición**: -
+
+| **Acción del usuario comprador** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario selecciona la opcion de explorar el mercado de NFTs | 2. El sistema despliega en forma de galeria las miniaturas de los NFTs a la venta ordenados por popularidad. |
+| 3. El usuario indica si desea filtrarlos por fecha de publicacion o precio o mantener el filtro en popularidad | 4. El sistema cambia el orden en el que se muestran las imagenes dependiendo del criterio elegido por el usuario|
+
+
+* **Postcondición**: La pagina debe quedar en forma de galeria para que el usuario pueda hacer click en alguna de las miniaturas y acceder a la pagina de dicho NFT para ver su informacion.
+
+#### RF7: Filtrado de NFTs.
+El sistema debera permitir ordenar NFTs por nombre, precio y popularidad.
+
+-Actor: Propietario/Comprador
+
+-Prioridad: 4
+
+#### RF8: Wallet.
+El sistema debera permitir al usuario acceder a una wallet.
+El sistema debera poder permitir al usuario almacenar las claves para acceder a sus fondos en la blockchain.
+
+-Actor : Usuario
+
+-Prioridad: 1
+
+#### RF9: Información de NFTs
+
+El sistema deberá almacenar la información de cada NFT. Esto es: 
+
+-Una identificación única (ver RNF#X)
+-Descripción (ver RNF#X)
+-Precio si está a la venta o en subasta 
+-Propietario actual
+-Colecciones a las que pertenece
+-Contenido multimedia (ver RNF#X)
+-Número de vistas
+-Fecha de subida
+
+-Actor: Sistema
+
+-Prioridad: 1
+
+#### RF10: Explorar NFTs.
+
+El sistema debe permitir explorar NFTs, dicho de otra forma, determinar las NFTs que pueden interesar al usuario (mediante el algoritmo #X), ordenar por precio decreciente y creciente, por popularidad (número de vistas) decreciente y por fecha de subida más antigua y más nueva.
+
+-Actor: Usuario
+
+-Prioridad: 2
 ### Boceto de UI
 
 
