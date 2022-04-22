@@ -208,7 +208,7 @@ El sistema deberá almacenar la información de cada NFT. Esto es:
 3. Precio si está a la venta o en subasta 
 4. Propietario actual
 5. Colecciones a las que pertenece
-6. Contenido multimedia (ver RNF#X)
+6. Contenido multimedia (ver RNF{Placeholder})
 7. Número de vistas
 8. Fecha de subida
 
@@ -217,7 +217,7 @@ El sistema deberá almacenar la información de cada NFT. Esto es:
 
 #### RF10: Explorar NFTs.
 
-El sistema debe permitir explorar NFTs, dicho de otra forma, determinar las NFTs que pueden interesar al usuario (mediante el algoritmo #X), ordenar por precio decreciente y creciente, por popularidad (número de vistas) decreciente y por fecha de subida más antigua y más nueva.
+El sistema debe permitir explorar NFTs, dicho de otra forma, determinar las NFTs que pueden interesar al usuario (mediante el algoritmo {Placeholder}), ordenar por precio decreciente y creciente, por popularidad (número de vistas) decreciente y por fecha de subida más antigua y más nueva.
 
 - Actor: Usuario
 - Prioridad: 2
@@ -258,7 +258,7 @@ A cada NFT se le asigna su identificación como el número siguiente a la NFT re
 
 #### RNF4: Descripción de una NFT
 
-Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \, ^
+Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \ , ^
 
 #### rnf2 funcionales
 -el usuario debe poder comprar ntfs
