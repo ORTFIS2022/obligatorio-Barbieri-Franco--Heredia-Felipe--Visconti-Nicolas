@@ -144,6 +144,8 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 
 ### Referencias bibliográficas
 
+- Para los bocetos GUI, se utilizó [Balsamiq](https://balsamiq.com/)
+
 ### User Personas
 
 ### Modelo conceptual
@@ -468,7 +470,7 @@ Este caso de uso trata sobre la creación de colecciones de NFT y agregar/quitar
     * Agregar/Eliminar NFT
     ![Bosquejo agregar o quitar una NFT a la colección](/BocetosBalsamiq/colecci%C3%B3n-agregar-quitar.png "Bosquejo inicial para agregar o quitar NFTs")
     * Eliminar colección
-    ![Bosquejo eliminar colección](/BocetosBalsamiq/colecci%C3%B3n-eliminar.png) "Bosquejo inicial para eliminar colección")
+    ![Bosquejo eliminar colección](/BocetosBalsamiq/colecci%C3%B3n-eliminar.png "Bosquejo inicial para eliminar colección")
 
 
 ### UC4: Explorar NFTs - Comprador
