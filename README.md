@@ -80,16 +80,16 @@ y luego desde la pagina de github le dimos los permisos de administrador a todos
 ### Comandos utilizados
 
 Estos son alguno de los comando que utulizamos durante del proyecto:
-- **git clone <url>:** clona un repositorio remoto alojado en url. además, <url> queda establecido como origen.
-- **git branch:** muestra las ramas, marcando en la que se está trabajando actualmente.
-- **git checkout <nombreRama>:** Cambia la rama de trabajo actual a la rama nombreRama.
-- **git checkout -b <nombreRama>:** Crea una rama con nombre nombreRama. Cambia la rama de trabajo actual a la rama nombreRama.
+- **git clone *url*:** Clona un repositorio remoto alojado en *url*. además, *url* queda establecido como origen.
+- **git branch:** Muestra las ramas, marcando en la que se está trabajando actualmente.
+- **git checkout *nombreRama*:** Cambia la rama de trabajo actual a la rama *nombreRama*.
+- **git checkout -b *nombreRama*:** Crea una rama con nombre *nombreRama*. Cambia la rama de trabajo actual a la rama *nombreRama*.
 - **git status:** Informa el estado (archivos eliminados, agregados, modificados) de la rama actual.
 - **git add . :** Agrega todos los archivos para ser utiliados en el próximo commit.
-- **git commit -m "mensaje":** Establece un punto de control en el desarrolo y guarda los cambios localmente.
+- **git commit -m "*mensaje*":** Establece un punto de control en el desarrolo y guarda los cambios localmente.
 - **git push:** "Empuja" los cambios (commits) al servidor remoto. Si hay conflictos, deberán resolverse a través de un nuevo commit.
 - **git pull:** Trae el repositorio remoto en su estado actual al repositorio local. Si hay conflictos, deberán resolverse.
-- **git merge <nombreRama>:** Combina la rama de trabajo actual con la rama nombreRama.
+- **git merge *nombreRama*:** Combina la rama de trabajo actual con la rama *nombreRama*.
 
 
 
