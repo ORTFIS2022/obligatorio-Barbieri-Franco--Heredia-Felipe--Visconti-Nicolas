@@ -55,7 +55,7 @@ Se recomienda el uso del [Índice](#índice) para navegar cómodamente por el do
 - Blockchain: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
 - Ethereum: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
 - Wallet: las Ethereum wallets son aplicaciones que permiten interactuar con las cuentas de ethereum, se usan para ver el balance de la cuenta y hacer transacciones.
-- Contratos inteligentes:contrato que se ejecuta por sí mismo sin que intermedien terceros y se escribe como un programa informático en lugar de utilizar un documento impreso con lenguaje legal estos funcionan con el sistema blockchain.
+- Contratos inteligentes:contrato que se ejecuta por sí mismo sin que intermedien terceros y se escribe como un programa informático en lugar de utilizar un documento impreso con lenguaje legal, estos funcionan con el sistema blockchain.
 - OpenSea: MarketPlace descentralizado donde se comercializan ntfs
 - Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
 - Git: herramienta para el versionado de software.
@@ -80,15 +80,16 @@ y luego desde la pagina de github le dimos los permisos de administrador a todos
 ### Comandos utilizados
 
 Estos son alguno de los comando que utulizamos durante del proyecto:
-- git clone: Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto (como Github, por ejemplo).
-- git branch: se utiliza para trabajar en paralelo en el mismo proyecto simultaneamente. dentro de la misma se encuentran:
-- git checkout para cambiar de una rama a otra
-- git status para obtener la informacion sobre la rama actual
-- git add: incluye lo cambios en el archivo para el siguiente commit
-- git commit: establece un punto de control en el desarrolo y guarda los cambios localmente
-- git push: envia los cambios (commits) al servidor remoto
-- git pull: recibe las actualizaciones realizadas por los otros integrantes desde el repositorio remoto
-- git merge: fusiona la rama acctual con la rama padre.
+- **git clone <url>:** clona un repositorio remoto alojado en url. además, <url> queda establecido como origen.
+- **git branch:** muestra las ramas, marcando en la que se está trabajando actualmente.
+- **git checkout <nombreRama>:** Cambia la rama de trabajo actual a la rama nombreRama.
+- **git checkout -b <nombreRama>:** Crea una rama con nombre nombreRama. Cambia la rama de trabajo actual a la rama nombreRama.
+- **git status:** Informa el estado (archivos eliminados, agregados, modificados) de la rama actual.
+- **git add . :** Agrega todos los archivos para ser utiliados en el próximo commit.
+- **git commit -m "mensaje":** Establece un punto de control en el desarrolo y guarda los cambios localmente.
+- **git push:** "Empuja" los cambios (commits) al servidor remoto. Si hay conflictos, deberán resolverse a través de un nuevo commit.
+- **git pull:** Trae el repositorio remoto en su estado actual al repositorio local. Si hay conflictos, deberán resolverse.
+- **git merge <nombreRama>:** Combina la rama de trabajo actual con la rama nombreRama.
 
 
 
@@ -226,7 +227,7 @@ El sistema deberá almacenar la información de cada NFT. Esto es:
 3. Precio si está a la venta o en subasta 
 4. Propietario actual
 5. Colecciones a las que pertenece
-6. Contenido multimedia (ver RNF{Placeholder})
+6. Contenido multimedia [(ver RNF8)](#rnf8-formato-de-nft)
 7. Número de vistas
 8. Fecha de subida
 
@@ -242,22 +243,36 @@ El sistema debe permitir explorar NFTs, dicho de otra forma, determinar las NFTs
 
 #### RF11: Compra de NTFs.
 
-El sistema debe permitir comprar NTFs,este puede ser por subasta o compra precio fijo. La única moneda admitida para la transacción será ethereum y el sistema debe verificar que el usuario tenga los fondos necesarios para realizar la transacción.
+El sistema debe permitir comprar NTFs bajo un precio fijo. La única moneda admitida para la transacción será Ethereum y el sistema debe verificar que el usuario tenga los fondos necesarios para realizar la transacción.
 
 - Actor: Comprador
 - Prioridad: 1
 
-#### RF12: venta de NTFs.
-El sistema debe permitir la venta de NFTs en la plataforma,el artículo puede ser ofertado por un precio fijo o en formato de subasta. el vendedor debe contar con una wallet que funcione con la moneda ethereum
+#### RF12: Venta de NTFs.
 
-Actor: vendedor
-Prioridad: 1
+El sistema debe permitir la venta de NFTs en la plataforma donde el propietario deberá indicar el precio. El vendedor debe contar con una wallet que funcione con la moneda ethereum.
 
-#### RF13: Publicación de NTFs.
-El sistema debe permitir la publicación de NFTs en la plataforma, este puede ser publicado en formato jpg, png o gif. El sistema no debe permitir la subida de un archivo que ya existe en la plataforma
+- Actor: Vendedor
+- Prioridad: 1
 
-Actor: Usuario
-Prioridad: 1
+#### RF13: Creación de una NFT.
+
+El sistema debe permitir crear una NFT, esto es, el usuario indicará los puntos 2, 4 y 5 del [Requerimiento funcional RF9](#rf9-información-de-nfts) . El sistema debe almacenar esta información e inicializar los demás puntos en su valor neutral una vez el NFT sea publicado:
+- Para su identificación, ver criterio según [Requerimiento no funcional RNF3](#rnf3-identificaciones-únicas-de-nfts)
+- No se asignará precio.
+- No se asignará a ninguna colección.
+- Número de vistas en 0.
+- Fecha de subida en fecha actual.
+
+- Actor: Usuario/Sistema
+- Prioridad: 1
+
+#### RF14: Publicación de NTFs.
+
+El sistema debe permitir la publicación de NFTs en la plataforma. El sistema no publicará un archivo que ya existe en la plataforma.
+
+- Actor: Usuario
+- Prioridad: 1
 
 
 
@@ -302,33 +317,17 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 
 La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
 
+#### RNF6: adaptabilidad en pantalla.
 
-#### RNF8: adaptabilidad en pantalla.
-El sistema funcionará en tamaños de pantalla 1920×1080 y 1366×768 .
+El sistema funcionará en tamaños de pantalla 1920×1080, 1366×768 y 1280x720.
 
+#### RNF7: límite de fijación de precio.
 
+El precio definido para un nft puede exceder los 10.000 ETH.
 
+#### RNF8: Formato de NFT
 
-
-#### RNF9: límite de fijación de precio.
-El precio definido para un nft puede exceder las 10.000 monedas
-
-
-
-
-#### rnf2 funcionales
--el usuario debe poder comprar ntfs
--el sistema debe solo aceptar ethereum como medio de pago
--el usuario debe poder filtrar el contenido por distintas categorías
--la compra no se debe efectuar si el usuario no cuenta con los fondos necesarios
--el precio definido por el usuario para su nft no puede exceder las 10.000 monedas
-
-#### rnfs
--Al seleccionar un nft se debe visualizar el token precio y una descripción
--la página debe ser adaptativa a cualquier tamaño de pantalla
--los nfts solo pueden ser subidos en formato jpg , png y gif
--la descripción no debe puede exceder los 10.000 caracteres
--el precio no puede exceder las 10.000 monedas
+Los formatos admitido para el contenido multimedia de una NFT son jpg, png o gif.
 
 ### User Stories
 
