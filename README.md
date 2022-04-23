@@ -489,7 +489,10 @@ Este caso de uso trata sobre el proceso busqueda de NFTs desde el punto de vista
 
 * **Postcondición**: La pagina debe quedar en forma de galeria para que el usuario pueda hacer click en alguna de las miniaturas y acceder a la pagina de dicho NFT para ver su informacion.
 
+
 ### Boceto de UI
+
+![Bosquejo de la interfaz gráfica para Explorar NFTs](/BocetosBalsamiq/ExplorarNFTs-Comprador.png"Bosquejo inicial Explorar NFTs")
 
 
 
