@@ -406,7 +406,7 @@ Este caso de uso trata sobre el proceso de subasta de una NFT desde el punto de 
 
 * **Bosquejo GUI** {Placeholder}
 
- ![Bosquejo de la interfaz gráfica para venta de NFT](/Placeholders/Placeholder-Subasta-Vendedor.png "Bosquejo inicial para venta de NFTs")
+ ![Bosquejo de la interfaz gráfica para venta de NFT](/BocetosBalsamiq/subasta-vendedor.png "Bosquejo inicial para venta de NFTs")
 
 ### UC2: Subasta de NFT - Comprador
 
