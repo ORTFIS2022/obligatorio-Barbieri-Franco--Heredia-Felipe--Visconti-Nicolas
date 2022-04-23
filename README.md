@@ -47,18 +47,18 @@
 ## Introducción
 
 Este documento explica y establece cómo debería ser nuestro software, un marketplace de NFTs, a la hora de implementarlo, se establecen distintos aspectos del mismo como requerimientos funcionales y no funcionales, use cases, user personas, user stories.
-Se recomienda el uso del [Índice](#índice) para navegar cómodamente por el documento luego de una lectura inicial.
+Se recomienda el uso del [índice](#índice) para navegar cómodamente por el documento luego de una lectura inicial.
 
 ## Glosario
 
-- NFT: Token no fungible (en inglés: Non Fungible Token). Es un contrato inteligente con tecnología blockchain.
-- Blockchain: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
-- Ethereum: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
-- Wallet: las Ethereum wallets son aplicaciones que permiten interactuar con las cuentas de ethereum, se usan para ver el balance de la cuenta y hacer transacciones.
-- Contratos inteligentes:contrato que se ejecuta por sí mismo sin que intermedien terceros y se escribe como un programa informático en lugar de utilizar un documento impreso con lenguaje legal, estos funcionan con el sistema blockchain.
-- OpenSea: MarketPlace descentralizado donde se comercializan ntfs
-- Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
-- Git: herramienta para el versionado de software.
+- **NFT**: Token no fungible (en inglés: Non Fungible Token). Es un contrato inteligente con tecnología blockchain.
+- **Blockchain**: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
+- **Ethereum**: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
+- **Wallet**: las Ethereum wallets son aplicaciones que permiten interactuar con las cuentas de ethereum, se usan para ver el balance de la cuenta y hacer transacciones.
+- C**ontratos inteligentes**: contrato que se ejecuta por sí mismo sin que intermedien terceros y se escribe como un programa informático en lugar de utilizar un documento impreso con lenguaje legal, estos funcionan con el sistema blockchain.
+- **OpenSea**: MarketPlace descentralizado donde se comercializan ntfs
+- **Repositorio**: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
+- **Git**: herramienta para el versionado de software.
 - Marketplace:{Placeholder}
 
 ## Repositorio Git
@@ -79,7 +79,7 @@ y luego desde la pagina de github le dimos los permisos de administrador a todos
 
 ### Comandos utilizados
 
-Estos son alguno de los comando que utulizamos durante del proyecto:
+Estos son algunos de los comandos más importantes que utlizamos durante del proyecto:
 - **git clone *url*:** Clona un repositorio remoto alojado en *url*. además, *url* queda establecido como origen.
 - **git branch:** Muestra las ramas, marcando en la que se está trabajando actualmente.
 - **git checkout *nombreRama*:** Cambia la rama de trabajo actual a la rama *nombreRama*.
@@ -167,21 +167,21 @@ Una vez realizado, el propietario puede iniciar la subasta.
 - Prioridad: 3
 
 
-#### Rf2: Ofertas en subastas.
+#### RF2: Ofertas en subastas.
 
 El sistema debe guardar todas las ofertas de las subastas. Los potenciales compradores podrán realizar ofertas únicamente más altas que la oferta actual, y esta deberá actualizarse inmediatamente en el sistema si el comprador posee un saldo mayor o igual al precio ofertado por el mismo, en caso contrario, no se realizará la oferta. El saldo indicado para la oferta quedará bloqueado y no se podrá utilizar en otras transacciones.
 
 - Actor: Propietario/Comprador
 - Prioridad: 3
 
-#### Rf3: Retiro de ofertas en subastas.
+#### RF3: Retiro de ofertas en subastas.
 
 El sistema deberá permitir retirar una oferta, si el potencial comprador lo indica. Luego se actualiza la lista de ofertas refrescando la oferta más alta.
 
 - Actor: Propietario/Comprador
 - Prioridad: 3
 
-#### Rf4: Finalización de la subasta.
+#### RF4: Finalización de la subasta.
 
 Al cumplirse la duración indicada por el usuario de la subasta, la NFT la adquiere el mejor postor y se resta al saldo de su cuenta lo que ofertó por la NFT.
 El saldo de la cuenta del propietario que subastó la NFT se le suma el precio al que fue vendida.
@@ -488,6 +488,95 @@ Este caso de uso trata sobre el proceso busqueda de NFTs desde el punto de vista
 
 
 * **Postcondición**: La pagina debe quedar en forma de galeria para que el usuario pueda hacer click en alguna de las miniaturas y acceder a la pagina de dicho NFT para ver su informacion.
+
+* **Bosquego GUI**
+
+    ![Bosquejo de la interfaz gráfica para Explorar NFTs](/BocetosBalsamiq/ExplorarNFTs-Comprador.png "Bosquejo inicial Explorar NFTs")
+
+
+### UC5: Compra de NFT
+
+Este caso de uso trata sobre el proceso de compra de una NFT del punto de vista de un usuario comprador.
+
+* **Prioridad**: 1
+* **Requerimientos asociados**:  [RF9](#rf9-información-de-nfts), [RF8](#rf8-wallet), [RF11](#rf11-compra-de-ntfs)
+* **Precondición**: El usuario posee una wallet vinculada.
+
+| **Acción del usuario comprador** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario determina una NFT la cual desea comprar | 2. El sistema indica la información asociada a la NFT, definida en [RF9](#rf9-información-de-nfts) |
+| 3. El usuario indica que va a comprar la NFT | 4. El sistema bloquea la NFT para que no se use en otras transacciones, deduce el precio del saldo del comprador y lo suma al del vendedor, cambia el propietario al comprador. El sistema ahora desbloquea la NFT. |
+
+
+* **Cursos alternativos** 
+
+    - 2.1. la NFT no está disponible para venta, vuelvo a caso 1. 
+    - 4.1. El usuario comprador no tiene saldo suficiente. El sistema lo informa, fin de caso de uso.
+
+* **Postcondición**: El propietario de la NFT pasa a ser el comprador (si se efectuó la compra correctamente), el saldo del vendedor aumenta y el del comprador disminuye.
+
+* **Bosquejo GUI**
+
+ ![Bosquejo de la interfaz gráfica para compra de NFT](/BocetosBalsamiq/comprar.png "Bosquejo inicial para compra de NFTs")
+
+
+### UC6: Venta de NFT
+
+Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista de un usuario comprador.
+
+* **Prioridad**: 1
+* **Requerimientos asociados**:  [RF12](#rf12-venta-de-ntfs)
+* **Precondición**: El usuario posee al menos una NFT.
+
+| **Acción del usuario vendedorr** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario determina una NFT la cual desea vender | 2. El sistema bloquea la NFT para que no sea utilizada en otro proceso de venta o subasta |
+| 3. El usuario indica el precio por el que quiere vender la NFT | 4. El sistema almacena dicho precio. |
+| 5. El usuario indica que va a vender la NFT | 6. El sistema pone la NFT a la venta |
+| - | 7. Se vende la NFT y el sistema deduce el saldo del comprador y se lo suma al usuario vendedor, cambiando el propietario y desbloqueando la NFT | 
+
+
+
+* **Cursos alternativos** 
+
+    - 4.1. El precio indicado no es válido [(ver RNF7)](#rnf7-límite-de-fijación-de-precio). El sistema lo informa y vuelve a caso 3.
+    - 7.1. El usuario vendedor retira la NFT de la venta. El sistema remueve la transacción y desbloquea la NFT.
+
+* **Postcondición**: El propietario de la NFT pasa a ser el comprador, el saldo del vendedor aumenta y el del comprador disminuye.
+
+* **Bosquejo GUI**
+
+ ![Bosquejo de la interfaz gráfica para venta de NFT](/BocetosBalsamiq/vender.png "Bosquejo inicial para venta de NFTs")
+
+#### UC7: Crear NFT
+
+Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista de un usuario comprador.
+
+* **Prioridad**: 1
+* **Requerimientos asociados**:  [RF12](#rf12-venta-de-ntfs)
+* **Precondición**: -
+
+| **Acción del usuario vendedorr** | **Respuesta del sistema** |
+| ---------------- | ------- |
+| 1. El usuario determina una NFT la cual desea vender | 2. El sistema bloquea la NFT para que no sea utilizada en otro proceso de venta o subasta |
+| 3. El usuario indica el precio por el que quiere vender la NFT | 4. El sistema almacena dicho precio. |
+| 5. El usuario indica que va a vender la NFT | 6. El sistema pone la NFT a la venta |
+| - | 7. Se vende la NFT y el sistema deduce el saldo del comprador y se lo suma al usuario vendedor, cambiando el propietario y desbloqueando la NFT | 
+
+
+
+* **Cursos alternativos** 
+
+    - 4.1. El precio indicado no es válido [(ver RNF7)](#rnf7-límite-de-fijación-de-precio). El sistema lo informa y vuelve a caso 3.
+    - 7.1. El usuario vendedor retira la NFT de la venta. El sistema remueve la transacción y desbloquea la NFT.
+
+* **Postcondición**: El propietario de la NFT pasa a ser el comprador, el saldo del vendedor aumenta y el del comprador disminuye.
+
+* **Bosquejo GUI**
+
+ ![Bosquejo de la interfaz gráfica para venta de NFT](/BocetosBalsamiq/vender.png "Bosquejo inicial para venta de NFTs")
+
+
 
 ### Boceto de UI
 
