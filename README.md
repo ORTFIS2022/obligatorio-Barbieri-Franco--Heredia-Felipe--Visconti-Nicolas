@@ -404,9 +404,9 @@ Este caso de uso trata sobre el proceso de subasta de una NFT desde el punto de 
 
 * **Postcondición**: El mayor postor (o el propietario original si no hubo postores o se retiraron todos los postores) se vuelve propietario de la NFT y se deduce el saldo de su cuenta y se suma a la del propietario original.
 
-* **Bosquejo GUI** {Placeholder}
+* **Bosquejo GUI**
 
- ![Bosquejo de la interfaz gráfica para venta de NFT](/BocetosBalsamiq/subasta-vendedor.png "Bosquejo inicial para venta de NFTs")
+ ![Bosquejo de la interfaz gráfica para subastar una NFT](/BocetosBalsamiq/subasta-vendedor.png "Bosquejo inicial para subastar una NFT")
 
 ### UC2: Subasta de NFT - Comprador
 
@@ -426,15 +426,16 @@ Este caso de uso trata sobre el proceso de subasta de una NFT desde el punto de 
 * **Cursos alternativos** 
 
     - 4.1. El usuario indico una oferta menor o igual a la actual. La oferta no se registra y se vuelve al paso 3.
+    - 4.2. El usuario indicó una oferta mayor o igual a la oferta máxima. Pasa a 5. Fin de caso de uso.
     - 5.1. No hubo postor o todos se retiraron, no se deduce del saldo de nadie y la transacción no tiene efecto
     - 5.2. El usuario retira la oferta, el sistema actualiza la oferta mayor y desbloquea su saldo.
 
 
 * **Postcondición**: El mayor postor (o el propietario original si no hubo postores o se retiraron todos los postores) se vuelve propietario de la NFT y se deduce el saldo de su cuenta.
 
-* **Bosquejo GUI** {Placeholder}
+* **Bosquejo GUI**
 
- ![Bosquejo de la interfaz gráfica para compra en subasta de NFT](/Placeholders/Placeholder-Subasta-Comprador.png "Bosquejo inicial para compra de NFTs en subasta")
+ ![Bosquejo de la interfaz gráfica para compra en subasta de NFT](/BocetosBalsamiq/subasta-comprador.png "Bosquejo inicial para compra de NFTs en subasta")
 
  ### UC3: Crear y agregar NFTs a colecciones de NFT
 
@@ -460,14 +461,14 @@ Este caso de uso trata sobre la creación de colecciones de NFT y agregar/quitar
 
 * **Postcondición**: El sistema ahora contendrá la colección creada por el usuario con las NFTs seleccionadas o no, si se decidió eliminar.
 
-* **Bosquejo GUI** {Placeholder}
+* **Bosquejo GUI**
 
     * Creación
-    ![Bosquejo crear colección](/Placeholders/Placeholder-Colecciones-Crear.png "Bosquejo inicial para crear colección")
+    ![Bosquejo crear colección](/BocetosBalsamiq/colecci%C3%B3n-crear.png "Bosquejo inicial para crear colección")
     * Agregar/Eliminar NFT
-    ![Bosquejo agregar o quitar una NFT a la colección](/Placeholders/Placeholder-Colecciones-Agregar-Eliminar.png "Bosquejo inicial para agregar o quitar NFTs")
+    ![Bosquejo agregar o quitar una NFT a la colección](/BocetosBalsamiq/colecci%C3%B3n-agregar-quitar.png "Bosquejo inicial para agregar o quitar NFTs")
     * Eliminar colección
-    ![Bosquejo eliminar colección](/Placeholders/Placeholder-Colecciones-Eliminar-Coleccion.png "Bosquejo inicial para eliminar colección")
+    ![Bosquejo eliminar colección](/BocetosBalsamiq/colecci%C3%B3n-eliminar.png) "Bosquejo inicial para eliminar colección")
 
 
 ### UC4: Explorar NFTs - Comprador
