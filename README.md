@@ -55,11 +55,11 @@ Se recomienda el uso del [índice](#índice) para navegar cómodamente por el do
 - **Blockchain**: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
 - **Ethereum**: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
 - **Wallet**: las Ethereum wallets son aplicaciones que permiten interactuar con las cuentas de ethereum, se usan para ver el balance de la cuenta y hacer transacciones.
-- C**ontratos inteligentes**: contrato que se ejecuta por sí mismo sin que intermedien terceros y se escribe como un programa informático en lugar de utilizar un documento impreso con lenguaje legal, estos funcionan con el sistema blockchain.
+- **Contratos inteligentes**: contrato que se ejecuta por sí mismo sin que intermedien terceros y se escribe como un programa informático en lugar de utilizar un documento impreso con lenguaje legal, estos funcionan con el sistema blockchain.
 - **OpenSea**: MarketPlace descentralizado donde se comercializan ntfs
 - **Repositorio**: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
 - **Git**: herramienta para el versionado de software.
-- Marketplace:{Placeholder}
+- **Marketplace**:{Placeholder}
 
 ## Repositorio Git
 
@@ -553,35 +553,35 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista de un usuario comprador.
 
 * **Prioridad**: 1
-* **Requerimientos asociados**:  [RF12](#rf12-venta-de-ntfs)
+* **Requerimientos asociados**:  [RF9](#rf9-información-de-nfts), [RF13](#rf13-creación-de-una-nft), [RF14](#rf14-publicación-de-ntfs)
 * **Precondición**: -
 
 | **Acción del usuario vendedorr** | **Respuesta del sistema** |
 | ---------------- | ------- |
-| 1. El usuario determina una NFT la cual desea vender | 2. El sistema bloquea la NFT para que no sea utilizada en otro proceso de venta o subasta |
-| 3. El usuario indica el precio por el que quiere vender la NFT | 4. El sistema almacena dicho precio. |
-| 5. El usuario indica que va a vender la NFT | 6. El sistema pone la NFT a la venta |
-| - | 7. Se vende la NFT y el sistema deduce el saldo del comprador y se lo suma al usuario vendedor, cambiando el propietario y desbloqueando la NFT | 
+| 1. El usuario determina crear una NFT | 2. El sistema pide los datos de la NFT |
+| 3. El usuario indica el nombre, descripción y sube una imagen para la NFT | 4. El sistema guarda los datos e inicializa una NFT vacía, donde le asigna la id única, el propietario como el usuario, la fecha de subida como fecha actual, sus colecciones en vacío, número de vistas en 0 y el resto de datos como los recibió del usuario. |
+| 5. El usuario decide publicar la NFT | 6. El sistema la hace visible para todos los demás |
 
 
 
 * **Cursos alternativos** 
 
-    - 4.1. El precio indicado no es válido [(ver RNF7)](#rnf7-límite-de-fijación-de-precio). El sistema lo informa y vuelve a caso 3.
-    - 7.1. El usuario vendedor retira la NFT de la venta. El sistema remueve la transacción y desbloquea la NFT.
+    - 4.1. La descripción no es válida [(ver RNF4)](#rnf4-descripción-de-una-nft). El sistema lo informa y vuelve a caso 5.
+    - 4.2 La imagen no es válida [(ver RNF8)](#rnf8-formato-de-nft). El sistema lo informa y vuelve a caso 7.
+    - 4.3 La imagen ya se encontraba en el sistema como parte de otra NFT. El sistema lo informa y vuelve a caso 7.
+    - 6.1 El usuario decide no publicar la NFT. El sistema no hace visible para todos los demás la NFT, Fin de caso de uso
 
-* **Postcondición**: El propietario de la NFT pasa a ser el comprador, el saldo del vendedor aumenta y el del comprador disminuye.
+* **Postcondición**: La NFT es publicada visible para los demás usuarios, o no, en el caso del curso alternativo.
 
 * **Bosquejo GUI**
 
- ![Bosquejo de la interfaz gráfica para venta de NFT](/BocetosBalsamiq/vender.png "Bosquejo inicial para venta de NFTs")
-
+ *  Crear
+    ![Bosquejo de la interfaz gráfica para creación de NFTs](/BocetosBalsamiq/crear.png "Bosquejo inicial para crear NFTs")
+ * Publicar
+    ![Bosquejo de la interfaz gráfica para publicación de NFTs](/BocetosBalsamiq/publicar.png "Bosquejo inicial para publicar NFTs")
 
 
 ### Boceto de UI
-
-![Bosquejo de la interfaz gráfica para Explorar NFTs](/BocetosBalsamiq/ExplorarNFTs-Comprador.png"Bosquejo inicial Explorar NFTs")
-
 
 
 ## Validación
