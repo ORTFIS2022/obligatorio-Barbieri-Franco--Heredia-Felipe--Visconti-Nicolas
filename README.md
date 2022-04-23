@@ -55,8 +55,8 @@ Se recomienda el uso del [Índice](#índice) para navegar cómodamente por el do
 - Blockchain: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
 - Ethereum: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
 - Wallet: las Ethereum wallets son aplicaciones que permiten interactuar con las cuentas de ethereum, se usan para ver el balance de la cuenta y hacer transacciones.
-- Contratos inteligentes: {Placeholder}
-- OpenSea:{Placeholder}
+- Contratos inteligentes:contrato que se ejecuta por sí mismo sin que intermedien terceros y se escribe como un programa informático en lugar de utilizar un documento impreso con lenguaje legal estos funcionan con el sistema blockchain.
+- OpenSea: MarketPlace descentralizado donde se comercializan ntfs
 - Repositorio: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
 - Git: herramienta para el versionado de software.
 - Marketplace:{Placeholder}
@@ -79,7 +79,17 @@ y luego desde la pagina de github le dimos los permisos de administrador a todos
 
 ### Comandos utilizados
 
-{Lista con descripción de los comandos y su uso}
+Estos son alguno de los comando que utulizamos durante del proyecto:
+- git clone: Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto (como Github, por ejemplo).
+- git branch: se utiliza para trabajar en paralelo en el mismo proyecto simultaneamente. dentro de la misma se encuentran:
+- git checkout para cambiar de una rama a otra
+- git status para obtener la informacion sobre la rama actual
+- git add: incluye lo cambios en el archivo para el siguiente commit
+- git commit: establece un punto de control en el desarrolo y guarda los cambios localmente
+- git push: envia los cambios (commits) al servidor remoto
+- git pull: recibe las actualizaciones realizadas por los otros integrantes desde el repositorio remoto
+- git merge: fusiona la rama acctual con la rama padre.
+
 
 
 
@@ -230,6 +240,26 @@ El sistema debe permitir explorar NFTs, dicho de otra forma, determinar las NFTs
 - Actor: Usuario
 - Prioridad: 2
 
+#### RF11: Compra de NTFs.
+
+El sistema debe permitir comprar NTFs,este puede ser por subasta o compra precio fijo. La única moneda admitida para la transacción será ethereum y el sistema debe verificar que el usuario tenga los fondos necesarios para realizar la transacción.
+
+- Actor: Comprador
+- Prioridad: 1
+
+#### RF12: venta de NTFs.
+El sistema debe permitir la venta de NFTs en la plataforma,el artículo puede ser ofertado por un precio fijo o en formato de subasta. el vendedor debe contar con una wallet que funcione con la moneda ethereum
+
+Actor: vendedor
+Prioridad: 1
+
+#### RF13: Publicación de NTFs.
+El sistema debe permitir la publicación de NFTs en la plataforma, este puede ser publicado en formato jpg, png o gif. El sistema no debe permitir la subida de un archivo que ya existe en la plataforma
+
+Actor: Usuario
+Prioridad: 1
+
+
 
 
 ### Requerimientos no funcionales
@@ -271,6 +301,20 @@ Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pued
 #### RNF5: Navegadores compatibles
 
 La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
+
+
+#### RNF8: adaptabilidad en pantalla.
+El sistema funcionará en tamaños de pantalla 1920×1080 y 1366×768 .
+
+
+
+
+
+#### RNF9: límite de fijación de precio.
+El precio definido para un nft puede exceder las 10.000 monedas
+
+
+
 
 #### rnf2 funcionales
 -el usuario debe poder comprar ntfs
