@@ -580,6 +580,8 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 ### Boceto de UI
 
+![Bosquejo de la interfaz gráfica para Explorar NFTs](/BocetosBalsamiq/ExplorarNFTs-Comprador.png"Bosquejo inicial Explorar NFTs")
+
 
 
 ## Validación
