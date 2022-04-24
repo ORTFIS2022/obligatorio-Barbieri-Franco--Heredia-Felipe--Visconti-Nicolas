@@ -26,9 +26,8 @@
 4. [Elicitación](#elicitación)
     1. [Investigación: técnicas utilizadas](#investigación-técnicas-utilizadas)
         1. [Ingeniería Reversa](#ingeniería-reversa)
-        2. [Focus Group](#focus-group)
-        3. [Análisis de documentación](#análisis-de-documentación)
-        4. [Lluvia de ideas](#lluvia-de-ideas)
+        2. [Entrevista](#entrevista)
+        3. [Lluvia de ideas](#lluvia-de-ideas)
     2. [Referencias bibliográficas](#referencias-bibliográficas)
     3. [User Personas](#user-personas)
 5. [Especificación](#especificación)
@@ -90,8 +89,7 @@ Estos son algunos de los comandos más importantes que utlizamos durante del pro
 - **git push:** "Empuja" los cambios (commits) al servidor remoto. Si hay conflictos, deberán resolverse a través de un nuevo commit.
 - **git pull:** Trae el repositorio remoto en su estado actual al repositorio local. Si hay conflictos, deberán resolverse.
 - **git merge *nombreRama*:** Combina la rama de trabajo actual con la rama *nombreRama*.
-
-
+- **git branch --set-upstream-to=origin/*origenRama* *nombreRama*:** Establece el origen de la rama *nombreRama* como origin/*origenRama* donde origin es el origen de la rama main.
 
 
 ## Elicitación
@@ -117,9 +115,15 @@ Pudimos identificar las siguientes funcionalidades:
 OpenSea cuenta con más funcionalidades pero creemos que estas son las suficientes y necesarias en términos de nuestro proyecto.
 
 
-#### Focus Group
+#### Entrevista
 
-#### Análisis de documentación
+En esta técnica entrevistamos a un inversor de NFTs, {Nombre Apellido}. Realizamos las siguientes preguntas y obtuvimos sus correspondientes respuestas:
+
+{Preguntas y respuetas}
+
+De esta información pudimos concluir:
+
+{Conclusiones}
 
 #### Lluvia de ideas
 
@@ -155,6 +159,7 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ### Referencias bibliográficas
 
 - Para los bocetos GUI, se utilizó [Balsamiq](https://balsamiq.com/)
+- [Técnicas de priorización](https://librescrum.com/2020/09/22/tecnicas-de-priorizacion/)
 
 ### User Personas
 
@@ -604,21 +609,51 @@ Para la verificación de los requerimientos utilizamos distintas técnicas:
 
 Revisión de pares es una técnica donde los colegas revisan el trabajo de uno. Cuando un integrante realiza un nuevo commit, los demás revisan el contenido agregado y dan un feedback sobre si creen que ya está completo y correcto el aporte, o si creen que hace falta algo o que habría que realizar cambios. Para lo segundo, luego se debe revisar nuevamente tras realizar los cambios. Nosotros utilizamos esta técnica de manera que los otros dos integrantes revisaban el trabajo del que realizó el commit.
 
-En particular esta técnica nos fue útil para identificar errores pequeños, como lo pueden ser faltas de ortografía, legibilidad de alguna estructura, sintaxis de markdown, etc.
+En particular esta técnica nos fue especialmente útil para identificar errores pequeños, como lo pueden ser faltas de ortografía, legibilidad de alguna estructura, sintaxis de markdown, etc. Además, nos permitió verificar otro tipo de cosas como los requerimientos, casos de uso, que contuviesen todo lo que tenían que contener y que estuvieran correctos.
 
 
 ### Walkthrough
 
 Walkthrough es una metodología donde el autor da un recorrido sobre una parte del sistema, a través de la interfaz, con el fin principalmente de verificar la usabilidad que tiene esa parte del sistema.
 
-Nosotros utilizamos esta metodología mayormente en la parte de los bocetos de interfaz de usuario, donde tras realizar un boceto, hacíamos un recorrido por el mismo a los demás integrantes del grupo. Si algo pareciera que pudiese mejorarse, lo hacíamos en el momento.
+Nosotros utilizamos esta metodología mayormente en la parte de los bocetos de interfaz de usuario, donde tras realizar un boceto, hacíamos un recorrido por el mismo a los demás integrantes del grupo. Si algo pareciera que pudiese mejorarse o corregirse, lo hacíamos en el momento.
 
+### Checklist
+
+Checklist es una técnica en la cual se utiliza una lista que contiene lo que debe estar, y se va **checkeando** lo que está presente en la lista. Si hay algo que no marcamos como **checkeado**, entonces lo que estamos verificando no contiene todo lo que debe contener. Este método nos permite verificar la completitud de nuestro software, es decir, que hace todo lo que debería hacer y que tiene todo lo que debería tener.
+
+Particularmente utilizamos esta técnica para revisar que nuestro documento contenía todo lo que se pedía, y, más específicamente utilizamos la lista de la diapositiva de la página 12 de la presentación de powerpoint del curso: **2.3 - Validación de requerimientos** para verificar requerimientos y casos de uso.
 
 ## Reflexión
 
 ### Detalles del trabajo individual
 
 ### Técnicas aplicadas y aprendidas
+
+Durante el obligatorio, aprendimos distintas técnicas que aplicamos a nuestro documento:
+
+* Técnicas de priorización
+    * RICE: **R**each, **I**mpact, **C**onfidence, **E**ffort. 
+        - Asignamos un número a cada variable, y luego (R x I x C) / E nos da un número que a mayor valor, más prioritario. En nuestro caso a mayor valor, menor el número que le asignamos como probabilidad (ya que 1 es el más prioritario y 10 el menos prioritario).
+    * MoSCoW: **M**ust, **S**hould, **W**ould, **C**ould.
+        - Must: Lo que debemos hacer y vamos a hacer de inmediato.
+        - Should: Lo que deberíamos hacer y vamos a hacer en lo posible.
+        - Could: Lo que podríamos hacer y vamos a hacer si somos capaces.
+        - Would: Lo que no vamos a hacer ahora y tal vez hagamos más tarde.
+    * Pirámide de priorización: pirámide con las siguientes reglas
+        - A mayor altura, más prioridad
+        - El nivel que está abajo no puede tener menos escalones que el que está arriba
+
+* Técnicas de verificación
+    * [Revisión de pares](#revisión-de-pares)
+    * [Walkthrough](#walkthrough)
+    * [Checklist](#checklist)
+
+* Técnicas de trabajo en grupo
+    * [Repositorio Git](#repositorio-git)
+        - Trabajar en distintas ramas y combinarlas
+        - Trabajar en un repositorio remoto y local
+        - Resolver conflictos
 
 ## Anexo
 
