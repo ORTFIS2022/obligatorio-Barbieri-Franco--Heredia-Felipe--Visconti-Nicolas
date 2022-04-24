@@ -599,7 +599,7 @@ Para la verificación de los requerimientos utilizamos distintas técnicas:
 
 Revisión de pares es una técnica donde los colegas revisan el trabajo de uno. Cuando un integrante realiza un nuevo commit, los demás revisan el contenido agregado y dan un feedback sobre si creen que ya está completo y correcto el aporte, o si creen que hace falta algo o que habría que realizar cambios. Para lo segundo, luego se debe revisar nuevamente tras realizar los cambios. Nosotros utilizamos esta técnica de manera que los otros dos integrantes revisaban el trabajo del que realizó el commit.
 
-En particular esta técnica nos fue útil para identificar errores pequeños, como lo pueden ser faltas de ortografía, legibilidad de alguna estructura, sintaxis de markdown, etc.
+En particular esta técnica nos fue especialmente útil para identificar errores pequeños, como lo pueden ser faltas de ortografía, legibilidad de alguna estructura, sintaxis de markdown, etc. Además, nos permitió verificar otro tipo de cosas como los requerimientos, casos de uso, que contuviesen todo lo que tenían que contener y que estuvieran correctos.
 
 
 ### Walkthrough
@@ -630,7 +630,7 @@ Durante el obligatorio, aprendimos distintas técnicas que aplicamos a nuestro d
         - Should: Lo que deberíamos hacer y vamos a hacer en lo posible.
         - Could: Lo que podríamos hacer y vamos a hacer si somos capaces.
         - Would: Lo que no vamos a hacer ahora y tal vez hagamos más tarde.
-    * Pirámide de priorización: pirámide co las siguientes reglas
+    * Pirámide de priorización: pirámide con las siguientes reglas
         - A mayor altura, más prioridad
         - El nivel que está abajo no puede tener menos escalones que el que está arriba
 
@@ -644,7 +644,6 @@ Durante el obligatorio, aprendimos distintas técnicas que aplicamos a nuestro d
         - Trabajar en distintas ramas y combinarlas
         - Trabajar en un repositorio remoto y local
         - Resolver conflictos
-        - 
 
 ## Anexo
 
