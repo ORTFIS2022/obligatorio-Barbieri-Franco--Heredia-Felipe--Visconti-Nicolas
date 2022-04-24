@@ -30,6 +30,7 @@
         3. [Lluvia de ideas](#lluvia-de-ideas)
     2. [Referencias bibliográficas](#referencias-bibliográficas)
     3. [User Personas](#user-personas)
+    4. [Modelo conceptual](#modelo-conceptual)
 5. [Especificación](#especificación)
     1. [Requerimientos funcionales](#requerimientos-funcionales)
     2. [Requerimientos no funcionales](#requerimientos-no-funcionales)
