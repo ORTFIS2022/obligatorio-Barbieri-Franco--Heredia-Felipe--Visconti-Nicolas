@@ -177,7 +177,7 @@ Para el modelo conceptual del sistema introdujimos las siguientes clases con sus
     - **Vendedor**: Extensión de usuario, cuando tiene uno o más NFTs a la venta.
 
 - Modelo
- ![Modelo conceptual del sistema](/BocetosBalsamiq/subasta-comprador.png "Modelo conceptual del sistema")
+ ![Modelo conceptual del sistema](/UML/modelo_conceptual.png "Modelo conceptual del sistema")
 
 
 ## Especificación
