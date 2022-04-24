@@ -149,22 +149,35 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ##### Ideas de Franco:
 
 - Sugerencias de NFTs que le puedan interesar al usuario en base a  diseños realizados por sus creadores favoritos o dentro de la misma categoría.
-- seguir creadores (buscar creadores).
-- automatizar la compra de un nft en base al precio, (si llega a tal valor, comprar).
-- poder publicar NFTs. 
-- filtrar por precio.
-- permitir al creador del NFT ver el historial de ventas y la opinión de los usuarios de la plataforma.
+- Seguir creadores (buscar creadores).
+- Automatizar la compra de un nft en base al precio, (si llega a tal valor, comprar).
+- Poder publicar NFTs. 
+- Filtrar por precio.
+- Permitir al creador del NFT ver el historial de ventas y la opinión de los usuarios de la plataforma.
 
 
 ### Referencias bibliográficas
 
 - Para los bocetos GUI, se utilizó [Balsamiq](https://balsamiq.com/)
 - [Técnicas de priorización](https://librescrum.com/2020/09/22/tecnicas-de-priorizacion/)
+- [¿Qué es un User persona?](https://www.questionpro.com/blog/es/que-es-un-user-persona/)
+- [User personas](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1010.835&rep=rep1&type=pdf)
 
 ### User Personas
 
+
+
 ### Modelo conceptual
 
+Para el modelo conceptual del sistema introdujimos las siguientes clases con sus respectivas relaciones:
+- **NFT**: contiene toda la información de las NFT.
+- **Sistema**: contiene una lista de NFT, de colecciones y de usuarios.
+- **Usuario**: contiene los datos de un usuario, una lista de sus NFTs y de sus colecciones de NFT.
+    - **Comprador**: Extensión de usuario, cuando tiene uno o más NFTs en su propiedad.
+    - **Vendedor**: Extensión de usuario, cuando tiene uno o más NFTs a la venta.
+
+- Modelo
+ ![Modelo conceptual del sistema](/BocetosBalsamiq/subasta-comprador.png "Modelo conceptual del sistema")
 
 
 ## Especificación
