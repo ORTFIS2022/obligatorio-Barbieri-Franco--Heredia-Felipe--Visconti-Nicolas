@@ -601,8 +601,13 @@ En particular esta técnica nos fue útil para identificar errores pequeños, co
 
 Walkthrough es una metodología donde el autor da un recorrido sobre una parte del sistema, a través de la interfaz, con el fin principalmente de verificar la usabilidad que tiene esa parte del sistema.
 
-Nosotros utilizamos esta metodología mayormente en la parte de los bocetos de interfaz de usuario, donde tras realizar un boceto, hacíamos un recorrido por el mismo a los demás integrantes del grupo. Si algo pareciera que pudiese mejorarse, lo hacíamos en el momento.
+Nosotros utilizamos esta metodología mayormente en la parte de los bocetos de interfaz de usuario, donde tras realizar un boceto, hacíamos un recorrido por el mismo a los demás integrantes del grupo. Si algo pareciera que pudiese mejorarse o corregirse, lo hacíamos en el momento.
 
+### Checklist
+
+Checklist es una técnica en la cual se utiliza una lista que contiene lo que debe estar, y se va **checkeando** lo que está presente en la lista. Si hay algo que no marcamos como **checkeado**, entonces lo que estamos verificando no contiene todo lo que debe contener. Este método nos permite verificar la completitud de nuestro software, es decir, que hace todo lo que debería hacer y que tiene todo lo que debería tener.
+
+Particularmente utilizamos esta técnica para revisar que nuestro documento contenía todo lo que se pedía, y, más específicamente utilizamos la lista de la diapositiva de la página 12 de la presentación de powerpoint del curso: **2.3 - Validación de requerimientos** para verificar requerimientos y casos de uso.
 
 ## Reflexión
 
