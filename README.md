@@ -90,8 +90,7 @@ Estos son algunos de los comandos más importantes que utlizamos durante del pro
 - **git push:** "Empuja" los cambios (commits) al servidor remoto. Si hay conflictos, deberán resolverse a través de un nuevo commit.
 - **git pull:** Trae el repositorio remoto en su estado actual al repositorio local. Si hay conflictos, deberán resolverse.
 - **git merge *nombreRama*:** Combina la rama de trabajo actual con la rama *nombreRama*.
-
-
+- **git branch --set-upstream-to=origin/*origenRama* *nombreRama*:** Establece el origen de la rama *nombreRama* como origin/*origenRama* donde origin es el origen de la rama main.
 
 
 ## Elicitación
@@ -145,6 +144,7 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ### Referencias bibliográficas
 
 - Para los bocetos GUI, se utilizó [Balsamiq](https://balsamiq.com/)
+- [Técnicas de priorización](https://librescrum.com/2020/09/22/tecnicas-de-priorizacion/)
 
 ### User Personas
 
@@ -614,6 +614,32 @@ Particularmente utilizamos esta técnica para revisar que nuestro documento cont
 ### Detalles del trabajo individual
 
 ### Técnicas aplicadas y aprendidas
+
+Durante el obligatorio, aprendimos distintas técnicas que aplicamos a nuestro documento:
+
+* Técnicas de priorización
+    * RICE: **R**each, **I**mpact, **C**onfidence, **E**ffort. 
+        - Asignamos un número a cada variable, y luego (R x I x C) / E nos da un número que a mayor valor, más prioritario. En nuestro caso a mayor valor, menor el número que le asignamos como probabilidad (ya que 1 es el más prioritario y 10 el menos prioritario).
+    * MoSCoW: **M**ust, **S**hould, **W**ould, **C**ould.
+        - Must: Lo que debemos hacer y vamos a hacer de inmediato.
+        - Should: Lo que deberíamos hacer y vamos a hacer en lo posible.
+        - Could: Lo que podríamos hacer y vamos a hacer si somos capaces.
+        - Would: Lo que no vamos a hacer ahora y tal vez hagamos más tarde.
+    * Pirámide de priorización: pirámide co las siguientes reglas
+        - A mayor altura, más prioridad
+        - El nivel que está abajo no puede tener menos escalones que el que está arriba
+
+* Técnicas de verificación
+    * [Revisión de pares](#revisión-de-pares)
+    * [Walkthrough](#walkthrough)
+    * [Checklist](#checklist)
+
+* Técnicas de trabajo en grupo
+    * [Repositorio Git](#repositorio-git)
+        - Trabajar en distintas ramas y combinarlas
+        - Trabajar en un repositorio remoto y local
+        - Resolver conflictos
+        - 
 
 ## Anexo
 
