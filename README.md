@@ -26,9 +26,8 @@
 4. [Elicitación](#elicitación)
     1. [Investigación: técnicas utilizadas](#investigación-técnicas-utilizadas)
         1. [Ingeniería Reversa](#ingeniería-reversa)
-        2. [Focus Group](#focus-group)
-        3. [Análisis de documentación](#análisis-de-documentación)
-        4. [Lluvia de ideas](#lluvia-de-ideas)
+        2. [Entrevista](#entrevista)
+        3. [Lluvia de ideas](#lluvia-de-ideas)
     2. [Referencias bibliográficas](#referencias-bibliográficas)
     3. [User Personas](#user-personas)
 5. [Especificación](#especificación)
@@ -116,9 +115,15 @@ Pudimos identificar las siguientes funcionalidades:
 OpenSea cuenta con más funcionalidades pero creemos que estas son las suficientes y necesarias en términos de nuestro proyecto.
 
 
-#### Focus Group
+#### Entrevista
 
-#### Análisis de documentación
+En esta técnica entrevistamos a un inversor de NFTs, {Nombre Apellido}. Realizamos las siguientes preguntas y obtuvimos sus correspondientes respuestas:
+
+{Preguntas y respuetas}
+
+De esta información pudimos concluir:
+
+{Conclusiones}
 
 #### Lluvia de ideas
 
