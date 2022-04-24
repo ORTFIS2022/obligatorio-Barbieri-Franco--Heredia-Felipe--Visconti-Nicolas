@@ -575,9 +575,9 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 * **Bosquejo GUI**
 
- *  Crear
+    *  Crear
     ![Bosquejo de la interfaz gráfica para creación de NFTs](/BocetosBalsamiq/crear.png "Bosquejo inicial para crear NFTs")
- * Publicar
+    * Publicar
     ![Bosquejo de la interfaz gráfica para publicación de NFTs](/BocetosBalsamiq/publicar.png "Bosquejo inicial para publicar NFTs")
 
 
@@ -587,6 +587,21 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 ## Validación
 
 ## Verificación
+
+Para la verificación de los requerimientos utilizamos distintas técnicas:
+
+### Revisión de pares
+
+Revisión de pares es una técnica donde los colegas revisan el trabajo de uno. Cuando un integrante realiza un nuevo commit, los demás revisan el contenido agregado y dan un feedback sobre si creen que ya está completo y correcto el aporte, o si creen que hace falta algo o que habría que realizar cambios. Para lo segundo, luego se debe revisar nuevamente tras realizar los cambios. Nosotros utilizamos esta técnica de manera que los otros dos integrantes revisaban el trabajo del que realizó el commit.
+
+En particular esta técnica nos fue útil para identificar errores pequeños, como lo pueden ser faltas de ortografía, legibilidad de alguna estructura, sintaxis de markdown, etc.
+
+
+### Walkthrough
+
+Walkthrough es una metodología donde el autor da un recorrido sobre una parte del sistema, a través de la interfaz, con el fin principalmente de verificar la usabilidad que tiene esa parte del sistema.
+
+Nosotros utilizamos esta metodología mayormente en la parte de los bocetos de interfaz de usuario, donde tras realizar un boceto, hacíamos un recorrido por el mismo a los demás integrantes del grupo. Si algo pareciera que pudiese mejorarse, lo hacíamos en el momento.
 
 
 ## Reflexión
