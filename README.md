@@ -142,6 +142,16 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 - Mostrar la cantidad total de valor de una coleccion de un usuario dada por la suma de valores de todos sus NFTs.
 - Avisarle al usuario cuando uno de sus NFTs cambie de precio o de propietario.
 
+##### Ideas de Franco:
+
+- Sugerencias de NFTs que le puedan interesar al usuario en base a  diseños realizados por sus creadores favoritos o dentro de la misma categoría.
+- seguir creadores (buscar creadores).
+- automatizar la compra de un nft en base al precio, (si llega a tal valor, comprar).
+- poder publicar NFTs. 
+- filtrar por precio.
+- permitir al creador del NFT ver el historial de ventas y la opinión de los usuarios de la plataforma.
+
+
 ### Referencias bibliográficas
 
 - Para los bocetos GUI, se utilizó [Balsamiq](https://balsamiq.com/)
