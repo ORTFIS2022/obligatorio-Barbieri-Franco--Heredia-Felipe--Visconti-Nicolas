@@ -811,16 +811,21 @@ Antes de tener la versión definitiva de los bocetos con Balsamiq, se utilizaron
 
 - Imágenes
     - Placeholder 1: Creación de colecciones
+
     ![Placeholder 1](/Placeholders/Placeholder-Colecciones-Crear.png)
 
     * Placeholder 2: Agregar/Eliminar a Colección
+
     ![Placeholder 1](/Placeholders/Placeholder-Colecciones-Agregar-Eliminar.png "Placeholder Colecciones")
 
     - Placeholder 3: Eliminar Colección
+
     ![Placeholder 1](/Placeholders/Placeholder-Colecciones-Eliminar-Coleccion.png "Placeholder Colecciones")
 
     - Placeholder 4: Subasta - Comprador
+
     ![Placeholder 1](/Placeholders/Placeholder-Subasta-Comprador.png "Placeholder Subasta")
 
     - Placeholder 5: Subasta - Vendedor
+    
     ![Placeholder 1](/Placeholders/Placeholder-Subasta-Vendedor.png "Placeholder Subasta")
