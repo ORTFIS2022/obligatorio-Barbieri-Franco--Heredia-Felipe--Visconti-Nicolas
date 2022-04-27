@@ -19,7 +19,9 @@
 
 ## Índice
 1. [Introducción](#introducción)
-2. [Glosasrio](#glosario)
+2. [Conceptos previos](#Conceptos-previos)
+    .1[Glosario](#Glosario)
+    .2[Supuestos](#Supuestos)
 3. [Repositorio Git](#repositorio-git)
     1. [Creación del repositorio](#creación-del-repositorio)
     2. [Comandos utilizados](#comandos-utilizados)
@@ -49,8 +51,9 @@
 Este documento explica y establece cómo debería ser nuestro software, un marketplace de NFTs, a la hora de implementarlo, se establecen distintos aspectos del mismo como requerimientos funcionales y no funcionales, use cases, user personas, user stories.
 Se recomienda el uso del [índice](#índice) para navegar cómodamente por el documento luego de una lectura inicial.
 
-## Glosario
+## Conceptos previos
 
+### Glosario
 - **NFT**: Token no fungible (en inglés: Non Fungible Token). Es un contrato inteligente con tecnología blockchain.
 - **Blockchain**: Estructura de datos cuya información se agrupa en bloques (o conjuntos)
 - **Ethereum**: es un exchange de criptomonedas con tecnología blockchain, que permite la programación de contratos inteligentes (smart contracts) o la creación de tokens, cuya moneda se denomina Ether (ETH).
@@ -60,6 +63,10 @@ Se recomienda el uso del [índice](#índice) para navegar cómodamente por el do
 - **Repositorio**: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
 - **Git**: herramienta para el versionado de software.
 - **Marketplace**:{Placeholder}
+
+### Supuestos
+- **Login**: Se asume que el usuario ya tiene un usuario creado en la pagina y esta logueado al mismo.
+- **Wallet**: Se asume que el usuario ya tiene asociada una wallet a su cuenta.
 
 ## Repositorio Git
 
