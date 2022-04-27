@@ -140,6 +140,8 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 
     ![Ejemplo 2](/Commits/Merge-ejemplo2.png "Ejemplo 2 Merge")
 
+    ![Ejemplo 3](/Commits/Merge-ejemplo3.png "Ejemplo 3 Merge")
+
 
 
 ### Evolución del proyecto
