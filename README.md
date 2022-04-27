@@ -23,7 +23,7 @@
 3. [Repositorio Git](#repositorio-git)
     1. [Creación del repositorio](#creación-del-repositorio)
     2. [Comandos utilizados](#comandos-utilizados)
-4. [Versionado]
+4. [Versionado](#versionado)
     1. [Ramas](#ramas)
     2. [Commits](#commits)
     3. [Evolución del proyecto](#evolución-del-proyecto)
@@ -113,21 +113,32 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 
 - **Add**: cuando se agrega un archivo o líneas a un archivo.
     - Ejemplos
+
     ![Ejemplo 1](/Commits/Add-ejemplo1.png "Ejemplo 1 Add")
+    
     ![Ejemplo 2](/Commits/Add-ejemplo2.png "Ejemplo 2 Add")
+   
     ![Ejemplo 3](/Commits/Add-ejemplo3.png "Ejemplo 3 Add") 
+
 - **Fix**: cuando se corrige parte de un archivo ya existente, sin agregar cambios nuevos.
     - Ejemplos
+
     ![Ejemplo 1](/Commits/Fix-ejemplo1.png "Ejemplo 1 Fix")
+
     ![Ejemplo 2](/Commits/Fix-ejemplo2.png "Ejemplo 2 Fix")
+
     ![Ejemplo 3](/Commits/Fix-ejemplo3.png "Ejemplo 3 Fix")
+
 - **Delete**: cuando se borra un archivo o líneas de un archivo.
     - Ejemplos
+
     ![Ejemplo 1](/Commits/Delete-ejemplo1.png "Ejemplo 1 Delete")
 
 - **Merge**: cuando se combinan ramas.
     - Ejemplos
+
     ![Ejemplo 1](/Commits/Merge-ejemplo1.png "Ejemplo 1 Merge")
+
     ![Ejemplo 2](/Commits/Merge-ejemplo2.png "Ejemplo 2 Merge")
 
 
@@ -589,7 +600,7 @@ Este caso de uso trata sobre el proceso de compra de una NFT del punto de vista 
 | **Acción del usuario comprador** | **Respuesta del sistema** |
 | ---------------- | ------- |
 | 1. El usuario determina una NFT la cual desea comprar | 2. El sistema indica la información asociada a la NFT, definida en [RF9](#rf9-información-de-nfts) |
-| 3. El usuario indica que va a comprar la NFT | 4. El sistema bloquea la NFT para que no se use en otras transacciones, deduce el precio del saldo del comprador y lo suma al del vendedor, cambia el propietario al comprador. El sistema ahora desbloquea la NFT. |
+| 3. El usuario indica que va a comprar la NFT | 4. El sistema bloquea la NFT para que no se use en otras transacciones, deduce el precio del saldo del comprador y lo suma al del vendedor, cambia el propietario al comprador y actualiza la rareza. El sistema ahora desbloquea la NFT. |
 
 
 * **Cursos alternativos** 
