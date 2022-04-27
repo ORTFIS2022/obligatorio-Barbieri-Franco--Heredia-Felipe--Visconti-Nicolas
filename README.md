@@ -174,6 +174,8 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ### User Personas
 
 
+![user persona1](/userPersonas/userPersona1.PNG "primer user persona")
+![user persona2](/userPersonas/userPersona2.PNG "segunda user persona")
 
 ### Modelo conceptual
 
