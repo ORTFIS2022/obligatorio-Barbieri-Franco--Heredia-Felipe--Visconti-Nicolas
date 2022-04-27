@@ -20,8 +20,8 @@
 ## Índice
 1. [Introducción](#introducción)
 2. [Conceptos previos](#Conceptos-previos)
-    .1[Glosario](#Glosario)
-    .2[Supuestos](#Supuestos)
+    1. [Glosario](#Glosario)
+    2. [Supuestos](#Supuestos)
 3. [Repositorio Git](#repositorio-git)
     1. [Creación del repositorio](#creación-del-repositorio)
     2. [Comandos utilizados](#comandos-utilizados)
