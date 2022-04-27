@@ -78,8 +78,7 @@ Nosotros utilizamos principalmente la rama main (princpal) y luego cada uno una 
 
 El repositorio fue creado utilizando el comando git init y dandole la ruta del del espacio de trabajo colaborativo classroom, 
 y luego desde la pagina de github le dimos los permisos de administrador a todos los participantes.
-    - Creación de ramas
-    - Criterio de nombre de ramas
+Para crear las ramas dos integrantes la crearon desde github, luego crearon una rama local y le asignaron como origen la rama remota a través del comando **git branch --set-upstream-to=origin/*origenRama* *nombreRama***. El restante integrante la creo directamente desde la terminal. Ambas maneras funcionaron bien.
 
 
 ### Comandos utilizados
@@ -145,7 +144,7 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 
 ### Evolución del proyecto
 
-{Al principio err trabajamos sobre main, luego empezamos a utilizar ramas separadas y fue más cómodo}
+{Al principio err trabajamos sobre main, luego empezamos a utilizar ramas separadas y fue más cómodo, usamos {}para marcar lo que hay que reemplazar}
 
 ## Elicitación
 
@@ -239,73 +238,73 @@ Para el modelo conceptual del sistema introdujimos las siguientes clases con sus
 
 ### Requerimientos funcionales
 
-Se asignan prioridades con un número entero del 1 al 10, siendo 1 el más prioritario.
+Se asignan prioridades con un número entero del 1 al 5, siendo 1 el más prioritario.
 
 #### RF1: Subasta de NFTs.
 
-El sistema deberá permitir subastar una NFT, esto es: el propietario debe poder indicar un precio inicial, un precio máximo o la ausencia de precio máximo sobre una de sus NFTs, además de la duración de la subasta. 
+**Descripción**: El sistema deberá permitir subastar una NFT, esto es: el propietario debe poder indicar un precio inicial, un precio máximo o la ausencia de precio máximo sobre una de sus NFTs, además de la duración de la subasta. 
 Una vez realizado, el propietario puede iniciar la subasta. 
 
-- Actor: Propietario/Comprador
-- Prioridad: 3
+- **Actor**: Propietario/Comprador
+- **Prioridad**: 3
 
 
 #### RF2: Ofertas en subastas.
 
-El sistema debe guardar todas las ofertas de las subastas. Los potenciales compradores podrán realizar ofertas únicamente más altas que la oferta actual, y esta deberá actualizarse inmediatamente en el sistema si el comprador posee un saldo mayor o igual al precio ofertado por el mismo, en caso contrario, no se realizará la oferta. El saldo indicado para la oferta quedará bloqueado y no se podrá utilizar en otras transacciones.
+**Descripción**: El sistema debe guardar todas las ofertas de las subastas. Los potenciales compradores podrán realizar ofertas únicamente más altas que la oferta actual, y esta deberá actualizarse inmediatamente en el sistema si el comprador posee un saldo mayor o igual al precio ofertado por el mismo, en caso contrario, no se realizará la oferta. El saldo indicado para la oferta quedará bloqueado y no se podrá utilizar en otras transacciones.
 
-- Actor: Propietario/Comprador
-- Prioridad: 3
+- **Actor**: Propietario/Comprador
+- **Prioridad**: 5
 
 #### RF3: Retiro de ofertas en subastas.
 
-El sistema deberá permitir retirar una oferta, si el potencial comprador lo indica. Luego se actualiza la lista de ofertas refrescando la oferta más alta.
+**Descripción**: El sistema deberá permitir retirar una oferta, si el potencial comprador lo indica. Luego se actualiza la lista de ofertas refrescando la oferta más alta.
 
-- Actor: Propietario/Comprador
-- Prioridad: 3
+- **Actor**: Propietario/Comprador
+- **Prioridad**: 5
 
 #### RF4: Finalización de la subasta.
 
-Al cumplirse la duración indicada por el usuario de la subasta, la NFT la adquiere el mejor postor y se resta al saldo de su cuenta lo que ofertó por la NFT.
+**Descripción**: Al cumplirse la duración indicada por el usuario de la subasta, la NFT la adquiere el mejor postor y se resta al saldo de su cuenta lo que ofertó por la NFT.
 El saldo de la cuenta del propietario que subastó la NFT se le suma el precio al que fue vendida.
 
-- Actor: Propietario/Comprador
-- Prioridad: 3
+- **Actor**: Propietario/Comprador
+- **Prioridad**: 5
 
 #### RF5: Colecciones de NFTs.
 
-El sistema deberá permitir crear colecciones de NFTs.
+**Descripción**: El sistema deberá permitir crear colecciones de NFTs.
 El usuario debe indicar el nombre de la colección a ser creada, si ya existiese una colección con ese nombre, no se permitirá crearla.
 El usuario puede eliminar una colección, el sistema quitará las NFTs de dicha colección y luego eliminará la colección del sistema.
 
-- Actor: Usuario propietario
-- Prioridad: 2
+- **Actor**: Usuario propietario
+- **Prioridad**: 4
 
 #### RF6: Agregado y borrado de NFTs a colecciones. 
 
-El sistema debe permitir que el usuario puede agregar NFTs que le pertenezcan a una colección.
+**Descripción**: El sistema debe permitir que el usuario puede agregar NFTs que le pertenezcan a una colección.
 El usuario puede retirar una NFT que le pertenezca de una colección.
 
 
 - Actor: Usuario propietario
-- Prioridad: 2
+- **Prioridad**: 5
 
 #### RF7: Filtrado de NFTs.
-El sistema debera permitir ordenar NFTs por nombre, precio y popularidad.
+**Descripción**: El sistema debera permitir ordenar NFTs por nombre, precio y popularidad.
 
-- Actor: Propietario/Comprador
-- Prioridad: 4
+- **Actor**: Propietario/Comprador
+- **Prioridad**: 5
 
 #### RF8: Wallet.
-El sistema debera permitir al usuario acceder a una wallet.
+**Descripción**: El sistema debera permitir al usuario acceder a una wallet.
 El sistema debera poder permitir al usuario almacenar las claves para acceder a sus fondos en la blockchain.
 
-- Actor : Usuario
-- Prioridad: 1
+- **Actor**: Usuario
+- **Prioridad**: 2
 
 #### RF9: Información de NFTs
 
-El sistema deberá almacenar la información de cada NFT. Esto es: 
+**Descripción**: El sistema deberá almacenar la información de cada NFT. Esto es: 
 
 1. Una identificación única [(ver RNF3)](#rnf3-identificaciones-únicas-de-nfts)
 2. Descripción [(ver RNF4)](#rnf4-descripción-de-una-nft)
@@ -317,33 +316,33 @@ El sistema deberá almacenar la información de cada NFT. Esto es:
 8. Fecha de subida
 9. Rareza [(ver RNF9)](#rnf9-rareza-de-un-nft)
 
-- Actor: Sistema
-- Prioridad: 1
+- **Actor**: Sistema
+- **Prioridad**: 2
 
 #### RF10: Explorar NFTs.
 
-El sistema debe permitir explorar NFTs, dicho de otra forma, determinar las NFTs que pueden interesar al usuario (mediante el algoritmo {Placeholder}), ordenar por precio decreciente y creciente, por popularidad (número de vistas) decreciente y por fecha de subida más antigua y más nueva.
+**Descripción**: El sistema debe permitir explorar NFTs, ordenar por precio decreciente y creciente, por popularidad (número de vistas) decreciente y por fecha de subida más antigua y más nueva.
 
-- Actor: Usuario
-- Prioridad: 2
+- **Actor**: Usuario
+- **Prioridad**: 2
 
 #### RF11: Compra de NTFs.
 
-El sistema debe permitir comprar NTFs bajo un precio fijo. La única moneda admitida para la transacción será Ethereum y el sistema debe verificar que el usuario tenga los fondos necesarios para realizar la transacción.
+**Descripción**: El sistema debe permitir comprar NTFs bajo un precio fijo. La única moneda admitida para la transacción será Ethereum y el sistema debe verificar que el usuario tenga los fondos necesarios para realizar la transacción.
 
-- Actor: Comprador
-- Prioridad: 1
+- **Actor**: Comprador
+- **Prioridad**: 3
 
 #### RF12: Venta de NTFs.
 
-El sistema debe permitir la venta de NFTs en la plataforma donde el propietario deberá indicar el precio. El vendedor debe contar con una wallet que funcione con la moneda ethereum.
+**Descripción**: El sistema debe permitir la venta de NFTs en la plataforma donde el propietario deberá indicar el precio. El vendedor debe contar con una wallet que funcione con la moneda ethereum.
 
-- Actor: Vendedor
-- Prioridad: 1
+- **Actor**: Vendedor
+- **Prioridad**: 3
 
 #### RF13: Creación de una NFT.
 
-El sistema debe permitir crear una NFT, esto es, el usuario indicará los puntos 2, 4 y 5 del [Requerimiento funcional RF9](#rf9-información-de-nfts) . El sistema debe almacenar esta información e inicializar los demás puntos en su valor neutral una vez el NFT sea publicado:
+**Descripción**: El sistema debe permitir crear una NFT, esto es, el usuario indicará los puntos 2, 4 y 5 del [Requerimiento funcional RF9](#rf9-información-de-nfts) . El sistema debe almacenar esta información e inicializar los demás puntos en su valor neutral una vez el NFT sea publicado:
 - Para su identificación, ver criterio según [RNF3](#rnf3-identificaciones-únicas-de-nfts)
 - No se asignará precio.
 - No se asignará a ninguna colección.
@@ -351,15 +350,15 @@ El sistema debe permitir crear una NFT, esto es, el usuario indicará los puntos
 - Fecha de subida en fecha actual.
 - Rareza según criterio descripto en [RNF9](#rnf9-rareza-de-un-nft)
 
-- Actor: Usuario/Sistema
-- Prioridad: 1
+- **Actor**: Usuario/Sistema
+- **Prioridad**: 1
 
 #### RF14: Publicación de NTFs.
 
-El sistema debe permitir la publicación de NFTs en la plataforma. El sistema no publicará un archivo que ya existe en la plataforma.
+**Descripción**: El sistema debe permitir la publicación de NFTs en la plataforma. El sistema no publicará un archivo que ya existe en la plataforma.
 
-- Actor: Usuario
-- Prioridad: 1
+- **Actor**: Usuario
+- **Prioridad**: 3
 
 
 
@@ -368,7 +367,7 @@ El sistema debe permitir la publicación de NFTs en la plataforma. El sistema no
 
 #### RNF1: Paleta de colores.
 
-Se indica el nombre del color y el código en hexadecimal.
+**Descripción**: Se indica el nombre del color y el código en hexadecimal.
 
 La paleta de colores primaria de la aplicación será:
 
@@ -385,46 +384,64 @@ La paleta de colores secundaria de la aplicación será:
 
 Para la paleta principal el texto irá en color blanco #ffffff y para la secundaria en negro #000000
 
+**Prioridad**: 4
+
 #### RNF2: Fuente de texto.
 
-La fuente de texto de la aplicación será Roboto, tamaño 14 por defecto. Para títulos se utilizará tamaño 20 y para subtítulos tamaño 17.
+**Descripción**: La fuente de texto de la aplicación será Roboto, tamaño 14 por defecto. Para títulos se utilizará tamaño 20 y para subtítulos tamaño 17.
 Se utilizará un 100% de opacidad para todos los textos.
+
+**Prioridad**: 5
 
 #### RNF3: Identificaciones únicas de NFTs
 
-Las identificaciones de cada NFT serán un número entero.
+**Descripción**: Las identificaciones de cada NFT serán un número entero.
 A la primera NFT se le asigna el número 1.
 A cada NFT se le asigna su identificación como el número siguiente a la NFT registrada antes de ella.
 
+**Prioridad**: 1
+
 #### RNF4: Descripción de una NFT
 
-Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \ , ^
+**Descripción**: Las descripciones de las NFT no deberán tener más de 1024 caracteres y no pueden contener los siguientes caracteres: \ , ^
+
+**Prioridad**: 2
 
 #### RNF5: Navegadores compatibles
 
-La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
+**Descripción**: La pagina debe correr en las version 100.0.4896.127 de Google Chrome para Windows 10, Linux y MacOs
+
+**Prioridad**: 3
 
 #### RNF6: adaptabilidad en pantalla.
 
-El sistema funcionará en tamaños de pantalla 1920×1080, 1366×768 y 1280x720.
+**Descripción**: El sistema funcionará en tamaños de pantalla 1920×1080, 1366×768 y 1280x720.
+
+**Prioridad**: 4
 
 #### RNF7: límite de fijación de precio.
 
-El precio definido para un nft puede exceder los 10.000 ETH.
+**Descripción**: El precio definido para un nft puede exceder los 10.000 ETH.
+
+**Prioridad**: 5
 
 #### RNF8: Formato de NFT
 
-Los formatos admitido para el contenido multimedia de una NFT son jpg, png o gif.
+**Descripción**: Los formatos admitido para el contenido multimedia de una NFT son jpg, png o gif.
+
+**Prioridad**: 2
 
 #### RNF9: Rareza de un NFT
 
-Los NFT deberán tener un atributo de rareza según el número de propietarios:
+**Descripción**: Los NFT deberán tener un atributo de rareza según el número de propietarios:
 
 - 1-2 propietarios: Rareza Legendaria.
 - 2-10 propietarios: Rareza Única.
 - 11-25 propietarios: Rareza de élite.
 - 26-100 propietarios: Rareza normal.
 - 101 o más propietarios: Rareza común.
+
+**Prioridad**: 5
 
 ### User Stories
 
