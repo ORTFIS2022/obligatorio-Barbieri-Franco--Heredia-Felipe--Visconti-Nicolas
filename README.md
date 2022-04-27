@@ -1,3 +1,5 @@
+# Obligatorio 1: NFTs
+
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7412974&assignment_repo_type=AssignmentRepo)
 
 ## Profesores
@@ -15,15 +17,17 @@
 [Link al repositorio](https://github.com/ORTFIS2022/obligatorio-Barbieri-Franco--Heredia-Felipe--Visconti-Nicolas.git)
 
 
-# Obligatorio 1: NFTs
-
 ## Índice
 1. [Introducción](#introducción)
 2. [Glosasrio](#glosario)
 3. [Repositorio Git](#repositorio-git)
     1. [Creación del repositorio](#creación-del-repositorio)
     2. [Comandos utilizados](#comandos-utilizados)
-4. [Elicitación](#elicitación)
+4. [Versionado]
+    1. [Ramas](#ramas)
+    2. [Commits](#commits)
+    3. [Evolución del proyecto](#evolución-del-proyecto)
+5. [Elicitación](#elicitación)
     1. [Investigación: técnicas utilizadas](#investigación-técnicas-utilizadas)
         1. [Ingeniería Reversa](#ingeniería-reversa)
         2. [Entrevista](#entrevista)
@@ -31,18 +35,18 @@
     2. [Referencias bibliográficas](#referencias-bibliográficas)
     3. [User Personas](#user-personas)
     4. [Modelo conceptual](#modelo-conceptual)
-5. [Especificación](#especificación)
+6. [Especificación](#especificación)
     1. [Requerimientos funcionales](#requerimientos-funcionales)
     2. [Requerimientos no funcionales](#requerimientos-no-funcionales)
     3. [User Stories](#user-stories)
     4. [Use Cases](#use-cases)
     5. [Boceto de UI](#boceto-de-ui)
-6. [Validación](#validación)
-7. [Verificación](#verificación)
-8. [Reflexión](#reflexión)
+7. [Validación](#validación)
+8. [Verificación](#verificación)
+9. [Reflexión](#reflexión)
     1. [Detalles del trabajo individual](#detalles-del-trabajo-individual)
     2. [Técnicas aplicadas y aprendidas](#técnicas-aplicadas-y-aprendidas)
-9. [Anexo](#anexo)
+10. [Anexo](#anexo)
 
 ## Introducción
 
@@ -72,9 +76,10 @@ Nosotros utilizamos principalmente la rama main (princpal) y luego cada uno una 
 
 ### Creación del repositorio
 
-{cómo fue creado, cómo se agregaron los integrantes, cómo se configuraron permisos, cómo funcionan las ramas, etc.}
 El repositorio fue creado utilizando el comando git init y dandole la ruta del del espacio de trabajo colaborativo classroom, 
 y luego desde la pagina de github le dimos los permisos de administrador a todos los participantes.
+    - Creación de ramas
+    - Criterio de nombre de ramas
 
 
 ### Comandos utilizados
@@ -92,6 +97,44 @@ Estos son algunos de los comandos más importantes que utlizamos durante del pro
 - **git merge *nombreRama*:** Combina la rama de trabajo actual con la rama *nombreRama*.
 - **git branch --set-upstream-to=origin/*origenRama* *nombreRama*:** Establece el origen de la rama *nombreRama* como origin/*origenRama* donde origin es el origen de la rama main.
 
+
+## Versionado
+
+### Ramas
+
+Dispusimos de la rama **main** donde se guardan las versiones estables, luego, cada integrante creo su propia rama donde trabajaban nuevas integraciones al documento en paralelo para luego combinarse al main:
+- **develop/Felipe**: rama donde trabajó Felipe
+- **developfranco**: rama donde trabajó Franco
+- **developNico**: rama donde trabajó Nicolás
+
+### Commits
+
+Utilizamos un criterio donde va una descripción de los cambios realizados y al comienzo del commit una palabra que refleja el tipo de  los cambios realizados, a continuación se describen brevemente y se muestran ejemplos:
+
+- **Add**: cuando se agrega un archivo o líneas a un archivo.
+    - Ejemplos
+    ![Ejemplo 1](/Commits/Add-ejemplo1.png "Ejemplo 1 Add")
+    ![Ejemplo 2](/Commits/Add-ejemplo2.png "Ejemplo 2 Add")
+    ![Ejemplo 3](/Commits/Add-ejemplo3.png "Ejemplo 3 Add") 
+- **Fix**: cuando se corrige parte de un archivo ya existente, sin agregar cambios nuevos.
+    - Ejemplos
+    ![Ejemplo 1](/Commits/Fix-ejemplo1.png "Ejemplo 1 Fix")
+    ![Ejemplo 2](/Commits/Fix-ejemplo2.png "Ejemplo 2 Fix")
+    ![Ejemplo 3](/Commits/Fix-ejemplo3.png "Ejemplo 3 Fix")
+- **Delete**: cuando se borra un archivo o líneas de un archivo.
+    - Ejemplos
+    ![Ejemplo 1](/Commits/Delete-ejemplo1.png "Ejemplo 1 Delete")
+
+- **Merge**: cuando se combinan ramas.
+    - Ejemplos
+    ![Ejemplo 1](/Commits/Merge-ejemplo1.png "Ejemplo 1 Merge")
+    ![Ejemplo 2](/Commits/Merge-ejemplo2.png "Ejemplo 2 Merge")
+
+
+
+### Evolución del proyecto
+
+{Al principio err trabajamos sobre main, luego empezamos a utilizar ramas separadas y fue más cómodo}
 
 ## Elicitación
 
@@ -261,6 +304,7 @@ El sistema deberá almacenar la información de cada NFT. Esto es:
 6. Contenido multimedia [(ver RNF8)](#rnf8-formato-de-nft)
 7. Número de vistas
 8. Fecha de subida
+9. Rareza [(ver RNF9)](#rnf9-rareza-de-un-nft)
 
 - Actor: Sistema
 - Prioridad: 1
@@ -289,11 +333,12 @@ El sistema debe permitir la venta de NFTs en la plataforma donde el propietario 
 #### RF13: Creación de una NFT.
 
 El sistema debe permitir crear una NFT, esto es, el usuario indicará los puntos 2, 4 y 5 del [Requerimiento funcional RF9](#rf9-información-de-nfts) . El sistema debe almacenar esta información e inicializar los demás puntos en su valor neutral una vez el NFT sea publicado:
-- Para su identificación, ver criterio según [Requerimiento no funcional RNF3](#rnf3-identificaciones-únicas-de-nfts)
+- Para su identificación, ver criterio según [RNF3](#rnf3-identificaciones-únicas-de-nfts)
 - No se asignará precio.
 - No se asignará a ninguna colección.
 - Número de vistas en 0.
 - Fecha de subida en fecha actual.
+- Rareza según criterio descripto en [RNF9](#rnf9-rareza-de-un-nft)
 
 - Actor: Usuario/Sistema
 - Prioridad: 1
@@ -359,6 +404,16 @@ El precio definido para un nft puede exceder los 10.000 ETH.
 #### RNF8: Formato de NFT
 
 Los formatos admitido para el contenido multimedia de una NFT son jpg, png o gif.
+
+#### RNF9: Rareza de un NFT
+
+Los NFT deberán tener un atributo de rareza según el número de propietarios:
+
+- 1-2 propietarios: Rareza Legendaria.
+- 2-10 propietarios: Rareza Única.
+- 11-25 propietarios: Rareza de élite.
+- 26-100 propietarios: Rareza normal.
+- 101 o más propietarios: Rareza común.
 
 ### User Stories
 
@@ -671,48 +726,71 @@ Durante el obligatorio, aprendimos distintas técnicas que aplicamos a nuestro d
 
 ## Anexo
 
-### Cronograma para reunión 3 (19/4/2022)
+### Cronogramas
 
-- 5 ideas c/u en lluvia de ideas 
+Para algunas de las reuniones utilizamos algunos cronogramas:
 
-- Requerimientos funcionales:
+    ### Cronograma para reunión 3 (19/4/2022)
 
-    - Felipe: Requerimientos de wallet
-    - Franco: Requerimientos de compra y venta de NFTs
-    - Nicolás: Requrerimientos de subasta y colecciones de NFTs
+    - 5 ideas c/u en lluvia de ideas 
 
-- Requirimientos no funcionales:
+    - Requerimientos funcionales:
 
-    - Felipe: navegador/sistema operativo en el que va a funcionar la aplicación 
-    - Franco: cómo se muestra la info de la NFT
-    - Nicolás: paleta de colores primaria y secundaria, fuente y tamaño
+        - Felipe: Requerimientos de wallet
+        - Franco: Requerimientos de compra y venta de NFTs
+        - Nicolás: Requrerimientos de subasta y colecciones de NFTs
 
-### Cronograma para reunión 4 (20/4/2022)
+    - Requirimientos no funcionales:
 
-- Franco: Comandos utilizados
+        - Felipe: navegador/sistema operativo en el que va a funcionar la aplicación 
+        - Franco: cómo se muestra la info de la NFT
+        - Nicolás: paleta de colores primaria y secundaria, fuente y tamaño
 
-- Felipe: User Stories (2)
+    ### Cronograma para reunión 4 (20/4/2022)
 
-- Nicolás: Requerimientos Funcionales (2) y Requerimientos no funcionales (2)
+    - Franco: Comandos utilizados
 
-### Cronograma para siguiente reunión (21/4/2022)
+    - Felipe: User Stories (2)
 
-- Felipe: User Stories: Publicar NFT y subastar NFT
+    - Nicolás: Requerimientos Funcionales (2) y Requerimientos no funcionales (2)
 
-- Nicolás: armar Índice, User Story: Comprar y vender NFT
+    ### Cronograma para reunión 5 (21/4/2022)
 
-### Cronograma para siguiente reunión (22/4/2022)
+    - Felipe: User Stories: Publicar NFT y subastar NFT
 
-- Franco: formalizar requerimientos (R3)
-    - Comandos utilizados (R4)
+    - Nicolás: armar Índice, User Story: Comprar y vender NFT
 
+    ### Cronograma para reunión 6 (22/4/2022)
 
-
-- Felipe: Use cases RF 7, 8, 9, 10
-    - Ideas de lluvia de Ideas  (R3)
-
+    - Franco: formalizar requerimientos (R3)
+        - Comandos utilizados (R4)
 
 
-- Nicolás: Use cases RF 1, 2, 3, 4, 5, 6
-    - Avanzar introducción
 
+    - Felipe: Use cases RF 7, 8, 9, 10
+        - Ideas de lluvia de Ideas  (R3)
+
+
+
+    - Nicolás: Use cases RF 1, 2, 3, 4, 5, 6
+        - Avanzar introducción
+
+### Placeholders
+
+Antes de tener la versión definitiva de los bocetos con Balsamiq, se utilizaron placeholders hechos en paint, que se encuentran en la carpeta  ![Placeholders](/Placeholders/)
+
+- Imágenes
+    - Placeholder 1: Creación de colecciones
+    ![Placeholder 1](/Placeholders/Placeholder-Colecciones-Crear.png)
+
+    * Placeholder 2: Agregar/Eliminar a Colección
+    ![Placeholder 1](/Placeholders/Placeholder-Colecciones-Agregar-Eliminar.png "Placeholder Colecciones")
+
+    - Placeholder 3: Eliminar Colección
+    ![Placeholder 1](/Placeholders/Placeholder-Colecciones-Eliminar-Coleccion.png "Placeholder Colecciones")
+
+    - Placeholder 4: Subasta - Comprador
+    ![Placeholder 1](/Placeholders/Placeholder-Subasta-Comprador.png "Placeholder Subasta")
+
+    - Placeholder 5: Subasta - Vendedor
+    ![Placeholder 1](/Placeholders/Placeholder-Subasta-Vendedor.png "Placeholder Subasta")
