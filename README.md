@@ -122,41 +122,25 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 - **Add**: cuando se agrega un archivo o líneas a un archivo.
     - Ejemplos
 
-    ![Ejemplo 1](/Commits/Add-ejemplo1.png "Ejemplo 1 Add")
-    
-    ![Ejemplo 2](/Commits/Add-ejemplo2.png "Ejemplo 2 Add")
-   
-    ![Ejemplo 3](/Commits/Add-ejemplo3.png "Ejemplo 3 Add")
-
+    ![Ejemplos Add](/Commits/Ejemplos-Add.png "Ejemplos Add")
     - Figura 2: Ejemplos de prefijo Add 
 
 - **Fix**: cuando se corrige parte de un archivo ya existente, sin agregar cambios nuevos.
     - Ejemplos
 
-    ![Ejemplo 1](/Commits/Fix-ejemplo1.png "Ejemplo 1 Fix")
-
-    ![Ejemplo 2](/Commits/Fix-ejemplo2.png "Ejemplo 2 Fix")
-
-    ![Ejemplo 3](/Commits/Fix-ejemplo3.png "Ejemplo 3 Fix")
-
+    ![Ejemplos Fix](/Commits/Ejemplos-Fix "Ejemplos Fix")
     - Figura 3: Ejemplos de prefijo Fix
 
 - **Delete**: cuando se borra un archivo o líneas de un archivo.
     - Ejemplos
 
-    ![Ejemplo 1](/Commits/Delete-ejemplo1.png "Ejemplo 1 Delete")
-
+    ![Ejemplo Delete](/Commits/Ejemplos-Delete "Ejemplo Delete")
     - Figura 4: Ejemplo de prefijo Delete
 
 - **Merge**: cuando se combinan ramas.
     - Ejemplos
 
-    ![Ejemplo 1](/Commits/Merge-ejemplo1.png "Ejemplo 1 Merge")
-
-    ![Ejemplo 2](/Commits/Merge-ejemplo2.png "Ejemplo 2 Merge")
-
-    ![Ejemplo 3](/Commits/Merge-ejemplo3.png "Ejemplo 3 Merge")
-
+    ![Ejemplos Merge](/Commits/Ejemplos-Merge "Ejemplos Merge")
     - Figura 5: Ejemplos de prefijo Merge
 
 
@@ -734,10 +718,12 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 
 ### Boceto de UI
-{Explicación de bocetos, cómo los hicimos (Balsamiq), posible prototipo?}
 
 Para realizar los bocetos de la interfaz de usuario, utilizamos la herramienta [Balsamiq](https://balsamiq.com/), que está justamente pensada para bocetos de interfaz, en un formato similar a lo que sería un bosquejo en papel, en blanco y negro.
 Esta herramienta posee la funcionalidad de poder vincular los bocetos entre sí resultando en un prototipo sencillo.
+A continuación se puede probar el proptotipo. Primero es necesario descargar [Balsamiq](https://balsamiq.com/).
+
+{Prototipo}
 
 ## Validación
 
