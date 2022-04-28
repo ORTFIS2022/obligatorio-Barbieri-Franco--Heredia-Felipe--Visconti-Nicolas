@@ -736,6 +736,9 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 ### Boceto de UI
 {Explicación de bocetos, cómo los hicimos (Balsamiq), posible prototipo?}
 
+Para realizar los bocetos de la interfaz de usuario, utilizamos la herramienta [Balsamiq](https://balsamiq.com/), que está justamente pensada para bocetos de interfaz, en un formato similar a lo que sería un bosquejo en papel, en blanco y negro.
+Esta herramienta posee la funcionalidad de poder vincular los bocetos entre sí resultando en un prototipo sencillo.
+
 ## Validación
 
 ## Verificación
