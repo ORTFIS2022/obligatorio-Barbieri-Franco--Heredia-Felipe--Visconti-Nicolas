@@ -128,19 +128,19 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 - **Fix**: cuando se corrige parte de un archivo ya existente, sin agregar cambios nuevos.
     - Ejemplos
 
-    ![Ejemplos Fix](/Commits/Ejemplos-Fix "Ejemplos Fix")
+    ![Ejemplos Fix](/Commits/Ejemplos-Fix.png "Ejemplos Fix")
     - Figura 3: Ejemplos de prefijo Fix
 
 - **Delete**: cuando se borra un archivo o líneas de un archivo.
     - Ejemplos
 
-    ![Ejemplo Delete](/Commits/Ejemplos-Delete "Ejemplo Delete")
+    ![Ejemplo Delete](/Commits/Ejemplos-Delete.png "Ejemplo Delete")
     - Figura 4: Ejemplo de prefijo Delete
 
 - **Merge**: cuando se combinan ramas.
     - Ejemplos
 
-    ![Ejemplos Merge](/Commits/Ejemplos-Merge "Ejemplos Merge")
+    ![Ejemplos Merge](/Commits/Ejemplos-Merge.png "Ejemplos Merge")
     - Figura 5: Ejemplos de prefijo Merge
 
 
