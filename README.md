@@ -113,6 +113,8 @@ Dispusimos de la rama **main** donde se guardan las versiones estables, luego, c
 - **developfranco**: rama donde trabajó Franco
 - **developNico**: rama donde trabajó Nicolás
 
+{Workflows - Fig. 1}
+
 ### Commits
 
 Utilizamos un criterio donde va una descripción de los cambios realizados y al comienzo del commit una palabra que refleja el tipo de  los cambios realizados, a continuación se describen brevemente y se muestran ejemplos:
@@ -124,7 +126,9 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
     
     ![Ejemplo 2](/Commits/Add-ejemplo2.png "Ejemplo 2 Add")
    
-    ![Ejemplo 3](/Commits/Add-ejemplo3.png "Ejemplo 3 Add") 
+    ![Ejemplo 3](/Commits/Add-ejemplo3.png "Ejemplo 3 Add")
+
+    - Figura 2: Ejemplos de prefijo Add 
 
 - **Fix**: cuando se corrige parte de un archivo ya existente, sin agregar cambios nuevos.
     - Ejemplos
@@ -135,10 +139,14 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 
     ![Ejemplo 3](/Commits/Fix-ejemplo3.png "Ejemplo 3 Fix")
 
+    - Figura 3: Ejemplos de prefijo Fix
+
 - **Delete**: cuando se borra un archivo o líneas de un archivo.
     - Ejemplos
 
     ![Ejemplo 1](/Commits/Delete-ejemplo1.png "Ejemplo 1 Delete")
+
+    - Figura 4: Ejemplo de prefijo Delete
 
 - **Merge**: cuando se combinan ramas.
     - Ejemplos
@@ -149,6 +157,7 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 
     ![Ejemplo 3](/Commits/Merge-ejemplo3.png "Ejemplo 3 Merge")
 
+    - Figura 5: Ejemplos de prefijo Merge
 
 
 ### Evolución del proyecto
@@ -230,7 +239,12 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 
 
 ![user persona1](/userPersonas/userPersona1.PNG "primer user persona")
+
+- Figura 6: User persona 1.
+
 ![user persona2](/userPersonas/userPersona2.PNG "segunda user persona")
+
+- Figura 7: User persona 2.
 
 ### Modelo conceptual
 
@@ -243,6 +257,8 @@ Para el modelo conceptual del sistema introdujimos las siguientes clases con sus
 
 - Modelo
  ![Modelo conceptual del sistema](/UML/modelo_conceptual.png "Modelo conceptual del sistema")
+
+- Figura 8: Modelo conceptual del sistema
 
 
 ## Especificación
@@ -521,17 +537,18 @@ Este caso de uso trata sobre el proceso de subasta de una NFT desde el punto de 
 
 * **Cursos alternativos** 
 
-    - 2.1. El usuario no seleccionó una NFT, vuelvo a paso 1.
-    - 4.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 3.
-    - 6.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 5.
-    - 8.1. El usuario no indicó un período de tiempo válido, vuelvo a paso 7.
-    - 11.1. No hubo ningún postor, la transacción no surte efecto y se desbloquea la NFT. Fin de caso de uso.
+    - 1.1. El usuario no seleccionó una NFT, vuelvo a paso 1.
+    - 3.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 3.
+    - 5.1. No se indicó un precio válido (palabras en vez de números), vuelvo a paso 5.
+    - 7.1. El usuario no indicó un período de tiempo válido, vuelvo a paso 7.
+    - 11.1. No hubo ningún postor, se desbloquea la NFT y se mantiene el propietario. Fin de caso de uso.
 
 * **Postcondición**: El mayor postor (o el propietario original si no hubo postores o se retiraron todos los postores) se vuelve propietario de la NFT y se deduce el saldo de su cuenta y se suma a la del propietario original.
 
 * **Bosquejo GUI**
 
  ![Bosquejo de la interfaz gráfica para subastar una NFT](/BocetosBalsamiq/subasta-vendedor.png "Bosquejo inicial para subastar una NFT")
+- Figura 9: Bosquejo de interfaz para subasta de NFT
 
 ### UC2: Subasta de NFT - Comprador
 
@@ -550,8 +567,8 @@ Este caso de uso trata sobre el proceso de subasta de una NFT desde el punto de 
 
 * **Cursos alternativos** 
 
-    - 4.1. El usuario indico una oferta menor o igual a la actual. La oferta no se registra y se vuelve al paso 3.
-    - 4.2. El usuario indicó una oferta mayor o igual a la oferta máxima. Pasa a 5. Fin de caso de uso.
+    - 3.1. El usuario indico una oferta menor o igual a la actual. La oferta no se registra y se vuelve al paso 3.
+    - 3.2. El usuario indicó una oferta mayor o igual a la oferta máxima. Pasa a 5. Fin de caso de uso.
     - 5.1. No hubo postor o todos se retiraron, no se deduce del saldo de nadie y la transacción no tiene efecto
     - 5.2. El usuario retira la oferta, el sistema actualiza la oferta mayor y desbloquea su saldo.
 
@@ -561,6 +578,7 @@ Este caso de uso trata sobre el proceso de subasta de una NFT desde el punto de 
 * **Bosquejo GUI**
 
  ![Bosquejo de la interfaz gráfica para compra en subasta de NFT](/BocetosBalsamiq/subasta-comprador.png "Bosquejo inicial para compra de NFTs en subasta")
+ - Figura 10: Bosquejo para compra en subasta de NFT
 
  ### UC3: Crear y agregar NFTs a colecciones de NFT
 
@@ -581,7 +599,7 @@ Este caso de uso trata sobre la creación de colecciones de NFT y agregar/quitar
 
 * **Cursos alternativos** 
 
-    - 2.1 El nombre ingresado no es válido (ver RNF{x}). No se crea la colección y se vuelve al paso 1.
+    - 1.1 El nombre ingresado no es válido [(ver RNF)](#rnf10{RNFnombresdecolecciones}). No se crea la colección y se vuelve al paso 1.
     
 
 * **Postcondición**: El sistema ahora contendrá la colección creada por el usuario con las NFTs seleccionadas o no, si se decidió eliminar.
@@ -590,10 +608,15 @@ Este caso de uso trata sobre la creación de colecciones de NFT y agregar/quitar
 
     * Creación
     ![Bosquejo crear colección](/BocetosBalsamiq/colecci%C3%B3n-crear.png "Bosquejo inicial para crear colección")
+    - Figura 11: Bosquejo creación de colección de NFTs
+
     * Agregar/Eliminar NFT
     ![Bosquejo agregar o quitar una NFT a la colección](/BocetosBalsamiq/colecci%C3%B3n-agregar-quitar.png "Bosquejo inicial para agregar o quitar NFTs")
+    - Figura 12: Bosquejo agregar y quitar NFTs a la colección
+
     * Eliminar colección
     ![Bosquejo eliminar colección](/BocetosBalsamiq/colecci%C3%B3n-eliminar.png "Bosquejo inicial para eliminar colección")
+    - Figura 13: Bosquejo eliminar la colección
 
 
 ### UC4: Explorar NFTs - Comprador
@@ -615,6 +638,7 @@ Este caso de uso trata sobre el proceso busqueda de NFTs desde el punto de vista
 * **Bosquego GUI**
 
     ![Bosquejo de la interfaz gráfica para Explorar NFTs](/BocetosBalsamiq/ExplorarNFTs-Comprador.png "Bosquejo inicial Explorar NFTs")
+    - Figura 14: Bosquejo de interfaz gráfica Explorar NFTs
 
 
 ### UC5: Compra de NFT
@@ -633,14 +657,15 @@ Este caso de uso trata sobre el proceso de compra de una NFT del punto de vista 
 
 * **Cursos alternativos** 
 
-    - 2.1. la NFT no está disponible para venta, vuelvo a caso 1. 
-    - 4.1. El usuario comprador no tiene saldo suficiente. El sistema lo informa, fin de caso de uso.
+    - 1.1. la NFT no está disponible para venta, vuelvo a caso 1. 
+    - 3.1. El usuario comprador no tiene saldo suficiente. El sistema lo informa, fin de caso de uso.
 
 * **Postcondición**: El propietario de la NFT pasa a ser el comprador (si se efectuó la compra correctamente), el saldo del vendedor aumenta y el del comprador disminuye.
 
 * **Bosquejo GUI**
 
  ![Bosquejo de la interfaz gráfica para compra de NFT](/BocetosBalsamiq/comprar.png "Bosquejo inicial para compra de NFTs")
+ - Figura 15: Bosquejo de interfaz gráfica para comprar NFT
 
 
 ### UC6: Venta de NFT
@@ -662,7 +687,7 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 * **Cursos alternativos** 
 
-    - 4.1. El precio indicado no es válido [(ver RNF7)](#rnf7-límite-de-fijación-de-precio). El sistema lo informa y vuelve a caso 3.
+    - 3.1. El precio indicado no es válido [(ver RNF7)](#rnf7-límite-de-fijación-de-precio). El sistema lo informa y vuelve a caso 3.
     - 7.1. El usuario vendedor retira la NFT de la venta. El sistema remueve la transacción y desbloquea la NFT.
 
 * **Postcondición**: El propietario de la NFT pasa a ser el comprador, el saldo del vendedor aumenta y el del comprador disminuye.
@@ -670,6 +695,7 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 * **Bosquejo GUI**
 
  ![Bosquejo de la interfaz gráfica para venta de NFT](/BocetosBalsamiq/vender.png "Bosquejo inicial para venta de NFTs")
+ - Figura 16: Bosquejo de interfaz para venta de NFT
 
 #### UC7: Crear NFT
 
@@ -689,10 +715,10 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 * **Cursos alternativos** 
 
-    - 4.1. La descripción no es válida [(ver RNF4)](#rnf4-descripción-de-una-nft). El sistema lo informa y vuelve a caso 5.
-    - 4.2 La imagen no es válida [(ver RNF8)](#rnf8-formato-de-nft). El sistema lo informa y vuelve a caso 7.
-    - 4.3 La imagen ya se encontraba en el sistema como parte de otra NFT. El sistema lo informa y vuelve a caso 7.
-    - 6.1 El usuario decide no publicar la NFT. El sistema no hace visible para todos los demás la NFT, Fin de caso de uso
+    - 3.1. La descripción no es válida [(ver RNF4)](#rnf4-descripción-de-una-nft). El sistema lo informa y vuelve a caso 5.
+    - 3.2 La imagen no es válida [(ver RNF8)](#rnf8-formato-de-nft). El sistema lo informa y vuelve a caso 7.
+    - 3.3 La imagen ya se encontraba en el sistema como parte de otra NFT. El sistema lo informa y vuelve a caso 7.
+    - 5.1 El usuario decide no publicar la NFT. El sistema no hace visible para todos los demás la NFT, Fin de caso de uso
 
 * **Postcondición**: La NFT es publicada visible para los demás usuarios, o no, en el caso del curso alternativo.
 
@@ -700,12 +726,15 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
     *  Crear
     ![Bosquejo de la interfaz gráfica para creación de NFTs](/BocetosBalsamiq/crear.png "Bosquejo inicial para crear NFTs")
+    - Figura 17: Bosquejo de interfaz de creación de NFTs
+
     * Publicar
     ![Bosquejo de la interfaz gráfica para publicación de NFTs](/BocetosBalsamiq/publicar.png "Bosquejo inicial para publicar NFTs")
+    - Figura 18: Bosquejo de interfaz para publicación de NFTs
 
 
 ### Boceto de UI
-
+{Explicación de bocetos, cómo los hicimos (Balsamiq), posible prototipo?}
 
 ## Validación
 
