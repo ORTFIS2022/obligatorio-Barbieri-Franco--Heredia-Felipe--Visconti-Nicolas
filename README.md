@@ -758,10 +758,9 @@ Particularmente utilizamos esta técnica para revisar que nuestro documento cont
 
 ### Tabla Requerimientos Funcionales (RF) vs Casos de uso (UC)
 
-Para verificar que los casos de uso contemplen todos los requerimientos funcionales, utilizamos una tabla donde se marca con **v** si están relacionados
+Para verificar que los casos de uso contemplen todos los requerimientos funcionales, utilizamos una tabla donde se marca con **v** si están relacionados.
 
 | - | [UC1](#uc1-subasta-de-nft---vendedor) | [UC2](#uc2-subasta-de-nft---comprador) | [UC3](#uc3-crear-y-agregar-nfts-a-colecciones-de-nft) | [UC4](#uc4-explorar-nfts---comprador) | [UC5](#uc5-compra-de-nft) | [UC6](#uc6-venta-de-nft) | [UC7](#uc7-crear-nft) |
-| -- | -- | -- | -- | -- | -- | -- | -- |
 | [RF2](#rf2-ofertas-en-subastas) | - | v | - | - | - | - | - |
 | [RF1](#rf1-subasta-de-nfts) | v | - | - | - | - | - | - |
 | [RF3](#rf3-retiro-de-ofertas-en-subastas) | v | v | - | - | - | - | - |
@@ -776,6 +775,8 @@ Para verificar que los casos de uso contemplen todos los requerimientos funciona
 | [RF12](#rf12-venta-de-ntfs) | - | - | - | - | - | v | - |
 | [RF13](#rf13-creación-de-una-nft) | - | - | - | - | - | - | v |
 | [RF14](#rf14-publicación-de-ntfs) | - | - | - | - | - | - | v |
+
+En la tabla se puede observar que todos los requerimientos funcionales están asociados a 1 o más casos de uso, y viceversa, que todos los casos de uso contemplan alguno o más requerimientos funcionales.
 
 
 ## Reflexión
