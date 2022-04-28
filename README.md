@@ -71,6 +71,7 @@ Se recomienda el uso del [índice](#índice) para navegar cómodamente por el do
 ### Supuestos
 - **Login**: Se asume que el usuario ya tiene un usuario creado en la pagina y esta logueado al mismo.
 - **Wallet**: Se asume que el usuario ya tiene asociada una wallet a su cuenta.
+- **Menú**: Se asume que no hay que especificar el menú.
 
 ## Repositorio Git
 
@@ -222,12 +223,10 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ### User Personas
 
 
-![user persona1](/userPersonas/userPersona1.PNG "primer user persona")
-
+![User persona 1](/userPersonas/userPersona1.PNG "Primer user persona")
 - Figura 6: User persona 1.
 
-![user persona2](/userPersonas/userPersona2.PNG "segunda user persona")
-
+![User persona 2](/userPersonas/userPersona2.PNG "Segunda user persona")
 - Figura 7: User persona 2.
 
 ### Modelo conceptual
@@ -241,7 +240,6 @@ Para el modelo conceptual del sistema introdujimos las siguientes clases con sus
 
 - Modelo
  ![Modelo conceptual del sistema](/UML/modelo_conceptual.png "Modelo conceptual del sistema")
-
 - Figura 8: Modelo conceptual del sistema
 
 
@@ -249,7 +247,15 @@ Para el modelo conceptual del sistema introdujimos las siguientes clases con sus
 
 ### Requerimientos funcionales
 
-Se asignan prioridades con un número entero del 1 al 5, siendo 1 el más prioritario.
+Se asignan prioridades con un número entero del 1 al 5, según la siguiente tabla.
+
+| **Número** | **Prioridad** |
+| -- | -- |
+| 1 | Muy alta |
+| 2 | Alta |
+| 3 | Media |
+| 4 | Baja |
+| 5 | Muy baja |
 
 #### RF1: Subasta de NFTs.
 
@@ -749,6 +755,27 @@ Nosotros utilizamos esta metodología mayormente en la parte de los bocetos de i
 Checklist es una técnica en la cual se utiliza una lista que contiene lo que debe estar, y se va **checkeando** lo que está presente en la lista. Si hay algo que no marcamos como **checkeado**, entonces lo que estamos verificando no contiene todo lo que debe contener. Este método nos permite verificar la completitud de nuestro software, es decir, que hace todo lo que debería hacer y que tiene todo lo que debería tener.
 
 Particularmente utilizamos esta técnica para revisar que nuestro documento contenía todo lo que se pedía, y, más específicamente utilizamos la lista de la diapositiva de la página 12 de la presentación de powerpoint del curso: **2.3 - Validación de requerimientos** para verificar requerimientos y casos de uso.
+
+### Tabla Requerimientos Funcionales (RF) vs Casos de uso (UC)
+
+Para verificar que los casos de uso contemplen todos los requerimientos funcionales, utilizamos una tabla donde se marca con **v** si están relacionados
+
+| - | [UC1](#uc1-subasta-de-nft---vendedor) | [UC2](#uc2-subasta-de-nft---comprador) | [UC3](#uc3-crear-y-agregar-nfts-a-colecciones-de-nft) | [UC4](#uc4-explorar-nfts---comprador) | [UC5](#uc5-compra-de-nft) | [UC6](#uc6-venta-de-nft) | [UC7](#uc7-crear-nft) |
+| [RF2](#rf2-ofertas-en-subastas)                       | - | v | - | - | - | - | - |
+| [RF1](#rf1-subasta-de-nfts)                           | v | - | - | - | - | - | - |
+| [RF3](#rf3-retiro-de-ofertas-en-subastas)             | v | v | - | - | - | - | - |
+| [RF4](#rf4-finalización-de-la-subasta)                | v | v | - | - | - | - | - |
+| [RF5](#rf5-colecciones-de-nfts)                       | - | - | v | - | - | - | - |
+| [RF6](#rf6-agregado-y-borrado-de-nfts-a-colecciones)  | - | - | v | - | - | - | - |
+| [RF7](#rf7-filtrado-de-nfts)                          | - | - | - | v | - | - | - |
+| [RF8](#rf8-wallet)                                    | - | - | - | - | v | - | - |
+| [RF9](#rf9-información-de-nfts)                       | - | - | - | - | v | - | v |
+| [RF10](#rf10-explorar-nfts)                           | - | - | - | v | - | - | - |
+| [RF11](#rf11-compra-de-ntfs)                          | - | - | - | - | v | - | - |
+| [RF12](#rf12-venta-de-ntfs)                           | - | - | - | - | - | v | - |
+| [RF13](#rf13-creación-de-una-nft)                     | - | - | - | - | - | - | v |
+| [RF14](#rf14-publicación-de-ntfs)                     | - | - | - | - | - | - | v |
+
 
 ## Reflexión
 
