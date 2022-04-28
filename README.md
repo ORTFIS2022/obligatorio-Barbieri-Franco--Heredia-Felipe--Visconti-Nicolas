@@ -778,6 +778,7 @@ Para verificar que los casos de uso contemplen todos los requerimientos funciona
 | [RF14](#rf14-publicación-de-ntfs)                         | - | - | - | - | - | - | v |
 
 En la tabla se puede observar que todos los requerimientos funcionales están asociados a 1 o más casos de uso, y viceversa, que todos los casos de uso contemplan alguno o más requerimientos funcionales.
+Esto significa los casos de uso contemplan todos nuestros requerimientos funcionales, por lo cuál podemos concluir que no nos faltan casos de uso.
 
 
 ## Reflexión
