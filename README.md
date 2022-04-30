@@ -727,9 +727,32 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 Para realizar los bocetos de la interfaz de usuario, utilizamos la herramienta [Balsamiq](https://balsamiq.com/), que está justamente pensada para bocetos de interfaz, en un formato similar a lo que sería un bosquejo en papel, en blanco y negro.
 Esta herramienta posee la funcionalidad de poder vincular los bocetos entre sí resultando en un prototipo sencillo.
-A continuación se puede probar el proptotipo. Primero es necesario descargar [Balsamiq](https://balsamiq.com/).
+A continuación se explica cómo probar el prototipo, se deben seguir los siguientes pasos:
 
-{Prototipo}
+* Descargar [Balsamiq](https://balsamiq.com/).
+
+* Descargar el [prototipo](/Prototipo/demo.bmpr).
+
+* Ejecutar Balsamiq.
+
+    ![Imagen Balsamiq](/Explicaci%C3%B3nPrototipo/Balsamiq-Wireframes.png "Balsamiq")
+
+* En la esquina superior izquierda: click en pestaña File > Open Project > Ubicación_del_prototipo.
+
+    ![Imagen abrir proyecto](/Explicaci%C3%B3nPrototipo/Open-Project.png "Abrir proyecto")
+
+* En la esquina superior derecha, apretar el botón para ejecutar la presentación en pantalla completa.
+
+    ![Imagen presentación en pantalla completa](/Explicaci%C3%B3nPrototipo/Full-Screen.png "Presentación en pantalla completa")
+
+* Seleccionar "User test" en el menú de opciones y cerrarlo
+
+    ![Imagen seleccionar User Test](/Explicaci%C3%B3nPrototipo/User-Test.png "Seleccionar User Test")
+
+* El prototipo está listo para ser probado.
+
+    ![Imagen inicio Prototipo](/Explicaci%C3%B3nPrototipo/Inicio.png "Pantalla de inicio del prototipo")
+
 
 ## Validación
 
