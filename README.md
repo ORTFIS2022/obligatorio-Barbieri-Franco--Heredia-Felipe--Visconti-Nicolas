@@ -66,7 +66,7 @@ Se recomienda el uso del [índice](#índice) para navegar cómodamente por el do
 - **OpenSea**: MarketPlace descentralizado donde se comercializan ntfs
 - **Repositorio**: Espacio centralizado donde se almacena, organiza, mantiene y, quizás difunde, información digital.
 - **Git**: herramienta para el versionado de software.
-- **Marketplace**:{Placeholder}
+- **Marketplace**: Es una plataforma donde se ofrecen determinados productos, a veces se lo conoce como mercado en línea.
 
 ### Supuestos
 - **Login**: Se asume que el usuario ya tiene un usuario creado en la pagina y esta logueado al mismo.
@@ -147,7 +147,7 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 
 ### Evolución del proyecto
 
-{Al principio err trabajamos sobre main, luego empezamos a utilizar ramas separadas y fue más cómodo, usamos {}para marcar lo que hay que reemplazar}
+Al principio nosotros trabajábamos todos sobre la rama main, sin tener ramas adicionales. Esto en un principio no generó complicaciones, pero una vez se fue haciendo más grande el documento y empezamos a agregar archivos externos, vimos la conveniencia de tener cada uno su rama, así que cada uno creo su propia rama y empezamos a trabajar de esa manera. Esto nos permitió trabajar más ordenadamente y guardar en el main lo que quedábamos en común.
 
 ## Elicitación
 
@@ -777,7 +777,31 @@ Nosotros utilizamos esta metodología mayormente en la parte de los bocetos de i
 
 Checklist es una técnica en la cual se utiliza una lista que contiene lo que debe estar, y se va **checkeando** lo que está presente en la lista. Si hay algo que no marcamos como **checkeado**, entonces lo que estamos verificando no contiene todo lo que debe contener. Este método nos permite verificar la completitud de nuestro software, es decir, que hace todo lo que debería hacer y que tiene todo lo que debería tener.
 
-Particularmente utilizamos esta técnica para revisar que nuestro documento contenía todo lo que se pedía, y, más específicamente utilizamos la lista de la diapositiva de la página 12 de la presentación de powerpoint del curso: **2.3 - Validación de requerimientos** para verificar requerimientos y casos de uso.
+Utilizamos las siguientes listas, basadas en las mostradas en clase [(ver en anexo)](#anexo):
+
+* **Para requerimientos**
+    * ¿Están correctamente priorizados?
+    * ¿Tiene una única interpretación?
+    * ¿Se puede probar?
+    * ¿Tienen el nivel de detalle adecuado?
+    * ¿Están duplicados?
+    * ¿Tienen conflictos entre sí?
+    * ¿Evita incluir aspectos de diseño?
+    * ¿Están al alcance?
+    * ¿Se pueden identificar y de forma única?
+    * ¿Se referencian entre sí de manera correcta?
+
+* **Para casos de uso**
+    * ¿Cumple un único objetivo?
+    * ¿Es medible para el usuario?
+    * ¿Queda claro qué actor(es) participan?
+    * ¿Existe una secuencia lógica en los pasos que permita entender la transacción entre el actor y el sistema?
+    * ¿Es el nivel de abstracción el adecuado?
+    * ¿Está libre de detalles de diseño e implementaciones?
+    * ¿Se documentan todos los casos alternativos?
+    * ¿Las pre y postcondiciones son las adecuadas?
+
+Particularmente utilizamos esta técnica para revisar que nuestro documento contenía todo lo que se pedía más específicamente y esto nos permitió tener una manera más formal para verificar requerimientos y casos de uso.
 
 ### Tabla Requerimientos Funcionales (RF) vs Casos de uso (UC)
 
@@ -807,6 +831,14 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
 ## Reflexión
 
 ### Detalles del trabajo individual
+
+#### Franco
+
+#### Felipe
+
+#### Nicolás
+
+
 
 ### Técnicas aplicadas y aprendidas
 
@@ -910,3 +942,9 @@ Antes de tener la versión definitiva de los bocetos con Balsamiq, se utilizaron
     - Placeholder 5: Subasta - Vendedor
     
     ![Placeholder 1](/Placeholders/Placeholder-Subasta-Vendedor.png "Placeholder Subasta")
+
+### Checklist
+
+- Checklist de requerimientos y casos de uso mostrada en clase
+
+![Imagen de checklist mostrada en clase](/Anexo/Checklist.png "Checklist mostrada en clase")
