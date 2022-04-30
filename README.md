@@ -465,6 +465,12 @@ A cada NFT se le asigna su identificación como el número siguiente a la NFT re
 
 ### User Stories
 
+#### RNF10: Nombres de las colecciones
+
+**Descripción**: Los nombres de las colecciones de NFT no pueden exceder los 50 caractéres.
+
+**Prioridad**: 5
+
 
 #### US1: Comprar una NFT
 
@@ -592,7 +598,7 @@ Este caso de uso trata sobre la creación de colecciones de NFT y agregar/quitar
 
 * **Cursos alternativos** 
 
-    - 1.1 El nombre ingresado no es válido [(ver RNF)](#rnf10{RNFnombresdecolecciones}). No se crea la colección y se vuelve al paso 1.
+    - 1.1 El nombre ingresado no es válido [(ver RNF10)](#rnf10-nombres-de-las-colecciones). No se crea la colección y se vuelve al paso 1.
     
 
 * **Postcondición**: El sistema ahora contendrá la colección creada por el usuario con las NFTs seleccionadas o no, si se decidió eliminar.
@@ -708,9 +714,10 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 * **Cursos alternativos** 
 
-    - 3.1. La descripción no es válida [(ver RNF4)](#rnf4-descripción-de-una-nft). El sistema lo informa y vuelve a caso 5.
-    - 3.2 La imagen no es válida [(ver RNF8)](#rnf8-formato-de-nft). El sistema lo informa y vuelve a caso 7.
-    - 3.3 La imagen ya se encontraba en el sistema como parte de otra NFT. El sistema lo informa y vuelve a caso 7.
+    - 3.1. La descripción no es válida [(ver RNF4)](#rnf4-descripción-de-una-nft). El sistema lo informa y vuelve a caso 3.
+    - 3.2 La imagen no es válida [(ver RNF8)](#rnf8-formato-de-nft). El sistema lo informa y vuelve a caso 3.
+    - 3.3 La imagen ya se encontraba en el sistema como parte de otra NFT. El sistema lo informa y vuelve a caso 3.
+    - 3.4 El usuario no ingresa un nombre. El sistema lo informa yu vuelve a caso 3.
     - 5.1 El usuario decide no publicar la NFT. El sistema no hace visible para todos los demás la NFT, Fin de caso de uso
 
 * **Postcondición**: La NFT es publicada visible para los demás usuarios, o no, en el caso del curso alternativo.
@@ -873,12 +880,12 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
 
 * **Aportes**
     - Estructura del documento
-    - Glosario: NFT, Blockchain, Repositorio, Git
+    - Glosario: NFT, Blockchain, Repositorio, Git, Marketplace
     - Repositorio: Introducción.
     - Ingeniería Reversa
     - Lluvia de Ideas
     - Requerimientos funcionales 1, 2, 3, 4, 5, 6, 9, 10, 14
-    - Requerimientos no funcionales 1, 2, 3, 4, 8, 9
+    - Requerimientos no funcionales 1, 2, 3, 4, 8, 9, 10
     - Índice
     - User stories 1 y 2
     - Use cases 1, 2, 3, 5, 6, 7
@@ -904,14 +911,14 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
 Durante el obligatorio, aprendimos distintas técnicas que aplicamos a nuestro documento:
 
 * Técnicas de priorización
-    * RICE: **R**each, **I**mpact, **C**onfidence, **E**ffort. 
-        - Asignamos un número a cada variable, y luego (R x I x C) / E nos da un número que a mayor valor, más prioritario. En nuestro caso a mayor valor, menor el número que le asignamos como probabilidad (ya que 1 es el más prioritario y 10 el menos prioritario).
-    * MoSCoW: **M**ust, **S**hould, **W**ould, **C**ould.
+    * **RICE**: **R**each, **I**mpact, **C**onfidence, **E**ffort. 
+        - Asignamos un número a cada variable, y luego (R x I x C) / E nos da un número que a mayor valor, más prioritario. En nuestro caso a mayor valor, menor el número que le asignamos como probabilidad (ya que 1 es el más prioritario y 5 el menos prioritario).
+    * **M**o**SC**o**W**: **M**ust, **S**hould, **W**ould, **C**ould.
         - Must: Lo que debemos hacer y vamos a hacer de inmediato.
         - Should: Lo que deberíamos hacer y vamos a hacer en lo posible.
         - Could: Lo que podríamos hacer y vamos a hacer si somos capaces.
         - Would: Lo que no vamos a hacer ahora y tal vez hagamos más tarde.
-    * Pirámide de priorización: pirámide con las siguientes reglas
+    * **Pirámide de priorización**: pirámide con las siguientes reglas
         - A mayor altura, más prioridad
         - El nivel que está abajo no puede tener menos escalones que el que está arriba
 
