@@ -47,6 +47,9 @@
 8. [Verificación](#verificación)
 9. [Reflexión](#reflexión)
     1. [Detalles del trabajo individual](#detalles-del-trabajo-individual)
+        1. [Franco](#franco)
+        2. [Felipe](#felipe)
+        3. [Nicolás](#nicolás)
     2. [Técnicas aplicadas y aprendidas](#técnicas-aplicadas-y-aprendidas)
 10. [Anexo](#anexo)
 
@@ -834,9 +837,65 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
 
 #### Franco
 
+* **Aportes**
+    - Estructura del documento
+    - Glosario: Contratos inteligentes, OpenSea
+    - Comandos utilizados
+    - Requerimientos funcionales 11, 12, 13
+    - Requerimients no funcionales 6, 7
+    - Lluvia de ideas
+    - Entrevista
+    - User personas 1 y 2
+    - Verificación
+    - Validación
+
+* Reflexión
+
 #### Felipe
 
+* **Aportes**
+    - Creación del repositorio
+    - Estructura del documento
+    - Explicación creación del repositorio.
+    - Glosario: Ethereum, Wallet
+    - Requerimientos funcionales 7, 8
+    - Requerimiento no funional 5
+    - User stories 3 y 4
+    - Use case 4
+    - Lluvia de ideas
+    - Verificación
+    - Validación
+    
+
+* **Reflexión**
+
 #### Nicolás
+
+* **Aportes**
+    - Estructura del documento
+    - Glosario: NFT, Blockchain, Repositorio, Git
+    - Repositorio: Introducción.
+    - Ingeniería Reversa
+    - Lluvia de Ideas
+    - Requerimientos funcionales 1, 2, 3, 4, 5, 6, 9, 10, 14
+    - Requerimientos no funcionales 1, 2, 3, 4, 8, 9
+    - Índice
+    - User stories 1 y 2
+    - Use cases 1, 2, 3, 5, 6, 7
+    - Verificación: explicación Checklist, Revisión de pares, Walkthrough y tabla Requerimientos funcionales vs casos de uso
+    - Técnicas aprendidas
+    - Modelo conceptual
+    - Versionado: commits, ramas y evolución del proyecto
+    - Anexo
+    - Identificadores de figura
+    - Prototipo
+    - Verificación
+    - Validación
+    - Detalles del trabajo individual: aportes de los tres integrantes
+
+* **Reflexión**
+    - Considero que aporté positivamente en el trabajo y trabajamos de una manera ordenada, que tal vez al principio nos costó un poco organizarnos pero con el tiempo logramos ordenarnos mejor y trabajar limpiamente, repartiendonos las tareas y verificando el trabajo de los demás mientras hacíamos nuestros aportes.
+    - Creo que fuimos un buen equipo y trabajamos equitativamente a lo largo del proyecto, logrando un documento con el que estamos conformes y que según entiendo cumple su función de buena manera. 
 
 
 
