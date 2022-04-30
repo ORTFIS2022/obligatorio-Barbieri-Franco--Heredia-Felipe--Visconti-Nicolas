@@ -112,7 +112,7 @@ Estos son algunos de los comandos más importantes que utlizamos durante del pro
 
 ### Ramas
 
-Dispusimos de la rama **main** donde se guardan las versiones estables, luego, cada integrante creo su propia rama donde trabajaban nuevas integraciones al documento en paralelo para luego combinarse al main:
+Dispusimos de la rama **main** donde se guardan las versiones estables, luego, cada integrante creo su propia rama donde se trabajaban nuevas integraciones al documento en paralelo para luego combinarse al main:
 - **develop/Felipe**: rama donde trabajó Felipe
 - **developfranco**: rama donde trabajó Franco
 - **developNico**: rama donde trabajó Nicolás
@@ -150,7 +150,7 @@ Utilizamos un criterio donde va una descripción de los cambios realizados y al 
 
 ### Evolución del proyecto
 
-Al principio nosotros trabajábamos todos sobre la rama main, sin tener ramas adicionales. Esto en un principio no generó complicaciones, pero una vez se fue haciendo más grande el documento y empezamos a agregar archivos externos, vimos la conveniencia de tener cada uno su rama, así que cada uno creo su propia rama y empezamos a trabajar de esa manera. Esto nos permitió trabajar más ordenadamente y guardar en el main lo que quedábamos en común.
+Al comienzo nosotros trabajábamos todos sobre la rama main, sin tener ramas adicionales. Esto en un principio no generó complicaciones, pero una vez se fue haciendo más grande el documento y empezamos a agregar archivos externos, vimos la conveniencia de tener cada uno su rama, así que cada uno creo su propia rama y empezamos a trabajar de esa manera. Esto nos permitió trabajar más ordenadamente y guardar en el main lo que quedábamos en común.
 
 ## Elicitación
 
@@ -159,7 +159,7 @@ Al principio nosotros trabajábamos todos sobre la rama main, sin tener ramas ad
 #### Ingeniería Reversa
 
 La técnica de ingeniería reversa consiste en identificar las funcionalidades de una implementación ya existente de otro sistema similar.
-Para identificar algunas de las principales funcionalidades que deben estar presente en nuestro sistema, realizamos esta técnica sobre OpenSea (opeansea.io), el autodenominado marketplace de NFTs más grande.
+Para identificar algunas de las principales funcionalidades que deben estar presentes en nuestro sistema, realizamos esta técnica sobre OpenSea (opeansea.io), el autodenominado marketplace de NFTs más grande.
 
 
 Pudimos identificar las siguientes funcionalidades:
@@ -187,7 +187,7 @@ De esta información pudimos concluir:
 
 #### Lluvia de ideas
 
-Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de proyecto.
+Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo del proyecto.
 
 ##### Ideas de Nicolás:
 
@@ -215,6 +215,8 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 - Filtrar por precio.
 - Permitir al creador del NFT ver el historial de ventas y la opinión de los usuarios de la plataforma.
 
+
+**Conclusión**: No terminamos tomando explicitamente muchas de las ideas planteadas, pero sí incluímos algunas variaciones de algunas, como el filtrado de NFTs (con precio y otros ítems). Finalmente, terminamos adaptando y transformando algunas de las ideas en ideas nuevas que quedaron en nuestro proyecto, como la fecha de subida y el número de vistas.
 
 ### Referencias bibliográficas
 
@@ -766,6 +768,33 @@ A continuación se explica cómo probar el prototipo, se deben seguir los siguie
 
 ## Validación
 
+Realizamos la validación utilizando el prototipo planteado en [bocetos de UI](#boceto-de-ui), además les mostramos a los usuarios el documento para que se adentrasen más concretamente en el contexto de nuestro software. A continuación se plantea la descripción de usuarios validados, seguida de sus comentarios y una conclusión al respecto.
+Se marca con **(+)** si el comentario es positivo, con **(-)** si el comentario es negativo y con **(!)** si el comentario es una sugerencia
+
+### Usuario 1
+
+* **Descripción del usuario**: mujer adulta, profesional de clase media-alta.
+* **Comentarios del usuario**
+    - El prototipo es user friendly. **(+)**
+    - Pocos pasos para cada funcionalidad (se llega rápido a la funcionalidad deseada). **(+)**
+    - Indicador de cuántas personas intentan realizar la misma transacción. **(!)**
+    - En menú principal: tabla de operaciones frecuentes. **(!)**
+* **Conclusiones**
+    - El prototipo fue agradable para el usuario, consideró que es rápido y amigable.
+    - Agregar un indicador de las personas que están intentando realizar una misma transacción puede ser incitador a intentar realizar la transacción rápida. Creemos que en nuestro caso puede ser más enriquecedor un indicador de cuántas personas estuvieron en la página de subasta/compra en las últimas 24 horas.
+    - La tabla de operaciones frecuentes es una muy buena idea que muy posiblemente debiéramos incluir. No todos los usuarios van a realizar as mismas operaciones y por ende puede resultar positivo para la experiencia del usuario, agregándole valor.
+
+### Usuario 2
+
+* **Descripción del usuario**: hombre joven, estudiante de clase media-alta.
+* **Comentarios del usuario**
+    - El prototipo resulta user friendly. **(+)**
+    - No se pueden modificar los valores (los números como el precio son fijos). **(-)**
+    - Un prototipo más cercano a la versión final. **(!)**
+* **Conclusiones**
+    - El prototipo nuevamente fue agradable para el usuario, sin embargo esta vez no gustó que los números fueran fijos y no se pudieran modificar, tal vez en la siguiente iteración sería sensato agregar esto al prototipo, aunque consideramos que no debe ser una prioridad, pero tal vez aporta para el usuario tener un prototipo más cercano a la versión definitiva.
+
+
 ## Verificación
 
 Para la verificación de los requerimientos utilizamos distintas técnicas:
@@ -897,12 +926,12 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
     - Identificadores de figura
     - Prototipo
     - Verificación
-    - Validación
+    - Validación: Introducción. Usuarios 1 y 2.
     - Detalles del trabajo individual: aportes de los tres integrantes
 
 * **Reflexión**
     - Considero que aporté positivamente en el trabajo y trabajamos de una manera ordenada, que tal vez al principio nos costó un poco organizarnos pero con el tiempo logramos ordenarnos mejor y trabajar limpiamente, repartiendonos las tareas y verificando el trabajo de los demás mientras hacíamos nuestros aportes.
-    - Creo que fuimos un buen equipo y trabajamos equitativamente a lo largo del proyecto, logrando un documento con el que estamos conformes y que según entiendo cumple su función de buena manera. 
+    - Creo que fuimos un buen equipo y trabajamos eficientemente a lo largo del proyecto, logrando un documento con el que estamos conformes y que según entiendo cumple su función de buena manera. 
 
 
 
