@@ -195,7 +195,7 @@ Para la realización de la misma se plantearon 12 preguntas:
 Estas fueron planteadas como una guía para ir llevando la conversación, pero durante el desarrollo buscábamos que el entrevistado se explaye en cualquier dirección que le pareciera adecuada, muchas veces respondiendo más de una pregunta a la vez.
 
 ##### Conclusión:
-La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir.El minting nos pareció que era una función muy interesante y que podía aportar, pero nos pareció fuera del alcance para este proyecto. La rareza fue adaptada en nuestro contexto.
+La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir.El minting nos pareció que era una función muy interesante y que podía aportar, pero creemos que estaba un poco fuera del alcance para este proyecto. La rareza fue adaptada en nuestro contexto.
 
 
 #### Lluvia de ideas
