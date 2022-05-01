@@ -180,22 +180,23 @@ OpenSea cuenta con más funcionalidades pero creemos que estas son las suficient
 En esta técnica entrevistamos a un inversor de NFTs, Valentino Bertín. El objetivo de está entrevista fue por un lado poder informarnos más acerca del mundo de las nfts a través de alguien que interactúa con el mismo en el día a día, así como poder sacar ideas y sugerencia de distintas herramientas y funcionalidades que podamos implementar en nuestra plataforma.
 
 Para la realización de la misma se plantearon 12 preguntas:
-- ¿Hace cuanto está con NTFs?
+- ¿Hace cuanto está con NFTs?
 - ¿Qué plataformas utilizas y has utilizado?
-- (explayar) pq cambiaste a tal plataforma que beneficios te brinda
-- ¿cómo eliges en que NFT invertir? ¿En qué te basas?
+- ¿Por qué cambiaste a tal plataforma? ¿Que beneficios te brinda?
+- ¿Cómo eliges en que NFT invertir? ¿En qué te basas?
 - ¿Qué fuentes de información utilizas? ¿La plataforma de trading te provee información?
-- ¿los marketplaces te presentan otras herramientas además de compra y venta de NFTs?
+- ¿Los marketplaces te presentan otras herramientas además de compra y venta de NFTs?
 - ¿Qué te gustaría que se añada a la plataforma reality tools y sniper?
-- ¿cómo puedes explorar los nft en la plataforma (filtrado,sugerencias,etc)?
-- ¿cómo funcionan las subastas? 
+- ¿Cómo puedes explorar los nft en la plataforma (filtrado,sugerencias,etc)?
+- ¿Cómo funcionan las subastas? 
 - ¿Qué información presentan los NFTs (descripción, creador, precio)?
-- ¿como realizas las transacciones?? ¿cuentas con una wallet?
+- ¿Como realizas las transacciones?? ¿cuentas con una wallet?
 
 Estas fueron planteadas como una guía para ir llevando la conversación, pero durante el desarrollo buscábamos que el entrevistado se explaye en cualquier dirección que le pareciera adecuada, muchas veces respondiendo más de una pregunta a la vez.
 
 ##### Conclusión:
-La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir.
+La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir.El minting nos pareció que era una función muy interesante y que podía aportar, pero nos pareció fuera del alcance para este proyecto. La rareza fue adaptada en nuestro contexto.
+
 
 #### Lluvia de ideas
 
