@@ -932,6 +932,7 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
 * **Reflexión**
     - Considero que aporté positivamente en el trabajo y trabajamos de una manera ordenada, que tal vez al principio nos costó un poco organizarnos pero con el tiempo logramos ordenarnos mejor y trabajar limpiamente, repartiendonos las tareas y verificando el trabajo de los demás mientras hacíamos nuestros aportes.
     - Creo que fuimos un buen equipo y trabajamos eficientemente a lo largo del proyecto, logrando un documento con el que estamos conformes y que según entiendo cumple su función de buena manera. 
+    - Salimos del obligatorio con muchas herramientas nuevas, no solo en el área de especificar un documento, también herramientas generales, como las técnicas de priorización, la interacción con un usuario para validar nuestra solución, etc. Como herramientas dentro del área aprendimos a utilizar git y github, que considero va a ser fundamental a la hora de realizar futuros trabajos, así como técnicas de investigación, especificar requerimientos funcionales y no funcionales, casos de uso, user stories, user personas y saber cuándo hay que tener cuidado de no dar detalles de implementación cuando no corresponde.
 
 
 
