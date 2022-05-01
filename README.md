@@ -221,6 +221,7 @@ Para esta técnica cada intengrante propuso 5 ideas sobre el aspecto creativo de
 ### Referencias bibliográficas
 
 - Para los bocetos GUI, se utilizó [Balsamiq](https://balsamiq.com/)
+- Para el modelo conceptual, utilizamos [StarUML](https://staruml.io/)
 - [Técnicas de priorización](https://librescrum.com/2020/09/22/tecnicas-de-priorizacion/)
 - [¿Qué es un User persona?](https://www.questionpro.com/blog/es/que-es-un-user-persona/)
 - [User personas](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1010.835&rep=rep1&type=pdf)
@@ -465,14 +466,14 @@ A cada NFT se le asigna su identificación como el número siguiente a la NFT re
 
 **Prioridad**: 5
 
-### User Stories
-
 #### RNF10: Nombres de las colecciones
 
 **Descripción**: Los nombres de las colecciones de NFT no pueden exceder los 50 caractéres.
 
 **Prioridad**: 5
 
+
+### User Stories
 
 #### US1: Comprar una NFT
 
@@ -605,17 +606,17 @@ Este caso de uso trata sobre la creación de colecciones de NFT y agregar/quitar
 
 * **Postcondición**: El sistema ahora contendrá la colección creada por el usuario con las NFTs seleccionadas o no, si se decidió eliminar.
 
-* **Bosquejo GUI**
+* **Bosquejos GUI**
 
-    * Creación
+
     ![Bosquejo crear colección](/BocetosBalsamiq/colecci%C3%B3n-crear.png "Bosquejo inicial para crear colección")
     - Figura 11: Bosquejo creación de colección de NFTs
 
-    * Agregar/Eliminar NFT
+
     ![Bosquejo agregar o quitar una NFT a la colección](/BocetosBalsamiq/colecci%C3%B3n-agregar-quitar.png "Bosquejo inicial para agregar o quitar NFTs")
     - Figura 12: Bosquejo agregar y quitar NFTs a la colección
 
-    * Eliminar colección
+
     ![Bosquejo eliminar colección](/BocetosBalsamiq/colecci%C3%B3n-eliminar.png "Bosquejo inicial para eliminar colección")
     - Figura 13: Bosquejo eliminar la colección
 
@@ -647,7 +648,7 @@ Este caso de uso trata sobre el proceso busqueda de NFTs desde el punto de vista
 Este caso de uso trata sobre el proceso de compra de una NFT del punto de vista de un usuario comprador.
 
 * **Prioridad**: 1
-* **Requerimientos asociados**:  [RF9](#rf9-información-de-nfts), [RF8](#rf8-wallet), [RF11](#rf11-compra-de-ntfs)
+* **Requerimientos asociados**:  [RF8](#rf8-wallet), [RF9](#rf9-información-de-nfts), [RF11](#rf11-compra-de-ntfs)
 * **Precondición**: El usuario posee una wallet vinculada.
 
 | **Acción del usuario comprador** | **Respuesta del sistema** |
@@ -724,13 +725,13 @@ Este caso de uso trata sobre el proceso de venta de una NFT del punto de vista d
 
 * **Postcondición**: La NFT es publicada visible para los demás usuarios, o no, en el caso del curso alternativo.
 
-* **Bosquejo GUI**
+* **Bosquejos GUI**
 
-    *  Crear
+
     ![Bosquejo de la interfaz gráfica para creación de NFTs](/BocetosBalsamiq/crear.png "Bosquejo inicial para crear NFTs")
     - Figura 17: Bosquejo de interfaz de creación de NFTs
 
-    * Publicar
+
     ![Bosquejo de la interfaz gráfica para publicación de NFTs](/BocetosBalsamiq/publicar.png "Bosquejo inicial para publicar NFTs")
     - Figura 18: Bosquejo de interfaz para publicación de NFTs
 
