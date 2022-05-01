@@ -199,11 +199,7 @@ Para la realización de la misma se plantearon 12 preguntas:
 Estas fueron planteadas como una guía para ir llevando la conversación, pero durante el desarrollo buscábamos que el entrevistado se explaye en cualquier dirección que le pareciera adecuada, muchas veces respondiendo más de una pregunta a la vez.
 
 ##### Conclusión:
-<<<<<<< HEAD
-La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir.El minting nos pareció que era una función muy interesante y que podía aportar, pero creemos que estaba un poco fuera del alcance para este proyecto. La rareza fue adaptada en nuestro contexto.
-=======
 La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir. El minting nos pareció que era una función muy interesante y que podía aportar, pero creemos que está fuera del alcance para este proyecto. La rareza fue adaptada en nuestro contexto.
->>>>>>> 253f2adc5a13bb022851a019d0543807a86e909a
 
 
 #### Lluvia de ideas
@@ -884,8 +880,8 @@ Para verificar que los casos de uso contemplen todos los requerimientos funciona
 
 | - | [UC1](#uc1-subasta-de-nft---vendedor) | [UC2](#uc2-subasta-de-nft---comprador) | [UC3](#uc3-crear-y-agregar-nfts-a-colecciones-de-nft) | [UC4](#uc4-explorar-nfts---comprador) | [UC5](#uc5-compra-de-nft) | [UC6](#uc6-venta-de-nft) | [UC7](#uc7-crear-nft) |
 | -- | -- | -- | -- | -- | -- | -- | -- |
-| [RF2](#rf2-ofertas-en-subastas)                           | - | v | - | - | - | - | - |
 | [RF1](#rf1-subasta-de-nfts)                               | v | - | - | - | - | - | - |
+| [RF2](#rf2-ofertas-en-subastas)                           | - | v | - | - | - | - | - |
 | [RF3](#rf3-retiro-de-ofertas-en-subastas)                 | v | v | - | - | - | - | - |
 | [RF4](#rf4-finalización-de-la-subasta)                    | v | v | - | - | - | - | - |
 | [RF5](#rf5-colecciones-de-nfts)                           | - | - | v | - | - | - | - |
