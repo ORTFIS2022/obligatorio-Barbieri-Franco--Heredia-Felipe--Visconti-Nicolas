@@ -1147,4 +1147,4 @@ Mira la wallet que uso yo metamask, que siempre uso y es la que usa todo el mund
 
 ### Workflow completo
 
-![Lectura](/Rutadelarchivo "cursor")
+![Imagen de el Workflow historico del repositorio](/Anexo/Workflowcompleto.png "Workflow completo")
