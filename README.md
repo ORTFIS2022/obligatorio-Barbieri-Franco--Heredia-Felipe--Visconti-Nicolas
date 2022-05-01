@@ -57,6 +57,7 @@
 
 Este documento explica y establece cómo debería ser nuestro software, un marketplace de NFTs, a la hora de implementarlo, se establecen distintos aspectos del mismo como requerimientos funcionales y no funcionales, use cases, user personas, user stories.
 Se recomienda el uso del [índice](#índice) para navegar cómodamente por el documento luego de una lectura inicial.
+También se recomienda leer el documento desde [git hub](https://github.com/), ya que fue pensado de esta manera.
 
 ## Conceptos previos
 
