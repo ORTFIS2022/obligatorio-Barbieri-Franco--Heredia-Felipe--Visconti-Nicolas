@@ -195,7 +195,7 @@ Para la realización de la misma se plantearon 12 preguntas:
 Estas fueron planteadas como una guía para ir llevando la conversación, pero durante el desarrollo buscábamos que el entrevistado se explaye en cualquier dirección que le pareciera adecuada, muchas veces respondiendo más de una pregunta a la vez.
 
 ##### Conclusión:
-La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir.El minting nos pareció que era una función muy interesante y que podía aportar, pero nos pareció fuera del alcance para este proyecto. La rareza fue adaptada en nuestro contexto.
+La entrevista con Valentino nos ofreció un mayor entendimiento del universo de los NFTs. Poder ver en primera mano las necesidades e intereses de un usuario de estos marketplaces, nos permitió tener una base mucho más segura de hacia donde debíamos guiar nuestro producto. También nos presentó bastantes conceptos de los que no estábamos al tanto como minting de NFTs y la rareza, que de hecho resultan muy importantes a la hora de elegir en qué proyecto invertir. El minting nos pareció que era una función muy interesante y que podía aportar, pero creemos que está fuera del alcance para este proyecto. La rareza fue adaptada en nuestro contexto.
 
 
 #### Lluvia de ideas
@@ -1071,28 +1071,28 @@ A través de cursos, info en línea, foros.
 
 - ¿Qué plataformas utilizas o has utilizado? 
 
-Use Magic Eden y Open Sea, Magic Eden es horrible pero era la única qué me permitió utilizar la moneda  solanas,  pero después arranque a usar Open Sea Y ahora nomás empezaron a implementar solanas en estado Beta,  pero open sea es la más establecida y la que más use pero antes se regía solo por la network de ethereum y las fees estaban altísimas por eso usaba Magic Eden. En Open sea me parece que está mucho más organizado todo, algo que no tiene está plataforma que si tenía Magic Eden que me parece que le falta y siempre me gusto que tenga es alguna herramienta implementada como nft rarity nft tools algo asi que te salte el ranking de rarezas de los nfts
+Use Magic Eden y OpenSea, Magic Eden es horrible pero era la única qué me permitió utilizar la moneda  solanas,  pero después arranque a usar OpenSea Y ahora nomás empezaron a implementar solanas en estado Beta,  pero OpenSea es la más establecida y la que más use pero antes se regía solo por la network de ethereum y las fees estaban altísimas por eso usaba Magic Eden. En OpenSea me parece que está mucho más organizado todo, algo que no tiene está plataforma que si tenía Magic Eden que me parece que le falta y siempre me gusto que tenga es alguna herramienta implementada como nft rarity nft tools algo asi que te salte el ranking de rarezas de los nfts
 
 - ¿Qué es rarity?
  
- Te muestro, rarity sniper te sirve para ver que tan raro es tu nft. Open Sea no lo tiene por ejemplo. Algo clave que me parece que es clave para un marketplace que tiene open sea son los rankings los top NFTs cosas como el volumen que tienen trades en 24 horas, esto es algo de lo que estoy bastante al tanto, siempre echando un ojo.
+ Te muestro, rarity sniper te sirve para ver que tan raro es tu nft. OpenSea no lo tiene por ejemplo. Algo clave que me parece que es clave para un marketplace que tiene OpenSea son los rankings los top NFTs cosas como el volumen que tienen trades en 24 horas, esto es algo de lo que estoy bastante al tanto, siempre echando un ojo.
 
 - ¿En qué te basas vos a la hora de elegir un nft?
 
 Hay 2 cosas que hago, una que es básicamente investigar un proyecto y tenerlos y holdearlos. Como por ejemplo ahora ufc sacó una colección de NFTs , eso lo compre y me los quedo para un futuro o capaz alguno que te deje hacer stacking esa es una manera de holdear que precisa también toda una investigación del proyecto.
 Hay veces que agarró una de estas páginas como NFTs rarity's que te avisa si algún nft raro fue listado a un precio no muy alto y ahí voy y snipeo los nfts. Esa es una manera más bien de hacer trading, algo que te tienes que fijar es que tenga bastante volumen no sea cosa de que compres algo y no te lo quiera comprar nadie.
 
-- ¿Qué herramientas te brinda open sea a la hora de elegir que nft comprar?
+- ¿Qué herramientas te brinda OpenSea a la hora de elegir que nft comprar?
 
-Nada, en un principio te da la opción de explorar, te pone el ranking y vos entras a la conexion, es mas no tiene ni un launchpad que es como por ejemplo, ponele que vos y yo queremos sacar una colección de NFTs y queremos que se minteen en la página. por ejemplo aca te muestro: este  launchpad drops por ejemplo está en vivo te muestra pet society y te dice public sale en 2 horas 30 y aca podes agarrar y mintearla directamente a la wallet antes de que salgan. El proceso de minteado es pasar los nfts a la blockchain, si tenés un launchpad adentro del marketplace ya podes hacerlo todo ahí y mintearlo directamente a la wallet. En open sea siempre fue como un market secundario, los tokens salían de las páginas de los proyectos. También da un poquito más de seguridad en el proyecto porque para sacarlo de una pagina tenes que confiar mucho en el proyecto.
+Nada, en un principio te da la opción de explorar, te pone el ranking y vos entras a la conexion, es mas no tiene ni un launchpad que es como por ejemplo, ponele que vos y yo queremos sacar una colección de NFTs y queremos que se minteen en la página. por ejemplo aca te muestro: este  launchpad drops por ejemplo está en vivo te muestra pet society y te dice public sale en 2 horas 30 y aca podes agarrar y mintearla directamente a la wallet antes de que salgan. El proceso de minteado es pasar los nfts a la blockchain, si tenés un launchpad adentro del marketplace ya podes hacerlo todo ahí y mintearlo directamente a la wallet. En OpenSea siempre fue como un market secundario, los tokens salían de las páginas de los proyectos. También da un poquito más de seguridad en el proyecto porque para sacarlo de una pagina tenes que confiar mucho en el proyecto.
 
-- ¿te presenta alguna otra herramienta open sea?
+- ¿Te presenta alguna otra herramienta OpenSea?
 
 La actividad ranking da cierta data pero cuando me decis herramientas pienso más en lo que te estaba diciendo como el ranking de rareza y launchpad.
 
 - ¿Se te ocurre alguna cosa más que te gustaría ver implementada en la plataforma?
 
-Para open sea el launchpad que tiene Magic está bueno y alguna herramienta de estas como rarity tools y rarity sniper, anotate esas dos.
+Para OpenSea el launchpad que tiene Magic está bueno y alguna herramienta de estas como rarity tools y rarity sniper, anotate esas dos.
 
 - Ya me hablaste de cómo se pueden explorar los NFTs en la plataforma, me hablaste de los tops. ¿Hay algunas otras herramientas como filtrados o capaz sugerencias que te haga la página?
 
@@ -1102,20 +1102,20 @@ Para open sea el launchpad que tiene Magic está bueno y alguna herramienta de e
 
 La verdad que yo no me pongo a investigar NFTs desde aca yo me muevo por twitter y foros, lugares donde busco proyectos. Además, me gusta meterme en proyectos antes de que sean minteados para poder mintearlos yo.
 
-- ¿Me podés contar un poco como funcionan las subastas  en open sea?
+- ¿Me podés contar un poco como funcionan las subastas en OpenSea?
 
 Sí, es más, hace un tiempo no se si fue Mc donalds o Burger king que sacó un NFT de una hamburguesa que valía por una hamburguesa cada semana o mes todo este año, algo asi, me voy a fijar a cuanto se subastó. 
 Básicamente vos tenes un NFT y vos podes venderlo como para que esté ahí y se compre de una, un buy now, o como subasta que le pones cuanto tiempo querés que dure. Si querés que vaya para abajo o arriba, la clásica es la de poner un precio bajo y va subiendo por cada persona que ofrezca más y otra que arranca con un precio alto y va bajando con el tiempo hasta que alguien la compre. Si no también está la opción de ofertar a un precio más bajo del que está enlistado
 
-- ¿Qué información te presenta de los nfts open sea?
+- ¿Qué información te presenta de los nfts OpenSea?
 
 Mira te muestro, es como un perfil de facebook ponele que tiene una foto de perfil un muro y 4 datos que siempre tenes que fijarte que son cuantos ítems son (es decir cuantos NFTs hay en la colección), cuantos holders hay de los nfts, el floor price, que es el precio más barato al que está listado un ítem de la colección y el volumen tradeado que es básicamente toda la plata que se estuvo moviendo por el proyecto con cada transacción. Es bastante intuitiva la página, bastante clean.
 
-- ¿le prestas atención a la descripción?
+- ¿Le prestas atención a la descripción?
 
 No, la verdad que no.
 Después tenés acá en los ítems la activity, la actividad que tiene el proyecto, cuando fue el último que se vendió. Esto siempre me fijo, es clave mas que nada si te queres meter en trading tienen que tener mucha actividad reciente.
 
 - Bueno la última pregunta. ¿Sobre el funcionamiento de la wallet que me podes contar?
 
-Mira la wallet que uso yo metamask, que siempre uso y es la que usa todo el mundo, es multichain, tienen varias block chains a la que te podes conectar tipo binance, la red de ethereum. En open sea siempre me conecto por ahí. es muy fácil porque las wallets son extensiones de chrome entonces en las páginas vos agarras pones contraseña y ya está, es un toque. Con open sea uso metamask y con magic antes usaba la red de solanas que se llama phantom. la verdad es muy fácil, tenés que saber hacerla lo único, eso es más complicado
+Mira la wallet que uso yo metamask, que siempre uso y es la que usa todo el mundo, es multichain, tienen varias block chains a la que te podes conectar tipo binance, la red de ethereum. En OpenSea siempre me conecto por ahí. es muy fácil porque las wallets son extensiones de chrome entonces en las páginas vos agarras pones contraseña y ya está, es un toque. Con OpenSea uso metamask y con magic antes usaba la red de solanas que se llama phantom. la verdad es muy fácil, tenés que saber hacerla lo único, eso es más complicado
