@@ -878,6 +878,8 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
     
 
 * **Reflexión**
+-Creo que este trabajo fue util para entender como funciona el sistema de versionado de git y como es que se comienza un proyecto de ingenieria de software colaborando con un equipo. Ademas el hecho de haber tenido que realizar investigaciones y aplicar diversas tecnicas para entender lo que es el mundo de los NFTs para poder llevar a cavo una aplicacion funcional de compra y venta de los mismos nos ayudo a entender mejor como funciona este mundo y a entender como es la tarea de comenzar un proyecto sin tener mucho conocimiento previo sobre lo que se va a hacer.
+-Como conclusion me parece que utilizando las herramientas aprendidas en clase y lo que fuimos aprendiendo durante el desarrollo del documento fuimos mejorando el trabajo en equipo y cada uno cumplio con su parte para llegar a lo que creo que es un buen trabajo como resultado.
 
 #### Nicolás
 
