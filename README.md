@@ -118,7 +118,10 @@ Dispusimos de la rama **main** donde se guardan las versiones estables, luego, c
 - **developfranco**: rama donde trabajó Franco
 - **developNico**: rama donde trabajó Nicolás
 
-{Workflows - Fig. 1}
+![Imagen de ejemplo del workflow del repositorio](/Workflows/ejemplo.png "Ejemplo Workflow")
+* Figura 1: Workflow del repositorio del primero de mayo
+
+Para ver el workflow completo, ver [Anexo: Workflow completo](#workflow-completo)
 
 ### Commits
 
@@ -1141,3 +1144,7 @@ Después tenés acá en los ítems la activity, la actividad que tiene el proyec
 - Bueno la última pregunta. ¿Sobre el funcionamiento de la wallet que me podes contar?
 
 Mira la wallet que uso yo metamask, que siempre uso y es la que usa todo el mundo, es multichain, tienen varias block chains a la que te podes conectar tipo binance, la red de ethereum. En OpenSea siempre me conecto por ahí. es muy fácil porque las wallets son extensiones de chrome entonces en las páginas vos agarras pones contraseña y ya está, es un toque. Con OpenSea uso metamask y con magic antes usaba la red de solanas que se llama phantom. la verdad es muy fácil, tenés que saber hacerla lo único, eso es más complicado
+
+### Workflow completo
+
+![Lectura](/Rutadelarchivo "cursor")
