@@ -761,13 +761,15 @@ A continuación se explica cómo probar el prototipo, se deben seguir los siguie
 
 Validacion Felipe:
 
-Usuario: Fernando, jubilado de 65 años sin conocimientos de los NFTs ni de programacion.
-Comentarios: El prototipo le parecio que esta bueno, es facil de usar y se entiende bien cuales son las funcionalidades que tiene la pagina.
-Reflexion: Es importante que la interfaz sea facil de entender y accesible a todo tipo de publico asi cualquier persona puede acceder a todas las funcionalidades que la pagina ofrece.
+###Usuario1
+* **Descripción del usuario**: Fernando, jubilado de 65 años sin conocimientos de los NFTs ni de programacion.
+* **Comentarios del usuario** El prototipo le parecio que esta bueno, es facil de usar y se entiende bien cuales son las funcionalidades que tiene la pagina.
+* **Conclusiones** Es importante que la interfaz sea facil de entender y accesible a todo tipo de publico asi cualquier persona puede acceder a todas las funcionalidades que la pagina ofrece.
 
-Usuario: Matias, Ingeniero en sistemas de 28 años
-comentarios: Dijo que seria mejor tener como menu principal la pagina de explorar NFTs y los demas casos de uso colocarlos en botones que esten en esa pantalla pero comento que en general es un buen prototipo y se entienden bien sus funcionalidades.
-Reflexion: Faltan ajustar algunos temas de diseño pero lo importante es que sea una interfaz funcional y que sea facil de entender.
+###Usuario2
+* **Descripción del usuario**:Matias, Ingeniero en sistemas de 28 años
+* **Comentarios del usuario** Dijo que seria mejor tener como menu principal la pagina de explorar NFTs y los demas casos de uso colocarlos en botones que esten en esa pantalla pero comento que en general es un buen prototipo y se entienden bien sus funcionalidades.
+* **Conclusiones** Faltan ajustar algunos temas de diseño pero lo importante es que sea una interfaz funcional y que sea facil de entender.
 
 ## Verificación
 
