@@ -808,6 +808,20 @@ Se marca con **(+)** si el comentario es positivo, con **(-)** si el comentario 
 * **Conclusiones**
     - El prototipo nuevamente fue agradable para el usuario, sin embargo esta vez no gustó que los números fueran fijos y no se pudieran modificar, tal vez en la siguiente iteración sería sensato agregar esto al prototipo, aunque consideramos que no debe ser una prioridad, pero tal vez aporta para el usuario tener un prototipo más cercano a la versión definitiva.
 
+### Usuario 3 
+* **Descripción del usuario**: Hombre adulto, jubilado clase media-alta.
+* **Comentarios del usuario** 
+    - El prototipo se ve bien, es facil de usar y se entiende bien cuales son las funcionalidades que tiene la pagina. **(+)**
+* **Conclusiones** 
+    -Es importante que la interfaz sea facil de entender y accesible a todo tipo de publico asi cualquier persona puede acceder a todas las funcionalidades que la pagina ofrece.
+
+### Usuario 4 
+* **Descripción del usuario**:Hombre Adulto, profesional de clase media-alta.
+* **Comentarios del usuario** 
+    - Seria mejor tener como menu principal la pagina de explorar NFTs y los demas casos de uso colocarlos en botones que esten en esa pantalla **(!)**
+    - En general es un buen prototipo y se entienden bien sus funcionalidades. **(+)**
+* **Conclusiones** 
+    -Faltan ajustar algunos temas de diseño pero lo importante es que sea una interfaz funcional y que sea facil de entender.
 
 ## Verificación
 
@@ -918,6 +932,8 @@ Esto significa los casos de uso contemplan todos nuestros requerimientos funcion
     
 
 * **Reflexión**
+-Creo que este trabajo fue util para entender como funciona el sistema de versionado de git y como es que se comienza un proyecto de ingenieria de software colaborando con un equipo. Ademas el hecho de haber tenido que realizar investigaciones y aplicar diversas tecnicas para entender lo que es el mundo de los NFTs para poder llevar a cavo una aplicacion funcional de compra y venta de los mismos nos ayudo a entender mejor como funciona este mundo y a entender como es la tarea de comenzar un proyecto sin tener mucho conocimiento previo sobre lo que se va a hacer.
+-Como conclusion me parece que utilizando las herramientas aprendidas en clase y lo que fuimos aprendiendo durante el desarrollo del documento fuimos mejorando el trabajo en equipo y cada uno cumplio con su parte para llegar a lo que creo que es un buen trabajo como resultado.
 
 #### Nicolás
 
